@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html><head>
+<title>Keyan Chen's Homepage</title>
+<link rel="icon" href="image/icon.webp" >
+
+<!--<script type="text/javascript">-->
+      <!--//判断是否手机访问 如果是跳转 -->
+      <!--try {-->
+      <!--var urlhash = window.location.hash;-->
+      <!--if (!urlhash.match("fromapp")) {-->
+      <!--if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {-->
+      <!--window.location = "/mobile.html";-->
+      <!--}-->
+      <!--}-->
+      <!--} catch (err) {}-->
+<!--</script>-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<style type="text/css">
+
+body
+{
+ 	font-family: 'Lucida Grande',Arial,Helvetica,'STXihei',sans-serif; 
+    background-color : #fff;
+    font-size: 18px;
+    width : 1440px;
+}
+    .content
+	{
+    		width : 1100px;
+    		padding : 25px 30px;
+    		margin : 25px auto;
+    		margin-left: 260px;
+/*     		background-color : #fff;
+    		box-shadow: 0px 0px 10px #999; */
+/*     		border-radius: 15px;  */
+	}	
+	table
+	{
+		padding: 5px;
+	}
+	
+  	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		padding: 8px;
+		width: 990px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-top: -5px;
+	}
+
+	td.pub_td1
+	{
+		width:50px;
+	}
+    td.pub_td1 img
+    {
+        height:120px;
+        width: 160px;
+    }
+	
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 1040px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		/*color: #1367a7;*/
+		height: 158px;
+/*     		font-size:110%; */
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h1
+	{
+		font-size:210%;
+	}
+	h2
+	{
+		font-size:150%;
+	}
+	h3
+	{
+		font-size:110%;
+	}
+	h4
+	{
+		font-size:100%;
+	}
+	p
+	{
+/*		color: #5B5B5B;*/
+		margin-bottom: 10px;
+		/*margin-left: 20px;*/
+		text-indent:2em;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+    }
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+    #beihang_logo {
+        position: absolute;
+        left: 646px;
+        top: 28px;
+        width: 200px;
+        height: 20px;
+    }
+   
+    table.pub_table tr {
+        outline: thin dotted #666666;
+    }
+    .papericon {
+        border-radius: 8px; 
+        /*-moz-box-shadow: 3px 3px 6px #888;
+        -webkit-box-shadow: 3px 3px 6px #888;*/
+        /*box-shadow: 3px 3px 6px #888;*/
+    }
+
+
+underline {
+	border-bottom: 2px solid;
+	display:inline-block;
+}
+
+</style>
+
+<script type="text/javascript" language="javascript">
+	function addEventHandler(target, type, func){
+	if (target.addEventListener)
+	target.addEventListener(type, func, false);
+	else if (target.attachEvent)
+	target.attachEvent("on" + type, func);
+	else target["on" + type] = func;
+	}
+	var advIniTop = 0;
+	function move(){
+	var layer1 = document.getElementById("nav1");
+	if (layer1) layer1.style.top = advIniTop + document.body.scrollTop || document.documentElement.scrollTop + 10 + "px";
+	}
+	addEventHandler(window, "scroll", move);
+</script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?29efd6468fd0186f0fea2a1a307a70cb";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+
+
+
+<a name="home"></a>
+<body>
+<div id="nav1" style="position:absolute;z-index:10;top:10px;left:100px;width:200px;">
+	<table>
+	  <td style="height:68px">
+	  </td>
+	</table>
+	<h2>Index</h2>
+	<table>
+	  <td style="height:15px">
+	  </td>
+	</table>
+	<div style="position:absolute;z-index:10;left:2px;border-left:2px solid #3B3B3B">
+	<table>
+	  <td style="width:15px">
+	  </td>
+	  <td valign="middle">
+	    <h4>
+			<a href="#home" style="color: #3B3B3B">Home</a><br><br>
+			<a href="#about-me" style="color: #3B3B3B">About Me</a><br><br>
+			<a href="#news" style="color: #3B3B3B">News</a><br><br>
+			<a href="#publications" style="color: #3B3B3B">Publications</a><br><br>
+			<!-- <a href="#talks" style="color: #3B3B3B">Invited Talks</a><br><br> -->
+<!--			<a href="#service" style="color: #3B3B3B">Service</a><br><br>-->
+			<a href="#education" style="color: #3B3B3B">Education</a><br><br>
+<!--			<a href="#experience" style="color: #3B3B3B">Research Experience</a><br><br>-->
+			<a href="#honors" style="color: #3B3B3B">Selected Honors</a><br><br>
+			<a href="#contact" style="color: #3B3B3B">Contact</a><br>
+		</h4>
+	  </td>
+	</table></div><br><br>
+</div>
+<br>
+<div class="content">
+	<div id="container">
+	<table>
+	<tbody><tr>
+		<td style="width:50px">
+  	</td>
+	<td style="width:310px">
+    <img id="myPicture" src="image/KeyanChen.jpg"
+	 style="float:center; border-radius: 15px"
+	 height="260px">
+  	</td>
+	<td>
+	<div id="DocInfo">
+	<!--<br>-->
+		<h1>Keyan Chen (陈科研)</h1><br>
+	<h3>Ph.D. Student, Beihang University</h3>
+	<h3></h3>
+	<font size=4.5><a href="./cv.pdf">CV (2023.1)</a> &bull; <a href="https://scholar.google.com/citations?user=5RF4ia8AAAAJ&hl=zh-CN">Google Scholar</a> &bull; <a href="https://www.semanticscholar.org/author/Keyan-Chen/152567984">Semantic Scholar</a> &bull; <a href="https://github.com/KyanChen">GitHub</a></font>
+	</div>
+	</td>
+	</tr>
+	</tbody></table>
+
+	<a name="about-me"></a><br><br><br>
+	<h2>About Me</h2><br>
+	<p>
+	I am a Ph.D. student in the <a href="http://levir.buaa.edu.cn/">LEVIR lab.</a> at <a href="https://www.buaa.edu.cn/">Beihang University</a>, advised by Prof. <a href="http://levir.buaa.edu.cn/">Zhenwei Shi</a> and Prof. <a href="https://zhengxiazou.github.io/">Zhengxia Zou</a>.
+	Before that, I received my B.S. and M.S. degree in <a href="http://www.sa.buaa.edu.cn/">Image Processing Center</a> at <a href="https://www.buaa.edu.cn/">Beihang University</a>. </p>
+<!--	<p>-->
+<!--	Feel free to call me "Rainforest", which has the same pronunciation as "Yulin" in Chinese.-->
+<!--	</p>-->
+	<p>
+	My research interests lie in the remote sensing image processing, deep learning and multimodal.
+	</p>
+
+
+
+	<a name="news"></a><br><br><br>
+	<h2>News</h2><br>
+		<p>
+			2023.01: Our <a href="https://arxiv.org/abs/1905.05055">Survey on Object Detection</a> is Accepted by <b><font color="red">Proceedings of the IEEE</font> (IF=14.91)</b>.
+		</p>
+		<p>
+			2023.01: Three Papers are Accepted by <b><font color="red">TGRS</font> (IF=8.125)</b> in 2022.
+		</p>
+
+
+<!--	2022.10: Winning the <a href="https://ur.bytedance.com/scholarship">2022 ByteDance Scholarship</a> (字节跳动奖学金, <b><font color="red">10</font> PhD students in China</b>).-->
+<!--	<p>-->
+<!--	2022.09: Winning the <a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">2022 Microsoft Research Asia Fellowship Award</a> ("微软学者"奖学金, <b><font color="red">12</font> PhD students in the Asia-Pacific region</b>).-->
+<!--	<p>-->
+<!--	2022.07: The <a href="https://arxiv.org/pdf/2201.03014.pdf">Journal Version of GFNet</a> is Accepted by <b><font color="red">TPAMI</font> (IF=24.31)</b>.-->
+<!--	<p>-->
+<!--	2022.03 & 2022.07: <a href="https://arxiv.org/pdf/2112.14238.pdf">AdaFocusV2</a> & <a href="https://arxiv.org/pdf/2209.13465.pdf">AdaFocusV3</a> are Accepted by CVPR 2022 & ECCV 2022.-->
+<!--	<p>-->
+<!--	2021.12: Winning the <a href="https://mp.weixin.qq.com/s/1Qkc2mZ_MJ2hKNZZDT7RQA">2021 Baidu Scholarship</a> (百度奖学金, <b><font color="red">10</font>  PhD students worldwide</b>).-->
+<!--	<p>-->
+<!--	2021.10: Winning the 2021 CCF-CV Outstanding Young Researcher Award (CCF-CV学术新锐奖, <b><font color="red">3</font> PhD or Master students in China</b>).-->
+<!--	<p>-->
+<!--	2021.09: Not All Images are Worth 16x16 Words! Our <a href="https://arxiv.org/pdf/2105.15075.pdf">Dynamic ViT (DVT)</a> is Accepted by NeurIPS 2021.-->
+<!--	<p>-->
+<!--	2021.09: Our <a href="https://arxiv.org/pdf/2102.04906.pdf">Survey on Dynamic Neural Networks</a> is Accepted by <b><font color="red">TPAMI</font> (IF=24.31)</b>.-->
+<!--	<p>-->
+<!--	2021.07: <a href="https://arxiv.org/pdf/2105.03245.pdf">AdaFocus</a> is Accepted by ICCV 2021 for <b><font color="red">Oral</font> Presentation</b>.-->
+<!--	&lt;!&ndash;<p>&ndash;&gt;-->
+<!--	&lt;!&ndash;2021.06: Not All Images are Worth 16x16 Words! Our Dynamic ViT (DVT) is Available at <a href="https://arxiv.org/pdf/2105.15075v1.pdf">Arxiv</a>/<a href="https://github.com/blackfeather-wang/Dynamic-Vision-Transformer">Github</a>.&ndash;&gt;-->
+<!--	<p>-->
+<!--	2021.05: Selected to be an <a href="http://cvpr2021.thecvf.com/node/184">Outstanding Reviewer</a> of CVPR 2021.-->
+<!--	<p>-->
+<!--	2021.03: Three Papers are Accepted by CVPR 2021 (with one <b><font color="red">Oral</font></b>).-->
+<!--	<p>-->
+<!--	2021.01: The <a href="https://arxiv.org/pdf/2007.10538.pdf">Journal Version of ISDA</a> is Accepted by <b><font color="red">TPAMI</font> (IF=24.31)</b>.-->
+<!--	<p>-->
+<!--	2021.01: One Paper is Accepted by ICLR 2021.-->
+
+
+  <a name="publications"></a><br><br><br>
+  <h2>Recent Publications (Selected)</h2><br>
+
+		<table>
+			<tbody>
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/FunSR.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Continuous Remote Sensing Image Super-Resolution based on Context Interaction in Implicit Function Space</b><br>
+						<i>Arxiv, 2023</i><br>
+						<b>Keyan Chen</b>, Wenyuan Li, Sen Lei, Jianqi Chen, Xiaolong Jiang, Zhengxia Zou, and Zhenwei Shi<br>
+						[<a href="https://arxiv.org/abs/2302.08046">PDF</a>] [<a href="https://github.com/KyanChen/FunSR">Code</a>] [<a href="https://kyanchen.github.io/FunSR/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/FunSR">Demo</a>]<br>
+						<div style="text-align: justify">
+							We propose a new super-resolution framework based on context interaction in implicit function space for learning continuous representations of remote sensing images, called FunSR, which consists of three main components: a functional representor, a functional interactor, and a functional parser.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/OvarNet.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>OvarNet: Towards Open-vocabulary Object Attribute Recognition</b><br>
+						<i>Arxiv, 2023</i><br>
+						<b>Keyan Chen</b>, Xiaolong Jiang, Yao Hu, Xu Tang, Yan Gao, Jianqi Chen and Weidi Xie<br>
+						[<a href="https://arxiv.org/abs/2301.09506">PDF</a>] [<a href="https://github.com/KyanChen/OvarNet">Code</a>] [<a href="https://kyanchen.github.io/OvarNet/">Page</a>]<br>
+						<div style="text-align: justify">
+							We consider the problem of simultaneously detecting objects and inferring their visual attributes in an image, even for those with no manual annotations provided at the training stage, resembling an open-vocabulary scenario.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/ODSurvey.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Object Detection in 20 Years: A Survey</b><br>
+						<i>Proceedings of the IEEE (P IEEE), 2023</i><br>
+						Zhengxia Zou, <b>Keyan Chen</b>, Zhenwei Shi, Yuhong Guo and Jieping Ye<br>
+						[<a href="http://levir.buaa.edu.cn/publications/od_survey.pdf">PDF</a>] [<a href="https://github.com/KyanChen/ODSurvey">Code</a>] [<a href="https://kyanchen.github.io/ODSurvey/">Page</a>]<br>
+						<div style="text-align: justify">
+							This paper extensively reviews the fast-moving research field in the light of technical evolution, spanning over a quarter-century's time (from the 1990s to 2022). A number of topics have been covered, including the milestone detectors in history, detection datasets, metrics, fundamental building blocks of the detection system, speed-up techniques, and the recent state-of-the-art detection methods.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/RASNet.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Resolution-agnostic Remote Sensing Scene Classification with Implicit Neural Representations</b><br>
+						<i>IEEE Geoscience and Remote Sensing Letters (GRSL), 2022</i><br>
+						<b>Keyan Chen</b>, Wenyuan Li, Jianqi Chen, Zhengxia Zou and Zhenwei Shi<br>
+						[<a href="http://levir.buaa.edu.cn/publications/RASNet.pdf">PDF</a>] [<a href="https://github.com/KyanChen/RASNet">Code</a>] [<a href="https://kyanchen.github.io/RASNet/">Page</a>]<br>
+						<div style="text-align: justify">
+							We propose a novel scene classification method with scale and resolution adaptation ability. Unlike previous CNNbased methods that make predictions based on rasterized image inputs, the proposed method converts the images as continuous functions with INRs optimization and then performs classification within the function space.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/GeCo.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Geographical Supervision Correction for Remote Sensing Representation Learning</b><br>
+						<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
+						Wenyuan Li, <b>Keyan Chen</b>, and Zhenwei Shi<br>
+						[<a href="http://levir.buaa.edu.cn/publications/FINAL_VERSION.pdf">PDF</a>]<br>
+						<div style="text-align: justify">
+							We propose a Geographical supervision Correction method (GeCo) for remote sensing representation learning. Deviated geographical supervision generated by GLC products can be corrected adaptively using the correction matrix during network pre-training and joint optimization process is designed to simultaneously update the correction matrix and network parameters.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/DRENet.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>A Degraded Reconstruction Enhancement-based Method for Tiny Ship Detection in Remote Sensing Images with A New Large-scale Dataset</b><br>
+						<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
+						Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Zhengxia Zou and Zhenwei Shi<br>
+						[<a href="http://levir.buaa.edu.cn/publications/DRENet.pdf">PDF</a>] [<a href="https://github.com/WindVChen/DRENet">Code</a>] [<a href="https://github.com/windvchen/levir-ship">Dataset</a>]<br>
+						<div style="text-align: justify">
+							We propose a tiny ship detection method namely, Degraded Reconstruction Enhancement Network (DRENet), for medium-resolution remote sensing images, and introduce Levir-Ship, which contains 3876 GF-1/GF-6 multi-spectral images and over 3K tiny ship instances.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/P2Net.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Contrastive Learning for Fine-grained Ship Classification in Remote Sensing Images</b><br>
+						<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
+						Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
+						[<a href="http://levir.buaa.edu.cn/publications/CLFSC.pdf">PDF</a>] [<a href="https://github.com/WindVChen/Push-and-Pull-Network">Code</a>]<br>
+						<div style="text-align: justify">
+							 We propose an asynchronous contrastive learning-based method for effective fine-grained ship classification, which refers to as "Push-and-Pull Network (P2Net)", includes a "push-out stage" and a "pull-in stage", where the first stage forces all the instances to be de-correlated and then the second one groups them into each subclass.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/GeoKR.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Geographical Knowledge-Driven Representation Learning for Remote Sensing Images</b><br>
+						<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2021</i><br>
+						Wenyuan Li, <b>Keyan Chen</b>, Hao Chen and Zhenwei Shi<br>
+						[<a href="http://levir.buaa.edu.cn/publications/Geographical_Knowledge-Driven.pdf">PDF</a>] [<a href="https://github.com/flyakon/Geographical-Knowledge-driven-Representaion-Learning">Code</a>]<br>
+						<div style="text-align: justify">
+							 We propose a Geographical Knowledge-driven Representation learning method for remote sensing images (GeoKR), improving network performance and reduce the demand for annotated data. The global land cover products and geographical location associated with each remote sensing image are regarded as geographical knowledge to provide supervision for representation learning and network pre-training.
+						</div>
+					</div>
+			</tr>
+			<tr>
+				<td>
+					<br>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="width:250px; height:110px" valign="middle" align='middle'>
+					<img src="image/STT.png" width="200">
+				</td>
+				<td style="width:10px">
+
+				</td>
+				<td valign="middle">
+					<div>
+						<b>Building Extraction from Remote Sensing Images with Sparse Token Transformers</b><br>
+						<i>Remote Sensing, 2021</i><br>
+						<b>Keyan Chen</b>, Zhengxia Zou and Zhenwei Shi<br>
+						[<a href="https://www.mdpi.com/2072-4292/13/21/4441">PDF</a>] [<a href="https://github.com/KyanChen/STT">Code</a>] [<a href="https://kyanchen.github.io/STT/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/BuildingExtraction">Demo</a>]<br>
+						<div style="text-align: justify">
+							We propose STT to explore the potential of using transformers for efficient building extraction. STT conducts an efficient dual-pathway transformer that learns the global semantic information in both their spatial and channel dimensions and achieves state-of-the-art accuracy on two building extraction benchmarks.
+						</div>
+					</div>
+			</tr>
+			</tbody>
+		</table>
+		<br>
+		<br>
+
+
+
+<!--		<table>-->
+<!--	  <tbody><tr>-->
+<!--	  <td style="width:250px; height:110px" valign="middle" align='middle'>-->
+<!--	    <img src="image/gf_nips.png" width="200">-->
+<!--	  </td>-->
+<!--	  <td style="width:10px">-->
+<!--	  </td>-->
+<!--	  <td valign="middle">-->
+<!--	    <div>-->
+<!--	    	<b>Glance and Focus: a Dynamic Approach to Reducing Spatial Redundancy in Image Classification</b><br>-->
+<!--			<i>Advances in Neural Information Processing Systems (<b>NeurIPS</b>) 2020</i><br>-->
+<!--	    	<b>Yulin Wang</b>, Kangchen Lv, Rui Huang, Shiji Song, Le Yang, and Gao Huang<br>-->
+<!--	    	[<a href="https://arxiv.org/pdf/2010.05300.pdf">PDF</a>] [<a href="https://github.com/blackfeather-wang/GFNet-Pytorch">Code</a>] [<a href="https://drive.google.com/file/d/19N9ermvLGwx_Nx3GtE989IAL_V42LivS/view?usp=sharing">Poster</a>] [<a href="https://zhuanlan.zhihu.com/p/266306870">知乎</a>] [<a href="https://mp.weixin.qq.com/s/zLa_y3t1IGrEN2763qUcPA">AI科技评论</a>]<br>-->
+<!--			We propose a general framework for inferring CNNs efficiently, which reduces the inference latency of MobileNets-V3 by 1.3x on an iPhone XS Max without sacrificing accuracy.-->
+<!--	    </div>-->
+<!--	</tr></tbody>-->
+<!--	</table><br><br>-->
+
+
+
+	<table>
+		<td style="width:20px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    	<b>Currently, I have several papers under review as well. I wish that I will receive positive results. If you are interested in my research, please feel free to reach me.</b><br>
+
+		</div>
+	</tr></tbody>
+	</table>
+
+
+
+    <!-- <a name="talks"></a><br><br><br>
+    <h2>Invited Talks</h2><br>
+        <ul>
+            <li>2019.10,  SCSE, Beihang University, Semantic Data Augmentation</li>
+         	<li>2019.12,  School of Computer Sci. and Tech., Beijing Institute of Technology, Semantic Data Augmentation</li>
+         	<li>2020.03,  Doctoral Students Forum, Tsinghua University, Semantic Data Augmentation</li>
+         	<li>2020.06,  Huawei Technologies Ltd., Glance and Focus Networks</li>
+         	<li>2020.11,  Qingyuan Seminar, Glance and Focus Networks</li>
+         	<li>2021.02,  Qingyuan Seminar, Locally Supervised Deep Learning</li>
+         	<li>2021.03,  Huawei Technologies Ltd., Adaptive Focus for Video Recognition</li>
+         	<li>2021.03,  ByteDance Ltd., Semantic Data Augmentation</li>
+         	<li>2021.03,  SFFAI, Semantic Data Augmentation</li>
+			<li>2021.04,  Doctoral Students Forum, Tsinghua University, Locally Supervised Deep Learning</li>
+         	<li>2021.04,  Beijing Academy of Artificial Intelligence, Dynamic Image/Video Recognition </li>
+         	<li>2021.04,  TechBeat Community, Jiangmen Venture Capital, Locally Supervised Deep Learning </li>
+			<li>2021.04,  SFFAI, Locally Supervised Deep Learning</li>
+			<li>2021.06,  AI Time, Locally Supervised Deep Learning</li>
+			<li>2021.07,  SIA, Chinese Academy of Science, Efficient Deep Learning</li>
+			<li>2021.09,  Aibee (invited by Yuanqing Lin), Semantic Data Augmentation</li>
+			<li>2021.10,  School of Computer Science, Fudan University, Dynamic Deep Networks for Reducing Spatial Redundancy</li>
+			<li>2021.12,  The fourth Chinese Conference on Pattern Recognition and Computer Vision (PRCV 2021), Dynamic Deep Networks for Reducing Spatial Redundancy</li>
+         </ul> -->
+
+
+
+<!--	<a name="service"></a><br><br><br>-->
+<!--  <h2>Academic Service</h2><br>-->
+<!--	  <table>-->
+<!--	  <tbody><tr>-->
+<!--	  <td style="width:20px">-->
+<!--	  </td>-->
+<!--	  <td style="width:30px">-->
+<!--	  </td>-->
+<!--	  <td valign="middle">-->
+<!--	    <div>-->
+<!--&lt;!&ndash;	    Reviewer for TPAMI, IJCV, TCYB, TNNLS, TCSVT, Pattern Recognition, TMLR, ...<br>&ndash;&gt;-->
+<!--&lt;!&ndash;			<br>&ndash;&gt;-->
+<!--&lt;!&ndash;		Reviewer for ICML, NeurIPS, ICLR, CVPR, ICCV, ECCV, ...<br>&ndash;&gt;-->
+<!--&lt;!&ndash;			<br>&ndash;&gt;-->
+<!--&lt;!&ndash;	    Program Committee Member for AAAI.<br>&ndash;&gt;-->
+<!--	    </ul>-->
+<!--	    </div>-->
+<!--	  </td>-->
+<!--	  </tr></tbody>-->
+<!--	  </table>-->
+
+
+	<a name="education"></a><br><br><br>
+  <h2>Education</h2><br>
+	  <table>
+	  <tbody><tr>
+	  <td style="width:20px">
+	  </td>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>Ph.D. in Pattern Recognition and Intelligent System, Beihang University, China.</b><br>
+	    2022.9 - Present
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table><br>
+
+	  <table>
+	  <tbody><tr>
+	  <td style="width:20px">
+	  </td>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>M.S. in Pattern Recognition and Intelligent System, Beihang University, China.</b><br>
+		2019.9 - 2022.1
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table><br>
+
+		<table>
+	  <tbody><tr>
+	  <td style="width:20px">
+	  </td>
+	  <td style="width:30px">
+	  </td>
+	  <td valign="middle">
+	    <div>
+	    <b>B.S. in Image Processing, Beihang University, China.</b><br>
+		2015.9 - 2019.6
+	    </ul>
+	    </div>
+	  </td>
+	  </tr></tbody>
+	  </table>
+
+
+<!--	<a name="experience"></a><br><br><br>-->
+<!--  	<h2>Research Experience</h2><br>-->
+
+<!--	  <table>-->
+<!--	  <tbody><tr>-->
+<!--	  <td style="width:20px">-->
+<!--	  </td>-->
+<!--	  <td style="width:30px">-->
+<!--	  </td>-->
+<!--	  <td valign="middle">-->
+<!--	    <div>-->
+<!--	    <b>Intern, Berkeley Deep Drive, University of California Berkeley, CA, USA.</b><br>-->
+<!--	    2018.7 - 2018.8, advised by Dr. <a href="https://path.berkeley.edu/ching-yao-chan">Ching-Yao Chan</a>.-->
+<!--	    </ul>-->
+<!--	    </div>-->
+<!--	  </td>-->
+<!--	  </tr></tbody>-->
+<!--	  </table><br>-->
+<!--		-->
+<!--	  <table>-->
+<!--	  <tbody><tr>-->
+<!--	  <td style="width:20px">-->
+<!--	  </td>-->
+<!--	  <td style="width:30px">-->
+<!--	  </td>-->
+<!--	  <td valign="middle">-->
+<!--	    <div>-->
+<!--	    <b>Intern, Lab of Intelligent Manufacturing, Beihang University, China.</b><br>-->
+<!--		2017.6 - 2018.6, advised by Prof. <a href="https://scholar.google.com/citations?user=-LQGKncAAAAJ&hl=zh-CN&oi=ao">Fei Tao</a>.-->
+<!--	    </ul>-->
+<!--	    </div>-->
+<!--	  </td>-->
+<!--	  </tr></tbody>-->
+<!--	  </table>-->
+
+
+
+
+
+    <a name="honors"></a><br><br><br>
+    <h2>Selected Honors</h2><br>
+        <ul>
+			<li>"Outstanding M.S. Dissertation Award" of Beihang, Beihang University, 2022, (<b>Top 0.5%</b>)</li>
+			<li>"Outstanding Graduates" of Beijing, Beijing, 2022 (<b>Top 1%</b>) </li>
+			<li>Second Prize of "AVIC Scholarship", Beihang University, 2021 (<b>Top 2%</b>)</li>
+			<li>First Prize "Academic Scholarship for Postgraduates", Beihang University, 2019 and 2020 (<b>Top 5%</b>)</li>
+			<li>Top 10 of "Semi-supervised Video Object Segmentation Algorithm Competition", Alibaba Tianchi (<b>Top 10/947</b>)</li>
+			<li>"Outstanding B.S. Dissertation Award" of Beihang and Beijing, Beijing, 2019, (<b>Top 0.5%</b>)</li>
+			<li>"Outstanding Graduates" of Beihang, Beihang University, 2019 (<b>Top 5%</b>) </li>
+			<li>"Excellent Student" of Beihang, Beihang University, 2019 (<b>Top 1%</b>)</li>
+			<li>Second Prize of the "9th Mechanical Innovation Design Competition", Beijing, 2018</li>
+			<li>Second Prize of the "28th Fengru Cup Scientific and Technological Competition", 2018</li>
+			<li>First Prize of the "Mathematics Modeling Competition", Beihang University, 2018 (<b>Top 3%</b>)</li>
+			<li>First Prize of "Lee Kum Kee Astronautics Scholarship", Beihang University, 2018 (<b>Top 0.5%</b>)</li>
+			<li>Special Scholarship of "Outstanding Academic Performance", Beihang University, 2018 (<b>Top 2%</b>)</li>
+<!--			<li><a href="https://ur.bytedance.com/scholarship">ByteDance Scholarship</a>, ByteDance Ltd., 2022, (字节跳动奖学金, <b><font color="red">10</font> PhD students in China</b>)</li>-->
+<!--			<li><a href="https://www.msra.cn/zh-cn/news/features/2022-fellows">Microsoft Research Asia Fellowship Award</a>, Microsoft Research Asia, 2022, ("微软学者"奖学金, <b><font color="red">12</font> PhD students in the Asia-Pacific region</b>)</li>-->
+<!--			<li><a href="https://mp.weixin.qq.com/s/1Qkc2mZ_MJ2hKNZZDT7RQA">Baidu Scholarship</a>, Baidu Inc., 2021 (百度奖学金, <b><font color="red">10</font>  PhD students worldwide</b>)</li>-->
+<!--			<li>National Scholarship, Ministry of Education of China, 2021 (<b>Top 2%</b> in Tsinghua University)</li>-->
+<!--			<li>CCF-CV Outstanding Young Researcher Award, China Computer Federation (CCF), 2021 (CCF-CV学术新锐奖, <b><font color="red">3</font> PhD or Master students in China</b>)</li>-->
+<!--			<li>Outstanding Reviewer, CVPR, 2021</li>-->
+<!--            <li>Outstanding Oral Presentation, Doctoral Students Forum, Tsinghua University, 2021</li>-->
+<!--            <li>Travel Award, NeurIPS, 2019</li>-->
+<!--            <li>Shenyuan Medal, Beihang University, 2018 (<b>Top 10 in 18,000+ undergraduate students every year</b>)</li>-->
+<!--	    	<li>National Scholarship, Ministry of Education of China, 2018 (<b>Top 2%</b>)</li>-->
+<!--	    	<li>National Scholarship, Ministry of Education of China, 2017 (<b>Top 2%</b>)</li>-->
+<!--            <li>Innovation Scholarship, Ministry of Industry and Information Technology of China, 2017 (<b>Top 1/231</b>)</li>-->
+<!--            <li>First Prize in the "Zhou Peiyuan" Mechanics Competition for Undergraduate Students, 2017 (<b>Top 0.3%</b>)</li>-->
+<!--            <li>First Prize in National Undergraduate Mathematical Contest in Modeling, 2017 (<b>Top 0.2%</b>)</li>-->
+<!--            <li>Scholarship for Outstanding Academic Performance, Beihang University, 2016-2019 (<b>Top 5%</b>)</li>-->
+         </ul>
+
+<!--     <h2>Professional Activities</h2>
+        <ul>
+            <li><b>Reviewer</b>, IEEE Transactions on Pattern Analysis and Machine Intelligence, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Image Processing, 2017-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Circuits and Systems for Video Technology, 2017-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Information Forensics and Security, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE Transactions on Biometrics, Behavior, and Identity Science, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE Access, 2018-.</li>
+            <li><b>Reviewer</b>, Pattern Recognition, 2016-.</li>
+            <li><b>Reviewer</b>, Journal of Visual Communication and Image Representation, 2017-.</li>
+            <li><b>Reviewer</b>, International Journal of Machine Learning and Cybernetics, 2018-.</li>
+            <li><b>Reviewer</b>, Multimedia Systems, 2018-.</li>
+            <li><b>Reviewer</b>, IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019.</li>
+            <li><b>Reviewer</b>, IEEE International Conference on Computer Vision, 2019.</li>
+            <li><b>Reviewer</b>, IEEE International Conference on Multimedia and Expo, 2018.</li>
+            <li><b>Reviewer</b>, IEEE International Conference on Image Processing, 2017-2018.</li>
+        </ul>   -->
+
+
+	<a name="contact"></a><br><br><br>
+	<h2>Contact</h2><br>
+	<table>
+    <tbody><tr>
+    <td style="width:15px">
+    </td>
+    <td valign="middle">
+      <div>
+      Email: kychen@buaa.edu.cn<p></p>
+      Address: Room D7, Shahe Main building, Beihang University, Beijing
+      </div>
+    </td>
+    </tr></tbody>
+    </table>
+
+</div>
+</div>
+<!--<br>-->
+
+<center>
+	<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=m&d=98ZgCYz_BPXzld4HL9fFapBJ5kjTLP5IRdxhqmBdddg&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
+</center>
+
+<br>
+<br>
+<br>
+<center><font size=2 style="color: #BBBBBB">Source code from <a href="https://www.antao.site/">here</a>.</font></center><br>
+</body></html>
