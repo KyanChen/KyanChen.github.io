@@ -5,7 +5,7 @@
 <div class='paper-box-text' markdown="1">
 
 <b>Continuous Remote Sensing Image Super-Resolution based on Context Interaction in Implicit Function Space</b><br>
-<i>Arxiv, 2023</i><br>
+<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023</i><br>
 <b>Keyan Chen</b>, Wenyuan Li, Sen Lei, Jianqi Chen, Xiaolong Jiang, Zhengxia Zou, and Zhenwei Shi<br>
 [<a href="https://arxiv.org/abs/2302.08046">PDF</a>] [<a href="https://github.com/KyanChen/FunSR">Code</a>] [<a href="https://kyanchen.github.io/FunSR/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/FunSR">Demo</a>]<br>
 <div style="text-align: justify">
@@ -21,7 +21,7 @@ We propose a new super-resolution framework based on context interaction in impl
 <div class='paper-box-text' markdown="1">
 
 <b>OvarNet: Towards Open-vocabulary Object Attribute Recognition</b><br>
-<i>Arxiv, 2023</i><br>
+<i>Computer Vision and Pattern Recognition Conference (CVPR), 2023</i><br>
 <b>Keyan Chen</b>, Xiaolong Jiang, Yao Hu, Xu Tang, Yan Gao, Jianqi Chen and Weidi Xie<br>
 [<a href="https://arxiv.org/abs/2301.09506">PDF</a>] [<a href="https://github.com/KyanChen/OvarNet">Code</a>] [<a href="https://kyanchen.github.io/OvarNet/">Page</a>]<br>
 <div style="text-align: justify">
