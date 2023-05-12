@@ -15,8 +15,8 @@ jobs:
         python3 update.py
         git init
         git config --local user.name "${GITHUB_ACTOR}"
-        git config --local user.email "keyan1055002755@163.com"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GHRS_GITHUB_API_TOKEN }}@github.com/KyanChen/KyanChen.git"
+        git config --local user.email "eehuitang@mail.scut.edu.cn"
+        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GHRS_GITHUB_API_TOKEN }}@github.com/huitangtang/huitangtang.git"
         git add README.md
         git add images
         git commit -m "update my description automatically"
