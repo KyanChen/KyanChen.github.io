@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Keyan Chen (陈科研)"
-description              : "Ph.D. Student, Beihang University"
-repository               : "KyanChen/KyanChen.github.io"
+title                    : "Hui Tang (唐慧)"
+description              : "Ph.D. Student, South China University of Techlonogy"
+repository               : "huitangtang/huitangtang.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
