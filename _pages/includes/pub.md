@@ -132,21 +132,6 @@ and prototype proximity filter selecting samples near semantic prototypes.
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GSF&PPF.png"><img src='image/GSF&PPF.png' alt="sym" width="100%"></a></div></div>
-<div class='paper-box-text' markdown="1">
-
-<b>Towards Discovering the Effectiveness of Moderately Confident Samples for Semi-Supervised Learning</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2021</i><br>
-Wenyuan Li, <b>Keyan Chen</b>, Hao Chen and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/Geographical_Knowledge-Driven.pdf">PDF</a>] [<a href="https://github.com/flyakon/Geographical-Knowledge-driven-Representaion-Learning">Code</a>]<br>
-<div style="text-align: justify">
- We propose a Geographical Knowledge-driven Representation learning method for remote sensing images (GeoKR), improving network performance and reduce the demand for annotated data. The global land cover products and geographical location associated with each remote sensing image are regarded as geographical knowledge to provide supervision for representation learning and network pre-training.
-</div>
-
-</div>
-</div>
-
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GAST.png"><img src='image/GAST.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -158,6 +143,82 @@ Longkun Zou, <b>Hui Tang</b>, Ke Chen, and Kui Jia<br>
 We propose a novel Geometry-Aware Self-Training (GAST) method for unsupervised domain adaptation on object point sets, 
 which encodes domain-invariant geometrics to semantic representation to mitigate domain discrepancy of point-based representations. 
 Technically, based on self-paced self-training on unlabeled target data, our GAST integrates the self-supervised tasks of predicting rotation class and distortion location into representation learning, such that the domain-shared feature space can be constructed.
+</div>
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/SRDC.png"><img src='image/SRDC.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>Unsupervised Domain Adaptation via Structurally Regularized Deep Clustering</b><br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020</i><br>
+<b>Hui Tang</b>, Ke Chen, and Kui Jia<br>
+[<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Tang_Unsupervised_Domain_Adaptation_via_Structurally_Regularized_Deep_Clustering_CVPR_2020_paper.pdf">PDF</a>] [<a href="https://github.com/Gorilla-Lab-SCUT/SRDC-CVPR2020">Code</a>] [<a href="https://huitangtang.github.io/SRDC-CVPR2020/">Page</a>]<br>
+<div style="text-align: justify">
+To address a potential issue of damaging the intrinsic data discrimination by explicitly learning domain-aligned features, 
+we propose a source-regularized, deep discriminative clustering method 
+in order to directly uncover the intrinsic discrimination among target data, 
+termed as Structurally Regularized Deep Clustering (SRDC). 
+In SRDC, we also design useful ingredients to enhance target discrimination with clustering of intermediate network features, 
+and to enhance structural regularization with soft selection of less divergent source examples.
+</div>
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DADA.png"><img src='image/DADA.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>Discriminative Adversarial Domain Adaptation</b><br>
+<i>AAAI Conference on Artificial Intelligence (AAAI), 2020</i><br>
+<b>Hui Tang</b> and Kui Jia<br>
+[<a href="https://ojs.aaai.org/index.php/AAAI/article/download/6054/5910">PDF</a>] [<a href="https://github.com/Gorilla-Lab-SCUT/DADA-AAAI2020">Code</a>] [<a href="https://huitangtang.github.io/DADA-AAAI2020/">Page</a>]<br>
+<div style="text-align: justify">
+We propose a novel adversarial learning method termed Discriminative Adversarial Domain Adaptation (DADA). 
+Based on an integrated category and domain classifier, DADA has a novel adversarial objective that 
+encourages a mutually inhibitory relation between category and domain predictions for any input instance. 
+Except for the traditional closed set domain adaptation, we also extend DADA for extremely challenging problem settings of partial and open set domain adaptation.
+</div>
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/SymNet.png"><img src='image/SymNet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>Domain-Symmetric Networks for Adversarial Domain Adaptation</b><br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019</i><br>
+Yabin Zhang, <b>Hui Tang</b>, Kui Jia, and Mingkui Tan<br>
+[<a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_Domain-Symmetric_Networks_for_Adversarial_Domain_Adaptation_CVPR_2019_paper.pdf">PDF</a>] [<a href="https://github.com/Gorilla-Lab-SCUT/SymNets">Code</a>]<br>
+<div style="text-align: justify">
+We propose a new domain adaptation method called Domain-Symmetric Networks (SymNets). 
+The proposed SymNet is based on a symmetric design of source and target task classifiers, 
+based on which we also construct an additional classifier that shares with them its layer neurons. 
+To train the SymNet, we propose a novel adversarial learning objective 
+whose key design is based on a two-level domain confusion scheme.
+</div>
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/MetaFGNet.png"><img src='image/MetaFGNet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>Fine-Grained Visual Categorization using Meta-Learning Optimization with Sample Selection of Auxiliary Data</b><br>
+<i>European Conference on Computer Vision (ECCV), 2018</i><br>
+Yabin Zhang, <b>Hui Tang</b>, and Kui Jia<br>
+[<a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Yabin_Zhang_Fine-Grained_Visual_Categorization_ECCV_2018_paper.pdf">PDF</a>] [<a href="https://github.com/Gorilla-Lab-SCUT/MetaFGNet">Code</a>]<br>
+<div style="text-align: justify">
+We propose a new deep fine-grained visual categorization (FGVC) model termed MetaFGNet.
+Training of MetaFGNet is based on a novel regularized meta-learning objective, 
+which aims to guide the learning of network parameters 
+so that they are optimal for adapting to the target FGVC task. 
+Based on MetaFGNet, we also propose a simple yet effective scheme for selecting more useful samples from the auxiliary data.
 </div>
 
 </div>
