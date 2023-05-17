@@ -21,15 +21,15 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Keyan Chen (陈科研)"
-  avatar           : "image/KeyanChen.jpg"
-  bio              : "Beihang University"
-  location         : "Beijing"
+  name             : "Hui Tang (唐慧)"
+  avatar           : "image/HuiTang.jpg"
+  bio              : "South China University of Techlonogy"
+  location         : "Guangzhou"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=5RF4ia8AAAAJ"
-  email            : "kychen@buaa.edu.cn"
-  researchgate     : "https://www.researchgate.net/profile/Keyan-Chen-6"
+  googlescholar    : "https://scholar.google.com/citations?user=eqVvhiQAAAAJ"
+  email            : "eehuitang@mail.scut.edu.cn"
+  researchgate     : "https://www.researchgate.net/profile/Hui-Tang-38"
   uri              :
   bitbucket        :
   codepen          :
@@ -37,25 +37,25 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "KyanChen"
+  github           : "huitangtang"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # "KeyanChen"
-  dblp             : "https://dblp.org/pid/256/2434.html"
-  orcid            : "https://orcid.org/0000-0003-0483-1306"
+  dblp             : #"https://dblp.org/pid/256/2434.html"
+  orcid            : "https://orcid.org/0000-0001-8856-9127"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "https://twitter.com/tang15178681"
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "https://www.youtube.com/@huitang8540"
   wikipedia        :
 
 
