@@ -41,45 +41,54 @@ To distill discriminative source information for target clustering, we propose t
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/ODSurvey.png"><img src='image/ODSurvey.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/ViCatDA.png"><img src='image/ViCatDA.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Object Detection in 20 Years: A Survey</b><br>
-<i>Proceedings of the IEEE (P IEEE), 2023</i><br>
-Zhengxia Zou, <b>Keyan Chen</b>, Zhenwei Shi, Yuhong Guo and Jieping Ye<br>
-[<a href="http://levir.buaa.edu.cn/publications/od_survey.pdf">PDF</a>] [<a href="https://github.com/KyanChen/ODSurvey">Code</a>] [<a href="https://kyanchen.github.io/ODSurvey/">Page</a>]<br>
+<b>Vicinal and categorical domain adaptation</b><br>
+<i>Pattern Recognition, 2021</i><br>
+<b>Hui Tang</b> and Kui Jia<br>
+[<a href="https://arxiv.org/pdf/2103.03460">PDF</a>] [<a href="https://github.com/huitangtang/ViCatDA">Code</a>] [<a href="https://huitangtang.github.io/ViCatDA/">Page</a>]<br>
 <div style="text-align: justify">
-This paper extensively reviews the fast-moving research field in the light of technical evolution, spanning over a quarter-century's time (from the 1990s to 2022). A number of topics have been covered, including the milestone detectors in history, detection datasets, metrics, fundamental building blocks of the detection system, speed-up techniques, and the recent state-of-the-art detection methods.
+To promote categorical domain adaptation (CatDA), based on a joint category-domain classifier, 
+we propose novel losses of adversarial training at both domain and category levels. 
+Since the joint classifier can be regarded as a concatenation of individual task classifiers respectively for the two domains, 
+our design principle is to enforce consistency of category predictions between the two task classifiers. 
+Moreover, we propose a concept of vicinal domains whose instances are produced by a convex combination of pairs of instances respectively from the two domains. 
+Intuitively, alignment of the possibly infinite number of vicinal domains enhances that of original domains.
 </div>
 
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/RASNet.png"><img src='image/RASNet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/McDalNets.png"><img src='image/McDalNets.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Resolution-agnostic Remote Sensing Scene Classification with Implicit Neural Representations</b><br>
-<i>IEEE Geoscience and Remote Sensing Letters (GRSL), 2022</i><br>
-<b>Keyan Chen</b>, Wenyuan Li, Jianqi Chen, Zhengxia Zou and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/RASNet.pdf">PDF</a>] [<a href="https://github.com/KyanChen/RASNet">Code</a>] [<a href="https://kyanchen.github.io/RASNet/">Page</a>]<br>
+<b>Unsupervised Multi-Class Domain Adaptation: Theory, Algorithms, and Practice</b><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022</i><br>
+Yabin Zhang, Bin Deng, <b>Hui Tang</b>, Lei Zhang, and Kui Jia<br>
+[<a href="https://arxiv.org/pdf/2002.08681">PDF</a>] [<a href="https://github.com/Gorilla-Lab-SCUT/MultiClassDA">Code</a>]<br>
 <div style="text-align: justify">
-We propose a novel scene classification method with scale and resolution adaptation ability. Unlike previous CNNbased methods that make predictions based on rasterized image inputs, the proposed method converts the images as continuous functions with INRs optimization and then performs classification within the function space.
+Suggested by a new domain adaptation bound for unsupervised multi-class domain adaptation (multi-class UDA), 
+we develop an algorithmic framework of Multi-class Domain-adversarial learning Networks (McDalNets), 
+and its different instantiations via surrogate learning objectives either coincide with or resemble a few recently popular methods. 
+Based on our identical theory for multi-class UDA, we also introduce a new algorithm of Domain-Symmetric Networks (SymmNets), 
+which is featured by a novel adversarial strategy of domain confusion and discrimination.
 </div>
 
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeCo.png"><img src='image/GeCo.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/S2RDA.png"><img src='image/S2RDA.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Geographical Supervision Correction for Remote Sensing Representation Learning</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
-Wenyuan Li, <b>Keyan Chen</b>, and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/FINAL_VERSION.pdf">PDF</a>]<br>
+<b>A New Benchmark: On the Utility of Synthetic Data with Blender for Bare Supervised Learning and Downstream Domain Adaptation</b><br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</i><br>
+<b>Hui Tang</b> and Kui Jia<br>
+[<a href="https://arxiv.org/pdf/2303.09165">PDF</a>] [<a href="https://github.com/huitangtang/On_the_Utility_of_Synthetic_Data">Code</a>] [<a href="https://huitangtang.github.io/On_the_Utility_of_Synthetic_Data/">Page</a>]<br>
 <div style="text-align: justify">
-We propose a Geographical supervision Correction method (GeCo) for remote sensing representation learning. Deviated geographical supervision generated by GLC products can be corrected adaptively using the correction matrix during network pre-training and joint optimization process is designed to simultaneously update the correction matrix and network parameters.
+To solve the basic and important problems in the context of image classification, such as the lack of comprehensive synthetic data research and the insufficient exploration of synthetic-to-real transfer, we propose to exploit synthetic datasets to explore questions on model generalization, benchmark pre-training strategies for DA, and <i>build a large-scale benchmark dataset S2RDA for synthetic-to-real transfer</i>, which can push forward future domain adaptation research.
 </div>
 
 </div>
