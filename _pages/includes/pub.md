@@ -1,15 +1,20 @@
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/FunSR.png"><img src='image/FunSR.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/1_H-SRDC.png"><img src='image/1_H-SRDC.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Continuous Remote Sensing Image Super-Resolution based on Context Interaction in Implicit Function Space</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2023</i><br>
-<b>Keyan Chen</b>, Wenyuan Li, Sen Lei, Jianqi Chen, Xiaolong Jiang, Zhengxia Zou, and Zhenwei Shi<br>
-[<a href="https://arxiv.org/abs/2302.08046">PDF</a>] [<a href="https://github.com/KyanChen/FunSR">Code</a>] [<a href="https://kyanchen.github.io/FunSR/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/FunSR">Demo</a>]<br>
+<b>Towards Uncovering the Intrinsic Data Structures for Unsupervised Domain Adaptation using Structurally Regularized Deep Clustering</b><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022</i><br>
+<b>Hui Tang</b>, Xiatian Zhu, Ke Chen, Kui Jia, and CL Philip Chen<br>
+[<a href="https://arxiv.org/pdf/2012.04280">PDF</a>] [<a href="https://github.com/huitangtang/H-SRDC">Code</a>] [<a href="https://huitangtang.github.io/H-SRDC/">Page</a>]<br>
 <div style="text-align: justify">
-We propose a new super-resolution framework based on context interaction in implicit function space for learning continuous representations of remote sensing images, called FunSR, which consists of three main components: a functional representor, a functional interactor, and a functional parser.
+We are motivated by a Unsupervised domain adaptation (UDA) assumption of structural similarity across domains, 
+and propose to directly uncover the intrinsic target discrimination via constrained clustering, 
+where we constrain the clustering solutions using structural source regularization that hinges on the very same assumption. 
+Technically, we propose a hybrid model of Structurally Regularized Deep Clustering, 
+which integrates the regularized discriminative clustering of target data with a generative one, 
+and we thus term our method as H-SRDC.
 </div>
 </div>
 
