@@ -132,7 +132,7 @@ and prototype proximity filter selecting samples near semantic prototypes.
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeoKR.png"><img src='image/GeoKR.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GSF&PPF.png"><img src='image/GSF&PPF.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Towards Discovering the Effectiveness of Moderately Confident Samples for Semi-Supervised Learning</b><br>
