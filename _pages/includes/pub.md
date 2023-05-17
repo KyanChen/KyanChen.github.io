@@ -86,9 +86,9 @@ which is featured by a novel adversarial strategy of domain confusion and discri
 <b>A New Benchmark: On the Utility of Synthetic Data with Blender for Bare Supervised Learning and Downstream Domain Adaptation</b><br>
 <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023</i><br>
 <b>Hui Tang</b> and Kui Jia<br>
-[<a href="https://arxiv.org/pdf/2303.09165">PDF</a>] [<a href="https://github.com/huitangtang/On_the_Utility_of_Synthetic_Data">Code</a>] [<a href="https://huitangtang.github.io/On_the_Utility_of_Synthetic_Data/">Page</a>]<br>
+[<a href="https://arxiv.org/pdf/2303.09165">PDF</a>] [<a href="https://github.com/huitangtang/On_the_Utility_of_Synthetic_Data">Code</a>] [<a href="https://huitangtang.github.io/On_the_Utility_of_Synthetic_Data/">Page</a>] [<a href="https://pan.baidu.com/s/1fHHaqrEHbUZLXEg9XKpgSg?pwd=w9wa">Dataset</a>]<br>
 <div style="text-align: justify">
-To solve the basic and important problems in the context of image classification, such as the lack of comprehensive synthetic data research and the insufficient exploration of synthetic-to-real transfer, we propose to exploit synthetic datasets to explore questions on model generalization, benchmark pre-training strategies for DA, and <i>build a large-scale benchmark dataset S2RDA for synthetic-to-real transfer</i>, which can push forward future domain adaptation research.
+To solve the basic and important problems in the context of image classification, such as the lack of comprehensive synthetic data research and the insufficient exploration of synthetic-to-real transfer, we propose to exploit synthetic datasets to explore questions on model generalization, benchmark pre-training strategies for domain adaptation (DA), and <i>build a large-scale benchmark dataset S2RDA for synthetic-to-real transfer</i>, which can push forward future DA research.
 </div>
 
 </div>
@@ -96,30 +96,36 @@ To solve the basic and important problems in the context of image classification
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DRENet.png"><img src='image/DRENet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/STOCO.png"><img src='image/STOCO.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>A Degraded Reconstruction Enhancement-based Method for Tiny Ship Detection in Remote Sensing Images with A New Large-scale Dataset</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
-Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Zhengxia Zou and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/DRENet.pdf">PDF</a>] [<a href="https://github.com/WindVChen/DRENet">Code</a>] [<a href="https://github.com/windvchen/levir-ship">Dataset</a>]<br>
+<b>Stochastic Consensus: Enhancing Semi-Supervised Learning with Consistency of Stochastic Classifiers</b><br>
+<i>European Conference on Computer Vision (ECCV), 2022</i><br>
+<b>Hui Tang</b>, Lin Sun, and Kui Jia<br>
+[<a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136910319.pdf">PDF</a>] [<a href="https://github.com/huitangtang/STOCO">Code</a>] [<a href="https://huitangtang.github.io/STOCO/">Page</a>]<br>
 <div style="text-align: justify">
-We propose a tiny ship detection method namely, Degraded Reconstruction Enhancement Network (DRENet), for medium-resolution remote sensing images, and introduce Levir-Ship, which contains 3876 GF-1/GF-6 multi-spectral images and over 3K tiny ship instances.
+We propose a new criterion based on consistency among multiple, stochastic classifiers, termed Stochastic Consensus (STOCO). 
+Specifically, we model parameters of the classifiers as a Gaussian distribution whose mean and standard deviation are jointly optimized during training. 
+We technically generate pseudo labels using a simple but flexible framework of deep discriminative clustering.
 </div>
 
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/P2Net.png"><img src='image/P2Net.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GSF&PPF.png"><img src='image/GSF&PPF.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Contrastive Learning for Fine-grained Ship Classification in Remote Sensing Images</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
-Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/CLFSC.pdf">PDF</a>] [<a href="https://github.com/WindVChen/Push-and-Pull-Network">Code</a>]<br>
+<b>Towards Discovering the Effectiveness of Moderately Confident Samples for Semi-Supervised Learning</b><br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</i><br>
+<b>Hui Tang</b> and Kui Jia<br>
+[<a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Tang_Towards_Discovering_the_Effectiveness_of_Moderately_Confident_Samples_for_Semi-Supervised_CVPR_2022_paper.pdf">PDF</a>] [<a href="https://github.com/huitangtang/GSF-PPF">Code</a>] [<a href="https://huitangtang.github.io/GSF-PPF/">Page</a>]<br>
 <div style="text-align: justify">
-We propose an asynchronous contrastive learning-based method for effective fine-grained ship classification, which refers to as "Push-and-Pull Network (P2Net)", includes a "push-out stage" and a "pull-in stage", where the first stage forces all the instances to be de-correlated and then the second one groups them into each subclass.
+We propose to utilize moderately confident samples. 
+Based on the principle of local optimization landscape consistency, we propose Taylor expansion inspired filtration framework, 
+relying on the Taylor expansion of the loss function to inspire the key measurement index of sample filtration, i.e., gradient and feature of finite orders. 
+We derive two novel filters from this framework: gradient synchronization filter selecting samples with similar optimization dynamics to the most reliable one, 
+and prototype proximity filter selecting samples near semantic prototypes.
 </div>
 
 </div>
@@ -129,7 +135,7 @@ We propose an asynchronous contrastive learning-based method for effective fine-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeoKR.png"><img src='image/GeoKR.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Geographical Knowledge-Driven Representation Learning for Remote Sensing Images</b><br>
+<b>Towards Discovering the Effectiveness of Moderately Confident Samples for Semi-Supervised Learning</b><br>
 <i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2021</i><br>
 Wenyuan Li, <b>Keyan Chen</b>, Hao Chen and Zhenwei Shi<br>
 [<a href="http://levir.buaa.edu.cn/publications/Geographical_Knowledge-Driven.pdf">PDF</a>] [<a href="https://github.com/flyakon/Geographical-Knowledge-driven-Representaion-Learning">Code</a>]<br>
@@ -141,15 +147,17 @@ Wenyuan Li, <b>Keyan Chen</b>, Hao Chen and Zhenwei Shi<br>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/STT.png"><img src='image/STT.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GAST.png"><img src='image/GAST.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>Building Extraction from Remote Sensing Images with Sparse Token Transformers</b><br>
-<i>Remote Sensing, 2021</i><br>
-<b>Keyan Chen</b>, Zhengxia Zou and Zhenwei Shi<br>
-[<a href="https://www.mdpi.com/2072-4292/13/21/4441">PDF</a>] [<a href="https://github.com/KyanChen/STT">Code</a>] [<a href="https://kyanchen.github.io/STT/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/BuildingExtraction">Demo</a>]<br>
+<b>Geometry-Aware Self-Training for Unsupervised Domain Adaptation on Object Point Clouds</b><br>
+<i>IEEE/CVF International Conference on Computer Vision (ICCV), 2021</i><br>
+Longkun Zou, <b>Hui Tang</b>, Ke Chen, and Kui Jia<br>
+[<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Zou_Geometry-Aware_Self-Training_for_Unsupervised_Domain_Adaptation_on_Object_Point_Clouds_ICCV_2021_paper.pdf">PDF</a>] [<a href="https://github.com/zou-longkun/GAST">Code</a>]<br>
 <div style="text-align: justify">
-We propose STT to explore the potential of using transformers for efficient building extraction. STT conducts an efficient dual-pathway transformer that learns the global semantic information in both their spatial and channel dimensions and achieves state-of-the-art accuracy on two building extraction benchmarks.
+We propose a novel Geometry-Aware Self-Training (GAST) method for unsupervised domain adaptation on object point sets, 
+which encodes domain-invariant geometrics to semantic representation to mitigate domain discrepancy of point-based representations. 
+Technically, based on self-paced self-training on unlabeled target data, our GAST integrates the self-supervised tasks of predicting rotation class and distortion location into representation learning, such that the domain-shared feature space can be constructed.
 </div>
 
 </div>
