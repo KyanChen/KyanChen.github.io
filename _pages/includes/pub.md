@@ -1,7 +1,7 @@
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/1_H-SRDC.png"><img src='image/1_H-SRDC.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/H-SRDC.png"><img src='image/H-SRDC.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Towards Uncovering the Intrinsic Data Structures for Unsupervised Domain Adaptation using Structurally Regularized Deep Clustering</b><br>
@@ -22,15 +22,19 @@ and we thus term our method as H-SRDC.
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/OvarNet.png"><img src='image/OvarNet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DisClusterDA.png"><img src='image/DisClusterDA.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b>OvarNet: Towards Open-vocabulary Object Attribute Recognition</b><br>
-<i>Computer Vision and Pattern Recognition Conference (CVPR), 2023</i><br>
-<b>Keyan Chen</b>, Xiaolong Jiang, Yao Hu, Xu Tang, Yan Gao, Jianqi Chen and Weidi Xie<br>
-[<a href="https://arxiv.org/abs/2301.09506">PDF</a>] [<a href="https://github.com/KyanChen/OvarNet">Code</a>] [<a href="https://kyanchen.github.io/OvarNet/">Page</a>]<br>
+<b>Unsupervised domain adaptation via distilled discriminative clustering</b><br>
+<i>Pattern Recognition, 2022</i><br>
+<b>Hui Tang</b>, Yaowei Wang, and Kui Jia<br>
+[<a href="https://arxiv.org/pdf/2302.11984">PDF</a>] [<a href="https://github.com/huitangtang/DisClusterDA">Code</a>] [<a href="https://kyanchen.github.io/DisClusterDA/">Page</a>]<br>
 <div style="text-align: justify">
-We consider the problem of simultaneously detecting objects and inferring their visual attributes in an image, even for those with no manual annotations provided at the training stage, resembling an open-vocabulary scenario.
+Motivated by the fundamental assumption for domain adaptability, we re-cast the domain adaptation problem as discriminative clustering of target data, 
+given strong privileged information provided by the closely related, labeled source data. 
+Technically, we use clustering objectives based on a robust variant of entropy minimization that adaptively filters target data, 
+a soft Fisher-like criterion, and additionally the cluster ordering via centroid classification. 
+To distill discriminative source information for target clustering, we propose to jointly train the network using parallel, supervised learning objectives over labeled source data. 
 </div>
 </div>
 
