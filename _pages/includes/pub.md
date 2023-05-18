@@ -153,7 +153,7 @@ Technically, based on self-paced self-training on unlabeled target data, our GAS
 <div class='paper-box-text' markdown="1">
 
 <b>Unsupervised Domain Adaptation via Structurally Regularized Deep Clustering</b><br>
-<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020</i><br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <span style="color:red">Oral Presentation</span>, 2020</i><br>
 <b>Hui Tang</b>, Ke Chen, and Kui Jia<br>
 [<a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Tang_Unsupervised_Domain_Adaptation_via_Structurally_Regularized_Deep_Clustering_CVPR_2020_paper.pdf">PDF</a>] [<a href="https://github.com/Gorilla-Lab-SCUT/SRDC-CVPR2020">Code</a>] [<a href="https://huitangtang.github.io/SRDC-CVPR2020/">Page</a>]<br>
 <div style="text-align: justify">
