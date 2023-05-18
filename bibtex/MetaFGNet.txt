@@ -1,0 +1,7 @@
+@inproceedings{zhang2018fine,
+  title={Fine-grained visual categorization using meta-learning optimization with sample selection of auxiliary data},
+  author={Zhang, Yabin and Tang, Hui and Jia, Kui},
+  booktitle={Proceedings of the european conference on computer vision (ECCV)},
+  pages={233--248},
+  year={2018}
+}
