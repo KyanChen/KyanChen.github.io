@@ -5,7 +5,7 @@
 <div class='paper-box-text' markdown="1">
 
 <b>Towards Uncovering the Intrinsic Data Structures for Unsupervised Domain Adaptation using Structurally Regularized Deep Clustering</b>
-//<span class='show_paper_citations' data='eqVvhiQAAAAJ:LkGwnXOMwfcC'></span> //"| Citations: 11"
+[//]: # (<span class='show_paper_citations' data='eqVvhiQAAAAJ:LkGwnXOMwfcC'></span> //"| Citations: 11")
 <br>
 <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022</i><br>
 <b>Hui Tang</b>, Xiatian Zhu, Ke Chen, Kui Jia, and CL Philip Chen<br>
