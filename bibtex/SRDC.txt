@@ -1,0 +1,7 @@
+@inproceedings{tang2020unsupervised,
+  title={Unsupervised domain adaptation via structurally regularized deep clustering},
+  author={Tang, Hui and Chen, Ke and Jia, Kui},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={8725--8735},
+  year={2020}
+}
