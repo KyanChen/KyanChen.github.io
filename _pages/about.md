@@ -20,8 +20,6 @@ redirect_from:
 {% include_relative includes/others.md %}
 <span class='anchor' id='end-page'></span>
 
-<span class='show_paper_citations' data='eqVvhiQAAAAJ:u-x6o8ySG0sC'></span>
-
 
 <br>
 
