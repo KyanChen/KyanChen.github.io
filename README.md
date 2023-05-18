@@ -18,7 +18,7 @@ AcadHomepage
 
 Some examples:
 
-- [Personal Homepage of the author](https://KyanChen.github.io/)
+- [Personal Homepage of An Author](https://huitangtang.github.io/)
 
 ## Key Features
 
