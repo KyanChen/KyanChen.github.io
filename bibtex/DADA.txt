@@ -1,0 +1,9 @@
+@inproceedings{tang2020discriminative,
+  title={Discriminative adversarial domain adaptation},
+  author={Tang, Hui and Jia, Kui},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  number={04},
+  pages={5940--5947},
+  year={2020}
+}
