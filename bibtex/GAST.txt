@@ -1,0 +1,7 @@
+@inproceedings{zou2021geometry,
+  title={Geometry-aware self-training for unsupervised domain adaptation on object point clouds},
+  author={Zou, Longkun and Tang, Hui and Chen, Ke and Jia, Kui},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={6403--6412},
+  year={2021}
+}
