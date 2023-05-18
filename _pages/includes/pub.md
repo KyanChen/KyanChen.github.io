@@ -4,8 +4,9 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/H-SRDC.png"><img src='image/H-SRDC.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
+<!-- <span class='show_paper_citations' data='eqVvhiQAAAAJ:LkGwnXOMwfcC'></span> // add "| Citations: 11") -->
+
 <b>Towards Uncovering the Intrinsic Data Structures for Unsupervised Domain Adaptation using Structurally Regularized Deep Clustering</b><br>
-<!-- <span class='show_paper_citations' data='eqVvhiQAAAAJ:LkGwnXOMwfcC'></span> //"| Citations: 11") -->
 <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022</i><br>
 <b>Hui Tang</b>, Xiatian Zhu, Ke Chen, Kui Jia, and CL Philip Chen<br>
 [<a href="https://arxiv.org/pdf/2012.04280">PDF</a>] [<a href="https://github.com/huitangtang/H-SRDC">Code</a>] [<a href="https://huitangtang.github.io/H-SRDC/">Page</a>] [<a href="bibtex/H-SRDC.txt">BibTex</a>]<br>
