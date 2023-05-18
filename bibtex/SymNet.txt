@@ -1,0 +1,7 @@
+@inproceedings{zhang2019domain,
+  title={Domain-symmetric networks for adversarial domain adaptation},
+  author={Zhang, Yabin and Tang, Hui and Jia, Kui and Tan, Mingkui},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={5031--5040},
+  year={2019}
+}
