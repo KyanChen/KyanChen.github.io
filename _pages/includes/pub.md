@@ -1,14 +1,30 @@
 
 # 📝 Publications
 
-My full paper list can be found at my [<a href="https://scholar.google.com/citations?user=5RF4ia8AAAAJ&hl=zh-CN">Google Scholar</a>].
+My full paper list can be found at my [<a href="https://scholar.google.com/citations?user=5RF4ia8AAAAJ">Google Scholar</a>] <a href='https://scholar.google.com/citations?user=5RF4ia8AAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FKeyanChen%2FKeyanChen.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/RSPrompter.png"><img src='image/RSPrompter.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2024_TTP.png"><img src='image/2024_TTP.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection</b><br>
+<i>Arxiv, 2024</i><br>
+<b>Keyan Chen</b>, Chenyang Liu, Wenyuan Li, Zili Liu, Hao Chen, Haotian Zhang, Zhengxia Zou, and Zhenwei Shi<br>
+[<a href="https://arxiv.org/abs/2312.16202">Arxiv</a>] [<a href="https://github.com/KyanChen/TTP">Github</a>] [<a href="https://kyanchen.github.io/TTP/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/TTP">Demo</a>]<br>
+<div style="text-align: justify">
+We integrate the latent knowledge of the SAM foundation model into change detection, effectively addressing the domain shift in general knowledge transfer and the challenge of expressing homogeneous and heterogeneous characteristics of multi-temporal images.
+</div>
+</div>
+
+</div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2024_RSPrompter.png"><img src='image/2024_RSPrompter.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model</b><br>
-<i>Arxiv, 2023</i><br>
+<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024</i><br>
 <b>Keyan Chen</b>, Chenyang Liu, Hao Chen, Haotian Zhang, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
 [<a href="https://arxiv.org/abs/2306.16269">Arxiv</a>] [<a href="https://github.com/KyanChen/RSPrompter">Github</a>] [<a href="https://kyanchen.github.io/RSPrompter/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/RSPrompter">Demo</a>]<br>
 <div style="text-align: justify">
@@ -19,7 +35,7 @@ We consider designing an automated instance segmentation approach for remote sen
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/FunSR.png"><img src='image/FunSR.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2023_FunSR.png"><img src='image/2023_FunSR.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Continuous Remote Sensing Image Super-Resolution based on Context Interaction in Implicit Function Space</b><br>
@@ -35,7 +51,7 @@ We propose a new super-resolution framework based on context interaction in impl
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/OvarNet.png"><img src='image/OvarNet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2023_OvarNet.png"><img src='image/2023_OvarNet.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>OvarNet: Towards Open-vocabulary Object Attribute Recognition</b><br>
@@ -50,12 +66,13 @@ We consider the problem of simultaneously detecting objects and inferring their 
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/ODSurvey.png"><img src='image/ODSurvey.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2023_ODSurvey.png"><img src='image/2023_ODSurvey.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Object Detection in 20 Years: A Survey</b><br>
 <i>Proceedings of the IEEE (P IEEE), 2023</i><br>
 Zhengxia Zou, <b>Keyan Chen</b>, Zhenwei Shi, Yuhong Guo and Jieping Ye<br>
+🏆️ <b><font color="red">ESI Highly Cited Paper & ESI Hot Paper</font></b><br>
 [<a href="http://levir.buaa.edu.cn/publications/od_survey.pdf">PDF</a>] [<a href="https://github.com/KyanChen/ODSurvey">Github</a>] [<a href="https://kyanchen.github.io/ODSurvey/">Page</a>]<br>
 <div style="text-align: justify">
 This paper extensively reviews the fast-moving research field in the light of technical evolution, spanning over a quarter-century's time (from the 1990s to 2022). A number of topics have been covered, including the milestone detectors in history, detection datasets, metrics, fundamental building blocks of the detection system, speed-up techniques, and the recent state-of-the-art detection methods.
@@ -65,7 +82,7 @@ This paper extensively reviews the fast-moving research field in the light of te
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/RASNet.png"><img src='image/RASNet.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2022_RASNet.png"><img src='image/2022_RASNet.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Resolution-agnostic Remote Sensing Scene Classification with Implicit Neural Representations</b><br>
@@ -80,68 +97,84 @@ We propose a novel scene classification method with scale and resolution adaptat
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeCo.png"><img src='image/GeCo.png' alt="sym" width="100%"></a></div></div>
-<div class='paper-box-text' markdown="1">
+[//]: # (<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeCo.png"><img src='image/GeCo.png' alt="sym" width="100%"></a></div></div>)
 
-<b>Geographical Supervision Correction for Remote Sensing Representation Learning</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
-Wenyuan Li, <b>Keyan Chen</b>, and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/FINAL_VERSION.pdf">PDF</a>]<br>
-<div style="text-align: justify">
-We propose a Geographical supervision Correction method (GeCo) for remote sensing representation learning. Deviated geographical supervision generated by GLC products can be corrected adaptively using the correction matrix during network pre-training and joint optimization process is designed to simultaneously update the correction matrix and network parameters.
-</div>
+[//]: # (<div class='paper-box-text' markdown="1">)
 
-</div>
-</div>
+[//]: # ()
+[//]: # (<b>Geographical Supervision Correction for Remote Sensing Representation Learning</b><br>)
 
+[//]: # (<i>IEEE Transactions on Geoscience and Remote Sensing &#40;TGRS&#41;, 2022</i><br>)
 
+[//]: # (Wenyuan Li, <b>Keyan Chen</b>, and Zhenwei Shi<br>)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DRENet.png"><img src='image/DRENet.png' alt="sym" width="100%"></a></div></div>
-<div class='paper-box-text' markdown="1">
+[//]: # ([<a href="http://levir.buaa.edu.cn/publications/FINAL_VERSION.pdf">PDF</a>]<br>)
 
-<b>A Degraded Reconstruction Enhancement-based Method for Tiny Ship Detection in Remote Sensing Images with A New Large-scale Dataset</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
-Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Zhengxia Zou and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/DRENet.pdf">PDF</a>] [<a href="https://github.com/WindVChen/DRENet">Github</a>] [<a href="https://github.com/windvchen/levir-ship">Dataset</a>]<br>
-<div style="text-align: justify">
-We propose a tiny ship detection method namely, Degraded Reconstruction Enhancement Network (DRENet), for medium-resolution remote sensing images, and introduce Levir-Ship, which contains 3876 GF-1/GF-6 multi-spectral images and over 3K tiny ship instances.
-</div>
+[//]: # (<div style="text-align: justify">)
 
-</div>
-</div>
+[//]: # (We propose a Geographical supervision Correction method &#40;GeCo&#41; for remote sensing representation learning. Deviated geographical supervision generated by GLC products can be corrected adaptively using the correction matrix during network pre-training and joint optimization process is designed to simultaneously update the correction matrix and network parameters.)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</div>)
+
+[//]: # (</div>)
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/P2Net.png"><img src='image/P2Net.png' alt="sym" width="100%"></a></div></div>
-<div class='paper-box-text' markdown="1">
 
-<b>Contrastive Learning for Fine-grained Ship Classification in Remote Sensing Images</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2022</i><br>
-Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/CLFSC.pdf">PDF</a>] [<a href="https://github.com/WindVChen/Push-and-Pull-Network">Github</a>]<br>
-<div style="text-align: justify">
-We propose an asynchronous contrastive learning-based method for effective fine-grained ship classification, which refers to as "Push-and-Pull Network (P2Net)", includes a "push-out stage" and a "pull-in stage", where the first stage forces all the instances to be de-correlated and then the second one groups them into each subclass.
-</div>
+[//]: # (<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/DRENet.png"><img src='image/DRENet.png' alt="sym" width="100%"></a></div></div>)
 
-</div>
-</div>
+[//]: # (<div class='paper-box-text' markdown="1">)
 
+[//]: # ()
+[//]: # (<b>A Degraded Reconstruction Enhancement-based Method for Tiny Ship Detection in Remote Sensing Images with A New Large-scale Dataset</b><br>)
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeoKR.png"><img src='image/GeoKR.png' alt="sym" width="100%"></a></div></div>
-<div class='paper-box-text' markdown="1">
+[//]: # (<i>IEEE Transactions on Geoscience and Remote Sensing &#40;TGRS&#41;, 2022</i><br>)
 
-<b>Geographical Knowledge-Driven Representation Learning for Remote Sensing Images</b><br>
-<i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2021</i><br>
-Wenyuan Li, <b>Keyan Chen</b>, Hao Chen and Zhenwei Shi<br>
-[<a href="http://levir.buaa.edu.cn/publications/Geographical_Knowledge-Driven.pdf">PDF</a>] [<a href="https://github.com/flyakon/Geographical-Knowledge-driven-Representaion-Learning">Github</a>]<br>
-<div style="text-align: justify">
- We propose a Geographical Knowledge-driven Representation learning method for remote sensing images (GeoKR), improving network performance and reduce the demand for annotated data. The global land cover products and geographical location associated with each remote sensing image are regarded as geographical knowledge to provide supervision for representation learning and network pre-training.
-</div>
+[//]: # (Jianqi Chen, <b>Keyan Chen</b>, Hao Chen, Zhengxia Zou and Zhenwei Shi<br>)
 
-</div>
-</div>
+[//]: # ([<a href="http://levir.buaa.edu.cn/publications/DRENet.pdf">PDF</a>] [<a href="https://github.com/WindVChen/DRENet">Github</a>] [<a href="https://github.com/windvchen/levir-ship">Dataset</a>]<br>)
+
+[//]: # (<div style="text-align: justify">)
+
+[//]: # (We propose a tiny ship detection method namely, Degraded Reconstruction Enhancement Network &#40;DRENet&#41;, for medium-resolution remote sensing images, and introduce Levir-Ship, which contains 3876 GF-1/GF-6 multi-spectral images and over 3K tiny ship instances.)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</div>)
+
+[//]: # (</div>)
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/STT.png"><img src='image/STT.png' alt="sym" width="100%"></a></div></div>
+
+[//]: # (<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/GeoKR.png"><img src='image/GeoKR.png' alt="sym" width="100%"></a></div></div>)
+
+[//]: # (<div class='paper-box-text' markdown="1">)
+
+[//]: # ()
+[//]: # (<b>Geographical Knowledge-Driven Representation Learning for Remote Sensing Images</b><br>)
+
+[//]: # (<i>IEEE Transactions on Geoscience and Remote Sensing &#40;TGRS&#41;, 2021</i><br>)
+
+[//]: # (Wenyuan Li, <b>Keyan Chen</b>, Hao Chen and Zhenwei Shi<br>)
+
+[//]: # ([<a href="http://levir.buaa.edu.cn/publications/Geographical_Knowledge-Driven.pdf">PDF</a>] [<a href="https://github.com/flyakon/Geographical-Knowledge-driven-Representaion-Learning">Github</a>]<br>)
+
+[//]: # (<div style="text-align: justify">)
+
+[//]: # ( We propose a Geographical Knowledge-driven Representation learning method for remote sensing images &#40;GeoKR&#41;, improving network performance and reduce the demand for annotated data. The global land cover products and geographical location associated with each remote sensing image are regarded as geographical knowledge to provide supervision for representation learning and network pre-training.)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (</div>)
+
+[//]: # (</div>)
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2021_STT.png"><img src='image/2021_STT.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b>Building Extraction from Remote Sensing Images with Sparse Token Transformers</b><br>

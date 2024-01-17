@@ -3,8 +3,6 @@
 - *2022* "Outstanding M.S. Dissertation Award" of Beihang, Beihang University (<b>Top 0.5%</b>)
 - *2022* "Outstanding Graduates" of Beijing, Beijing (<b>Top 1%</b>)
 - *2021* Second Prize of "AVIC Scholarship", Beihang University (<b>Top 2%</b>)
-- *2020* First Prize "Academic Scholarship for Postgraduates", Beihang University (<b>Top 5%</b>)
-- *2019* First Prize "Academic Scholarship for Postgraduates", Beihang University (<b>Top 5%</b>)
 - *2019* Top 10 of "Semi-supervised Video Object Segmentation Algorithm Competition", Alibaba Tianchi (<b>Top 10/947</b>)
 - *2019* "Outstanding B.S. Dissertation Award" of Beihang and Beijing, Beijing, (<b>Top 0.5%</b>)
 - *2019* "Outstanding Graduates" of Beihang, Beihang University (<b>Top 5%</b>) 
