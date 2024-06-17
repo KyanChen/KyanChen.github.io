@@ -4,6 +4,21 @@
 My full paper list can be found at <a href='https://scholar.google.com/citations?user=5RF4ia8AAAAJ'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FKyanChen%2FKyanChen.github.io@google-scholar-stats%2Fgs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2024_RSMamba.png"><img src='image/2024_RSMamba.png' alt="sym" width="100%"></a></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b>RSMamba: Remote Sensing Image Classification with State Space Model</b><br>
+<i>GRSL, 2024</i><br>
+<b>Keyan Chen</b>, Bowen Chen, Chenyang Liu, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
+[<a href="https://arxiv.org/abs/2403.19654">Arxiv</a>] [<a href="https://github.com/KyanChen/RSMamba">Github</a>] <br>
+<div style="text-align: justify">
+We introduce RSMamba, a novel architecture for remote sensing image classification. RSMamba is based on the State Space Model (SSM) and incorporates an efficient, hardware-aware design known as the Mamba. To overcome the limitation of the vanilla Mamba, which can only model causal sequences and is not adaptable to two-dimensional image data, we propose a dynamic multi-path activation mechanism to augment Mamba's capacity to model non-causal data.
+</div>
+</div>
+
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2024_TTP.png"><img src='image/2024_TTP.png' alt="sym" width="100%"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
