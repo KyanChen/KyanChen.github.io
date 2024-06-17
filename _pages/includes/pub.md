@@ -8,7 +8,7 @@ My full paper list can be found at <a href='https://scholar.google.com/citations
 <div class='paper-box-text' markdown="1">
 
 <b>Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection</b><br>
-<i>Arxiv, 2024</i><br>
+<i>IGARSS, 2024</i><br>
 <b>Keyan Chen</b>, Chenyang Liu, Wenyuan Li, Zili Liu, Hao Chen, Haotian Zhang, Zhengxia Zou, and Zhenwei Shi<br>
 [<a href="https://arxiv.org/abs/2312.16202">Arxiv</a>] [<a href="https://github.com/KyanChen/TTP">Github</a>] [<a href="https://kyanchen.github.io/TTP/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/TTP">Demo</a>]<br>
 <div style="text-align: justify">
@@ -44,22 +44,6 @@ We consider designing an automated instance segmentation approach for remote sen
 [<a href="https://arxiv.org/abs/2302.08046">Arxiv</a>] [<a href="https://github.com/KyanChen/FunSR">Github</a>] [<a href="https://kyanchen.github.io/FunSR/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/FunSR">Demo</a>]<br>
 <div style="text-align: justify">
 We propose a new super-resolution framework based on context interaction in implicit function space for learning continuous representations of remote sensing images, called FunSR, which consists of three main components: a functional representor, a functional interactor, and a functional parser.
-</div>
-</div>
-
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge"></div><a href="image/2023_OvarNet.png"><img src='image/2023_OvarNet.png' alt="sym" width="100%"></a></div></div>
-<div class='paper-box-text' markdown="1">
-
-<b>OvarNet: Towards Open-vocabulary Object Attribute Recognition</b><br>
-<i>Computer Vision and Pattern Recognition Conference (CVPR), 2023</i><br>
-<b>Keyan Chen</b>, Xiaolong Jiang, Yao Hu, Xu Tang, Yan Gao, Jianqi Chen and Weidi Xie<br>
-[<a href="https://arxiv.org/abs/2301.09506">Arxiv</a>] [<a href="https://github.com/KyanChen/OvarNet">Github</a>] [<a href="https://kyanchen.github.io/OvarNet/">Page</a>]<br>
-<div style="text-align: justify">
-We consider the problem of simultaneously detecting objects and inferring their visual attributes in an image, even for those with no manual annotations provided at the training stage, resembling an open-vocabulary scenario.
 </div>
 </div>
 
