@@ -1,5 +1,5 @@
 # 🎖 Honors and Awards
-- *2024* "Youth Basic Research Project (Ph.D.)", National Natural Science Foundation of China (NSFC) (<b>500 in China</b>)
+- *2024* "Youth Basic Research Project (Ph.D.)" 国家自然科学基金青年学生基础研究项目（博士研究生）, National Natural Science Foundation of China (NSFC) (<b>500 in China</b>)
 - *2023* "National Scholarship of Ph.D.", Beihang University (<b>Top 1%</b>)
 - *2022* "Outstanding M.S. Dissertation Award" of Beihang, Beihang University (<b>Top 0.5%</b>)
 - *2022* "Outstanding Graduates" of Beijing, Beijing (<b>Top 1%</b>)
