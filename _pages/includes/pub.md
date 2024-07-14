@@ -10,7 +10,7 @@ My full paper list can be found at <a href='https://scholar.google.com/citations
 <b>RSMamba: Remote Sensing Image Classification with State Space Model</b><br>
 <i>GRSL, 2024</i><br>
 <b>Keyan Chen</b>, Bowen Chen, Chenyang Liu, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
-<b><font color="red">Popular Paper of GRSL</font></b><br>
+<b><font color="red">Popular Article of GRSL</font></b><br>
 [<a href="https://arxiv.org/abs/2403.19654">Arxiv</a>] [<a href="https://github.com/KyanChen/RSMamba">Github</a>] <br>
 <div style="text-align: justify">
 We introduce RSMamba, a novel architecture for remote sensing image classification. RSMamba is based on the State Space Model (SSM) and incorporates an efficient, hardware-aware design known as the Mamba. To overcome the limitation of the vanilla Mamba, which can only model causal sequences and is not adaptable to two-dimensional image data, we propose a dynamic multi-path activation mechanism to augment Mamba's capacity to model non-causal data.
@@ -43,7 +43,7 @@ We integrate the latent knowledge of the SAM foundation model into change detect
 <i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024</i><br>
 <b>Keyan Chen</b>, Chenyang Liu, Hao Chen, Haotian Zhang, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
 🏆️ <b><font color="red">ESI Highly Cited Paper & ESI Hot Paper</font></b><br>
-<b><font color="red">Popular Paper of TGRS</font></b><br>
+<b><font color="red">Popular Article of TGRS</font></b><br>
 [<a href="https://arxiv.org/abs/2306.16269">Arxiv</a>] [<a href="https://github.com/KyanChen/RSPrompter">Github</a>] [<a href="https://kyanchen.github.io/RSPrompter/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/RSPrompter">Demo</a>]<br>
 <div style="text-align: justify">
 We consider designing an automated instance segmentation approach for remote sensing images based on the SAM foundation model, incorporating semantic category information with prompt learning. 
@@ -75,7 +75,7 @@ We propose a new super-resolution framework based on context interaction in impl
 <i>Proceedings of the IEEE (P IEEE), 2023</i><br>
 Zhengxia Zou, <b>Keyan Chen</b>, Zhenwei Shi, Yuhong Guo and Jieping Ye<br>
 🏆️ <b><font color="red">ESI Highly Cited Paper & ESI Hot Paper</font></b><br>
-<b><font color="red">Popular Paper of P IEEE</font></b><br>
+<b><font color="red">Popular Article of P IEEE</font></b><br>
 [<a href="http://levir.buaa.edu.cn/publications/od_survey.pdf">PDF</a>] [<a href="https://github.com/KyanChen/ODSurvey">Github</a>] [<a href="https://kyanchen.github.io/ODSurvey/">Page</a>]<br>
 <div style="text-align: justify">
 This paper extensively reviews the fast-moving research field in the light of technical evolution, spanning over a quarter-century's time (from the 1990s to 2022). A number of topics have been covered, including the milestone detectors in history, detection datasets, metrics, fundamental building blocks of the detection system, speed-up techniques, and the recent state-of-the-art detection methods.
