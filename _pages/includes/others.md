@@ -11,11 +11,15 @@
 
 
 # 💻 Academic Service
-- Reviewer for International Journal of Computer Vision (IJCV)
-- Reviewer for IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
-- Reviewer for ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS)
-- Reviewer for IEEE Transactions on Geoscience and Remote Sensing (TGRS)
-- Reviewer for IEEE International Journal of Digital Earth (IJDE)
-- Reviewer for IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)
-- Reviewer for Remote Sensing (RS)
+- Reviewer for ACM Computing Surveys (CSUR, IF=23.8)
+- Reviewer for International Journal of Computer Vision (IJCV, IF=11.6)
+- Reviewer for ISPRS Journal of Photogrammetry and Remote Sensing (ISPRS, IF=10.6)
+- Reviewer for IEEE Transactions on Circuits and Systems for Video Technology (TCSVT, IF=8.3)
+- Reviewer for IEEE Transactions on Geoscience and Remote Sensing (TGRS, IF=7.5)
+- Reviewer for IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS, IF=4.7)
+- Reviewer for Geo-spatial Information Science (GSIS, IF=4.4)
+- Reviewer for Remote Sensing (RS, IF=4.2)
+- Reviewer for IEEE International Journal of Digital Earth (IJDE, IF=3.7)
+- Reviewer for European Journal of Remote Sensing (EJRS, IF=3.7)
+- Reviewer for Infrared Physics & Technology (IF=3.1)
 - ...
