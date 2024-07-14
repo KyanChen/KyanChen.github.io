@@ -41,6 +41,7 @@ We integrate the latent knowledge of the SAM foundation model into change detect
 <b>RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model</b><br>
 <i>IEEE Transactions on Geoscience and Remote Sensing (TGRS), 2024</i><br>
 <b>Keyan Chen</b>, Chenyang Liu, Hao Chen, Haotian Zhang, Wenyuan Li, Zhengxia Zou, and Zhenwei Shi<br>
+🏆️ <b><font color="red">ESI Highly Cited Paper & ESI Hot Paper</font></b><br>
 [<a href="https://arxiv.org/abs/2306.16269">Arxiv</a>] [<a href="https://github.com/KyanChen/RSPrompter">Github</a>] [<a href="https://kyanchen.github.io/RSPrompter/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/RSPrompter">Demo</a>]<br>
 <div style="text-align: justify">
 We consider designing an automated instance segmentation approach for remote sensing images based on the SAM foundation model, incorporating semantic category information with prompt learning. 
