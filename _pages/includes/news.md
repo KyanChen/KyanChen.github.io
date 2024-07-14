@@ -1,4 +1,8 @@
 # 🔥 News
+- *2024.07*: RSMamba becomes a GRSL **<font color="red">Popular Article</font>**.
+- *2024.07*: RSPrompter becomes an ESI Highly Cited Paper and a Hot Paper.
+- *2024.05*: RSPrompter becomes a TGRS **<font color="red">Popular Article</font>**.
+- *2024.05*: Funded by NSFC on Youth Basic Research Project (Ph.D. Student) 获得首批国家自然科学基金青年学生基础研究项目(博士研究生)资助.
 - *2024.01*: Two papers are accepted by **<font color="red">TGRS</font>** (**IF=8.2**) in 2024.
 - *2023.12*: My [google scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ) citations have exceeded 2000! 🎉🎉 
 - *2023.12*: Two papers are accepted by **<font color="red">TGRS</font>** (**IF=8.2**) in 2023.
