@@ -1,4 +1,5 @@
 # 🔥 News
+- *2024.11*: STT becomes an **<font color="red">ESI Highly Cited Paper</font>**.
 - *2024.07*: RSMamba becomes a **<font color="red">Popular Article</font>** of GRSL.
 - *2024.07*: RSPrompter becomes an **<font color="red">ESI Highly Cited Paper and a Hot Paper</font>**.
 - *2024.05*: RSPrompter becomes a **<font color="red">Popular Article</font>** of TGRS.

@@ -183,6 +183,7 @@ We propose a novel scene classification method with scale and resolution adaptat
 <b>Building Extraction from Remote Sensing Images with Sparse Token Transformers</b><br>
 <i>Remote Sensing, 2021</i><br>
 <b>Keyan Chen</b>, Zhengxia Zou and Zhenwei Shi<br>
+🏆️ <b><font color="red">ESI Highly Cited Paper</font></b><br>
 [<a href="https://www.mdpi.com/2072-4292/13/21/4441">PDF</a>] [<a href="https://github.com/KyanChen/STT">Github</a>] [<a href="https://kyanchen.github.io/STT/">Page</a>] [<a href="https://huggingface.co/spaces/KyanChen/BuildingExtraction">Demo</a>]<br>
 <div style="text-align: justify">
 We propose STT to explore the potential of using transformers for efficient building extraction. STT conducts an efficient dual-pathway transformer that learns the global semantic information in both their spatial and channel dimensions and achieves state-of-the-art accuracy on two building extraction benchmarks.
