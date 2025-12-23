@@ -1,0 +1,78 @@
+bio:
+  en: |
+    
+    <!-- I am currently a **Research Fellow** at the College of Computing and Data Science (CCDS), **Nanyang Technological University (NTU)**, working with [Prof. Shijian Lu](https://scholar.google.com/citations?user=uYmK-A0AAAAJ). -->
+    
+    I obtained my Ph.D., M.S., and B.S. degrees from **Beihang University** in 2025, 2022, and 2019, respectively, under the supervision of [Prof. Zhenwei Shi](https://scholar.google.com/citations?user=kNhFWQIAAAAJ) and [Prof. Zhengxia Zou](https://scholar.google.com/citations?user=DzwoyZsAAAAJ).
+
+    My research centers on **Computer Vision** and **Remote Sensing**, with a particular focus on **Foundation Models**, **Multimodal Learning**, and **AI4Earth**. I have published <span class="highlight">over 40</span> papers in prestigious international journals and conferences, including <span class="highlight">*Proc. IEEE*, *TPAMI*, *CVPR*, and *TGRS*</span>. My publication record features <span class="highlight">3 ESI Hot Papers</span> and <span class="highlight">9 ESI Highly Cited Papers</span>, with **4 papers** ranked among the **Top 3** "Most Popular Papers" in their respective journals. My work has drawn citations and endorsements from over 40 Academicians and Fellows worldwide, accumulating over <span class="highlight">7,000 citations</span> on [Google Scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ).
+
+    I have delivered invited talks at IEEE GRSS, the VALSE Student Forum (<span class="highlight">only 8 selected nationwide</span>), and the CSIG Student Forum. My research has been featured in authoritative media outlets such as IEEE and CSIG, and my open-source projects have garnered <span class="highlight">2,500+</span> GitHub stars. Additionally, I serve as a **Guest Editor** for *Remote Sensing* and regularly review for top-tier journals including *ACM CS*, *IJCV*, and *TIP*.
+
+    I served as the **Principal Investigator** for the inaugural <span class="highlight">NSFC</span> Ph.D. Student Project. My core algorithms have been successfully deployed in the **Gaofen series** and commercial remote sensing satellite systems. I am the recipient of numerous prestigious awards, including the <span class="highlight">Grand Prize of Baosteel Education Award</span> (Top 10 graduate students nationwide), the <span class="highlight">Shen Yuan Medal</span> (highest honor for Beihang students), the <span class="highlight">May Fourth Medal</span> (highest honor for Beihang youth), and the Beijing Excellent Thesis Award.
+  cn: |
+    
+    <!-- 我现任**南洋理工大学（NTU）**计算与数据科学学院 **Research Fellow**，合作导师为 [Lu Shijian 教授](https://scholar.google.com/citations?user=uYmK-A0AAAAJ)。 -->
+    我分别于2025年、2022年及2019年在**北京航空航天大学**获得**博士、硕士及学士**学位，师从[史振威教授](https://scholar.google.com/citations?user=kNhFWQIAAAAJ)和[邹征夏教授](https://scholar.google.com/citations?user=DzwoyZsAAAAJ)。
+
+    研究致力于**计算机视觉**与**遥感**图像处理领域，重点聚焦**基础模型**、**多模态学习**及 **AI4Earth**。迄今已在 <span class="highlight">*Proc. IEEE*、*TPAMI*、*CVPR*、*TGRS*</span> 等国际顶级期刊和会议发表学术论文 <span class="highlight">40余篇</span>。其中包含 <span class="highlight">3篇 ESI 热点论文</span> 及 <span class="highlight">9篇 ESI 高被引论文</span>，另有**4篇**论文入选期刊“最受欢迎论文”榜单**前三**。研究成果获全球 40 余位院士及 Fellow 引用与评价，[谷歌学术](https://scholar.google.com/citations?user=5RF4ia8AAAAJ)引用超 <span class="highlight">7000次</span>。
+
+    曾受邀在 IEEE GRSS、VALSE 优秀学生论坛（<span class="highlight">全国仅8人入选</span>）、CSIG 优秀学生论坛等作学术报告。相关成果被 IEEE、中国图象图形学会、机器之心等权威学术媒体报道，开源代码累计收获 GitHub Stars <span class="highlight">2500+</span>。此外，担任 *Remote Sensing* 期刊 **Guest Editor**，并长期担任 *ACM CS*、*IJCV*、*TIP* 等多个顶级期刊审稿人。
+
+    作为**项目负责人**主持了首批 <span class="highlight">国家自然科学基金 (NSFC)</span> 博士生项目，所研究的核心算法已成功部署于**高分系列**和及商遥系列卫星应用系统。曾获 <span class="highlight">宝钢教育奖特等奖</span>（全国研究生仅10人）、<span class="highlight">沈元奖章</span>（北航学生最高荣誉）、<span class="highlight">五四奖章</span>（北航青年最高荣誉）及北京市优秀学位论文等多项荣誉奖励。
+
+
+short_bio:
+  en: |
+    
+    <!-- I am currently a **Research Fellow** at the College of Computing and Data Science (CCDS), **Nanyang Technological University (NTU)**, working with [Prof. Shijian Lu](https://scholar.google.com/citations?user=uYmK-A0AAAAJ). -->
+    
+    I obtained my Ph.D., M.S., and B.S. degrees from **Beihang University** in 2025, 2022, and 2019, respectively, under the supervision of [Prof. Zhenwei Shi](https://scholar.google.com/citations?user=kNhFWQIAAAAJ) and [Prof. Zhengxia Zou](https://scholar.google.com/citations?user=DzwoyZsAAAAJ).
+
+    My research centers on **Computer Vision** and **Remote Sensing**, with a particular focus on **Foundation Models**, **Multimodal Learning**, and **AI4Earth**.
+  cn: |
+    
+    <!-- 我现任**南洋理工大学（NTU）**计算与数据科学学院 **Research Fellow**，合作导师为 [Lu Shijian 教授](https://scholar.google.com/citations?user=uYmK-A0AAAAJ)。 -->
+    
+    我分别于2025年、2022年及2019年在**北京航空航天大学**获得**博士、硕士及学士**学位，师从[史振威教授](https://scholar.google.com/citations?user=kNhFWQIAAAAJ)和[邹征夏教授](https://scholar.google.com/citations?user=DzwoyZsAAAAJ)。
+
+    研究致力于**计算机视觉**与**遥感**图像处理领域，重点聚焦**基础模型**、**多模态学习**及 **AI4Earth**。
+
+
+education:
+  - time: "2025.09 -- Present"
+    institution: "JD Explore Academy"
+    degree: "Algorithm Researcher"
+    institution_cn: "京东探索研究院"
+    degree_cn: "算法研究员"
+    selected: false
+  - time: "2022.10 -- Present"
+    institution: "Xiaohongshu (Multimodal Team)"
+    degree: "Algorithm Researcher"
+    institution_cn: "小红书多模态算法组"
+    degree_cn: "算法研究员"
+    selected: false
+  - time: "2022.09 -- 2025.11"
+    institution: "Beihang University"
+    degree: "Ph.D. in Pattern Recognition & Intelligent Systems"
+    institution_cn: "北京航空航天大学"
+    degree_cn: "模式识别与智能系统 博士"
+    selected: true
+  - time: "2019.09 -- 2022.01"
+    institution: "Beihang University"
+    degree: "M.S. in Pattern Recognition & Intelligent Systems"
+    institution_cn: "北京航空航天大学"
+    degree_cn: "模式识别与智能系统 硕士"
+    selected: true
+  - time: "2015.09 -- 2019.07"
+    institution: "Beihang University"
+    degree: "B.E. in Guidance, Navigation and Control Technology"
+    institution_cn: "北京航空航天大学"
+    degree_cn: "探测制导与控制技术 学士"
+    selected: true
+
+contact:
+  address: "9 GaoJiaoYuan Nan San Jie, Changping District, Beijing, China"
+  address_cn: "北京市昌平区高教园南三街9号"
+  email: "kychen(at)buaa.edu.cn"
+  wechat: "Keyan_666888"

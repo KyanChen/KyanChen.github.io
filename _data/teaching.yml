@@ -1,0 +1,63 @@
+
+- term_cn: "2025春"
+  term_en: "Spring 2025"
+  course_cn: "模式识别系列实验 (研究生)"
+  course_en: "Pattern Recognition Lab Series (Grad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2025-03-02" # 设置不同日期以微调同一学期的显示顺序
+  selected: true
+
+- term_cn: "2025春"
+  term_en: "Spring 2025"
+  course_cn: "数字信号处理 (本科生)"
+  course_en: "Digital Signal Processing (Undergrad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2025-03-01"
+  selected: true
+
+- term_cn: "2024秋"
+  term_en: "Fall 2024"
+  course_cn: "科研课堂 (本科生)"
+  course_en: "Research Methodology (Undergrad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2024-09-01"
+  selected: true
+
+- term_cn: "2024春"
+  term_en: "Spring 2024"
+  course_cn: "模式识别系列实验 (研究生)"
+  course_en: "Pattern Recognition Lab Series (Grad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2024-03-02"
+  selected: true
+
+- term_cn: "2024春"
+  term_en: "Spring 2024"
+  course_cn: "数字信号处理 (本科生)"
+  course_en: "Digital Signal Processing (Undergrad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2024-03-01"
+  selected: true
+
+- term_cn: "2023秋"
+  term_en: "Fall 2023"
+  course_cn: "科研课堂 (本科生)"
+  course_en: "Research Methodology (Undergrad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2023-09-01"
+  selected: true
+
+- term_cn: "2023春"
+  term_en: "Spring 2023"
+  course_cn: "模式识别系列实验 (研究生)"
+  course_en: "Pattern Recognition Lab Series (Grad)"
+  role_cn: "助教"
+  role_en: "TA"
+  date: "2023-03-01"
+  selected: true

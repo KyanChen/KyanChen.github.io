@@ -1,0 +1,29 @@
+# _data/impacts.yml
+
+# --- 总述段落 (Intro) ---
+intro:
+  cn: "研究工作获 <span class='bold'>40余位院士/Fellow</span>（含图灵奖得主及多国院士）高度评价，[谷歌学术](https://scholar.google.com/citations?user=5RF4ia8AAAAJ)引用 <span class='highlight'>7000+次</span>，被 <span class='bold'>IEEE、中国图象图形学学会</span> 等权威机构报道，GitHub开源项目获 <span class='highlight'>2500+ Stars</span>，代表性评价如下："
+  en: "My research has drawn high praise from <span class='bold'>over 40 Academicians and Fellows</span> (including a Turing Award winner and multinational academicians). It has accumulated <span class='highlight'>7,000+</span> citations on [Google Scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ) and has been featured by authoritative institutions such as <span class='bold'>IEEE and CSIG</span>. His open-source projects have garnered <span class='highlight'>2,500+ Stars</span> on GitHub. Representative endorsements include:"
+
+# --- 评价列表 (Items) ---
+items:
+  - cn: "**获图灵奖得主引用：**<span class='bold'>图灵奖得主 Yoshua Bengio 教授</span>（引用量 <span class='highlight'>100万+</span>）在 NeurIPS'25 论文中多次引用本人工作，并指出该研究受本人方法启发（building upon insights from），将本人方法作为 <span class='highlight'>关键研究基础</span> 迁移至其领域并取得显著效果。"
+    en: "**Cited by Turing Award Winner:** <span class='bold'>Prof. Yoshua Bengio</span> (Turing Award Winner, Citations: <span class='highlight'>1M+</span>) cited my work multiple times in a NeurIPS'25 paper. He noted that his research was “building upon insights from” my work, adopting it as a <span class='highlight'>key research foundation</span> to achieve significant improvements in his domain."
+
+  - cn: "**获顶尖科技公司引用：**<span class='bold'>Meta FAIR团队</span>（含计算机视觉泰斗/杰出科学家 <span class='bold'>Ross Girshick</span>，引用量 <span class='highlight'>58万+</span>）在开源视觉大模型 <span class='highlight'>SAM 2</span> 的技术报告中，将本人工作作为 <span class='highlight'>遥感领域2个代表性方法之一</span> 进行介绍。"
+    en: "**Cited by Top Tech Giant:** The <span class='bold'>Meta FAIR Team</span> (including Computer Vision pioneer/Distinguished Scientist <span class='bold'>Ross Girshick</span>, Citations: <span class='highlight'>580k+</span>) highlighted my work as <span class='highlight'>one of the two representative methods in Remote Sensing</span> in the technical report of their open-source vision foundation model, <span class='highlight'>SAM 2</span>."
+
+  - cn: "**入选斯坦福大学CS231n教材：**综述论文“Object Detection in 20 Years”成为 <span class='bold'>Proceedings of the IEEE</span> <span class='highlight'>最受欢迎及最高下载量论文</span>。该论文被 <span class='bold'>美国三院院士 Fei-Fei Li 教授</span> 主讲的全球著名公开课 <span class='highlight'>“CS231n”</span>（2023-2025年）列为参考材料，成为深度学习领域的经典参考文献。"
+    en: "**Included in Stanford CS231n Curriculum:** The survey “Object Detection in 20 Years” became the <span class='highlight'>Most Popular and Most Downloaded Article</span> in <span class='bold'>Proceedings of the IEEE</span>. It was listed as course material in the world-renowned course <span class='highlight'>“CS231n”</span> (2023-2025), taught by <span class='bold'>Prof. Fei-Fei Li (NAS/NAM/AAAS Fellow)</span>, establishing it as a classic reference in Deep Learning."
+
+  - cn: "**获 IEEE/AAIA Fellow 高度评价：**<span class='bold'>法国 INRIA 研究所主任 Jocelyn Chanussot 教授</span> 在其论文中高度评价本人提出的 RSPrompter 方法 <span class='highlight'>“成功地 (successfully)”</span> 且 <span class='highlight'>“能够自动地 (autonomously)”</span> 将大模型应用于实例分割任务，充分肯定了算法的自动化能力。"
+    en: "**Praised by IEEE/AAIA Fellow:** <span class='bold'>Prof. Jocelyn Chanussot (Director at INRIA, France)</span> highly commended the RSPrompter method, stating it <span class='highlight'>“successfully”</span> and <span class='highlight'>“autonomously”</span> adapts large models for instance segmentation tasks, fully affirming the algorithm's automation capabilities."
+
+  - cn: "**获 IEEE/ACM/AAAS Fellow综述推荐：**<span class='bold'>Dacheng Tao 院士</span> 与 <span class='bold'>Xudong Jiang (IEEE Fellow)</span> 教授在顶级期刊 <span class='bold'>TPAMI</span> (2024) 中，将本人工作作为代表性方法进行介绍，评价该方法 <span class='highlight'>“能够同时检测目标及其属性”</span>，并验证了细粒度属性对开放世界检测的互补性。"
+    en: "**Recommended by IEEE/ACM/AAAS Fellow:** <span class='bold'>Academician Dacheng Tao</span> and <span class='bold'>Prof. Xudong Jiang (IEEE Fellow)</span> introduced my work as a representative method in the top-tier journal <span class='bold'>TPAMI</span> (2024). They assessed that the method <span class='highlight'>“is capable of simultaneously detecting objects and their attributes”</span>, validating the complementarity of fine-grained attributes for open-world detection."
+
+  - cn: "**获加拿大皇家学会/科学院/工程院院士肯定：**<span class='bold'>Jonathan Li 院士</span> 在其论文 (JAG, 2023) 中指出，本人算法设计了 <span class='highlight'>“精简”</span> 的双通道架构以实现 <span class='highlight'>“效率最大化”</span>，并成功建立了时空长距离依赖，增强了特征提取性能。"
+    en: "**Affirmed by Fellow of RSC/CAE/EIC:** <span class='bold'>Academician Jonathan Li</span> pointed out in his paper (JAG, 2023) that my algorithm designed a <span class='highlight'>“compact”</span> dual-channel architecture to achieve <span class='highlight'>“efficiency maximization”</span>, successfully establishing spatiotemporal long-range dependencies to enhance feature extraction."
+
+  - cn: "**获领域专家重点推介：**<span class='bold'>Fahad Shahbaz Khan 教授</span> 在 <span class='bold'>Remote Sensing</span> 综述中设立单独章节介绍本人工作；<span class='bold'>张良培教授</span> (IEEE Fellow) 在 <span class='bold'>NeurIPS</span> 论文中评价本人的自适应提示方法 <span class='highlight'>“与其他人工提示方法显著不同”</span>，具有独特优势。"
+    en: "**Highlighted by Domain Experts:** <span class='bold'>Prof. Fahad Shahbaz Khan</span> dedicated a separate section to introduce my work in a <span class='bold'>Remote Sensing</span> survey. <span class='bold'>Prof. Liangpei Zhang</span> (IEEE Fellow) evaluated the adaptive prompting method in a <span class='bold'>NeurIPS</span> paper as being <span class='highlight'>“significantly different from other manual prompting methods”</span>, possessing unique advantages."

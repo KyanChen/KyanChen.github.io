@@ -1,0 +1,48 @@
+# Basic Information 
+title: Keyan Chen
+position: Research Fellow
+affiliation: Beihang University
+affiliation_link: https://ev.buaa.edu.cn/
+affiliation_logo: assets/img/beihang.svg
+email: kychen(at)buaa.edu.cn
+email2: kychen1012(at)gmail.com
+
+# Search Engine Optimization (SEO)
+keywords: keyan chen, chen keyan, keyanchen, chenkeyan
+canonical: chenkeyan.top
+description: Keyan Chen is a doctor in the LEVIR lab. at Beihang University. His research involves deep learning, computer vision, remote sensing image processing, and multimodal.
+
+# The option is used to enable the Illinois template.
+enable_beihang_logo: true
+
+# The option is used to show the last update time.
+enable_last_update: true
+
+# Links
+link_type: icon #text/icon
+google_scholar: https://scholar.google.com/citations?user=5RF4ia8AAAAJ
+github_link: https://github.com/KyanChen
+linkedin: https://www.linkedin.com/in/chenkeyan/
+twitter: https://x.com/KyanChen1012
+cv_link: assets/KeyanChen_CV.pdf
+
+# Images 
+avatar: ./assets/KeyanChen_2025.jpg
+
+# Footnotes
+footnote: Feel free to use my website's source code.
+footnote_link: https://github.com/KyanChen/KyanChen.github.io
+
+# Analytics
+# Please remove the following lines about analytics services if you fork my project. 
+# Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
+clustrmaps_id: 98ZgCYz_BPXzld4HL9fFapBJ5kjTLP5IRdxhqmBdddg
+
+# The following files will be removed from the generated website.
+exclude:
+  - build.sh
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME

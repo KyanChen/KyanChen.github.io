@@ -1,0 +1,89 @@
+# _data/awards.yml
+
+- name_cn: "北航优秀博士毕业生"
+  name_en: "Outstanding Ph.D. Graduate of Beihang University"
+  org_cn: "北京航空航天大学"
+  org_en: "Beihang University"
+  date_str: "2025.11"
+  date: "2025-11-01"
+  selected: true
+
+- name_cn: "博士研究生国家奖学金"
+  name_en: "National Scholarship (Doctoral)"
+  org_cn: "中华人民共和国教育部"
+  org_en: "Ministry of Education"
+  date_str: "2025.11"
+  date: "2025-11-01"
+  selected: true
+
+- name_cn: "首都“挑战杯”大学生学术科技作品竞赛特等奖（擂主）"
+  name_en: "Capital “Challenge Cup” Competition Grand Prize (Champion)"
+  org_cn: "北京市团委"
+  org_en: "Beijing Municipal Committee of the CYL"
+  date_str: "2025.06"
+  date: "2025-06-01"
+  selected: true
+
+- name_cn: "北航五四奖章（北航青年最高荣誉）"
+  name_en: "Beihang May 4th Medal (Highest Honor for Beihang Youth)"
+  org_cn: "北京航空航天大学"
+  org_en: "Beihang University"
+  date_str: "2025.05"
+  date: "2025-05-01"
+  selected: true
+
+- name_cn: "北航沈元奖章（北航学生最高荣誉）"
+  name_en: "Beihang Shenyuan Medal (Highest Honor for Students)"
+  org_cn: "北京航空航天大学"
+  org_en: "Beihang University"
+  date_str: "2024.12"
+  date: "2024-12-01"
+  selected: true
+
+- name_cn: "宝钢奖学金特等奖（全国研究生仅十人，北航唯一）"
+  name_en: "Baosteel Scholarship Grand Prize (Top 10 Nationwide, Sole Recipient at Beihang)"
+  org_cn: "宝钢教育奖委员会"
+  org_en: "Baosteel Education Foundation"
+  date_str: "2024.11"
+  date: "2024-11-01"
+  selected: true
+
+- name_cn: "博士研究生国家奖学金"
+  name_en: "National Scholarship (Doctoral)"
+  org_cn: "中华人民共和国教育部"
+  org_en: "Ministry of Education"
+  date_str: "2023.09"
+  date: "2023-09-01"
+  selected: true
+
+- name_cn: "北京市优秀硕士毕业生"
+  name_en: "Outstanding Graduate of Beijing (Master's)"
+  org_cn: "北京市教育委员会"
+  org_en: "Beijing Municipal Education Commission"
+  date_str: "2022.01"
+  date: "2022-01-01"
+  selected: true
+
+- name_cn: "北航优秀硕士学位论文"
+  name_en: "Excellent Master's Thesis of Beihang University"
+  org_cn: "北京航空航天大学"
+  org_en: "Beihang University"
+  date_str: "2022.01"
+  date: "2022-01-01"
+  selected: true
+
+- name_cn: "北航优秀本科毕业论文"
+  name_en: "Excellent Undergraduate Thesis of Beihang University"
+  org_cn: "北京航空航天大学"
+  org_en: "Beihang University"
+  date_str: "2019.10"
+  date: "2019-10-01"
+  selected: true
+
+- name_cn: "北京市优秀本科毕业论文"
+  name_en: "Excellent Undergraduate Thesis of Beijing"
+  org_cn: "北京市教育委员会"
+  org_en: "Beijing Municipal Education Commission"
+  date_str: "2019.09"
+  date: "2019-09-01"
+  selected: true

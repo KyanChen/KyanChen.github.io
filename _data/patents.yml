@@ -1,0 +1,144 @@
+
+- title_cn: "一种基于多模态大语言模型强化微调的遥感影像指示分割方法"
+  title_en: "Remote Sensing Image Referring Segmentation Method Based on Reinforced Fine-tuning of Multimodal Large Language Model"
+  authors_cn: "史振威, 张佳凡, **陈科研**, 刘辰阳, 林柏宏, 邹征夏"
+  authors_en: "Zhenwei Shi, Jiafan Zhang, **Keyan Chen**, Chenyang Liu, Bohong Lin, Zhengxia Zou"
+  info_cn: "申请号: CN202511912851.8, 申请日: 2025.12.18"
+  info_en: "App. No.: CN202511912851.8, App. Date: 2025.12.18"
+  date: "2025-12-18"
+  selected: true
+
+- title_cn: "一种基于地理信息混合专家模型的遥感图像船只目标检测方法"
+  title_en: "Remote Sensing Ship Detection Method Based on Geographic Information Mixture-of-Experts Model"
+  authors_cn: "史振威, 卢光宇, **陈科研**, 陈博文, 邹征夏"
+  authors_en: "Zhenwei Shi, Guangyu Lu, **Keyan Chen**, Bowen Chen, Zhengxia Zou"
+  info_cn: "申请号: CN202510760125.2, 公开日: 2025.10.31"
+  info_en: "App. No.: CN202510760125.2, Pub. Date: 2025.10.31"
+  date: "2025-10-31"
+  selected: true
+
+- title_cn: "一种基于状态空间模型知识蒸馏的轻量化遥感目标实例分割模型的构建方法"
+  title_en: "Construction Method of Lightweight Remote Sensing Instance Segmentation Model via SSM Knowledge Distillation"
+  authors_cn: "邹征夏, 杨沁哲, **陈科研**, 史振威"
+  authors_en: "Zhengxia Zou, Qinzhe Yang, **Keyan Chen**, Zhenwei Shi"
+  info_cn: "申请号: CN202411183072.4, **已授权** (公告日: 2025.10.24)"
+  info_en: "App. No.: CN202411183072.4, **Granted** (Issue Date: 2025.10.24)"
+  date: "2025-10-24"
+  selected: true
+
+- title_cn: "属性识别模型的训练方法、装置、设备、存储介质及程序产品"
+  title_en: "Training Method for Attribute Recognition Model, Apparatus, Device, Storage Medium, and Program Product"
+  authors_cn: "**陈科研**, 蒋小龙, 汤旭"
+  authors_en: "**Keyan Chen**, Xiaolong Jiang, Xu Tang"
+  info_cn: "申请号: CN202510277420.2, 公开日: 2025.07.11"
+  info_en: "App. No.: CN202510277420.2, Pub. Date: 2025.07.11"
+  date: "2025-07-11"
+  selected: true
+
+- title_cn: "面向非严格开放词的遥感图像语义变化检测方法"
+  title_en: "Semantic Change Detection for Remote Sensing Images Oriented to Non-Strict Open Vocabulary"
+  authors_cn: "李露, 朱永烁, **陈科研**, 赵丹培, 周付根, 史振威"
+  authors_en: "Lu Li, Yongshuo Zhu, **Keyan Chen**, Danpei Zhao, Fugen Zhou, Zhenwei Shi"
+  info_cn: "申请号: CN202411975072.8, 公开日: 2025.05.02"
+  info_en: "App. No.: CN202411975072.8, Pub. Date: 2025.05.02"
+  date: "2025-05-02"
+  selected: true
+
+- title_cn: "属性识别模型的训练方法、装置、设备及存储介质"
+  title_en: "Training Method for Attribute Recognition Model, Apparatus, Device, and Storage Medium"
+  authors_cn: "**陈科研**, 蒋小龙, 汤旭"
+  authors_en: "**Keyan Chen**, Xiaolong Jiang, Xu Tang"
+  info_cn: "申请号: CN202310324181.2, **已授权** (公告日: 2025.02.25)"
+  info_en: "App. No.: CN202310324181.2, **Granted** (Issue Date: 2025.02.25)"
+  date: "2025-02-25"
+  selected: true
+
+- title_cn: "基于分类网络模型的文本分类方法、装置、终端及介质"
+  title_en: "Text Classification Method, Apparatus, Terminal, and Medium Based on Classification Network Model"
+  authors_cn: "詹作保, **陈科研**, 沈维发"
+  authors_en: "Zuobao Zhan, **Keyan Chen**, Weifa Shen"
+  info_cn: "申请号: CN202110877266.4, **已授权** (公告日: 2024.11.01)"
+  info_en: "App. No.: CN202110877266.4, **Granted** (Issue Date: 2024.11.01)"
+  date: "2024-11-01"
+  selected: true
+
+- title_cn: "文本分类管理方法、装置、终端及可读存储介质"
+  title_en: "Text Classification Management Method, Apparatus, Terminal, and Readable Storage Medium"
+  authors_cn: "詹作保, 杨天培, **陈科研**"
+  authors_en: "Zuobao Zhan, Tianpei Yang, **Keyan Chen**"
+  info_cn: "申请号: CN202110877260.7, **已授权** (公告日: 2024.07.26)"
+  info_en: "App. No.: CN202110877260.7, **Granted** (Issue Date: 2024.07.26)"
+  date: "2024-07-26"
+  selected: true
+
+- title_cn: "轻量化的敏感信息文本分类方法、装置、设备及存储介质"
+  title_en: "Lightweight Sensitive Information Text Classification Method, Apparatus, Device, and Storage Medium"
+  authors_cn: "詹作保, 沈维发, **陈科研**"
+  authors_en: "Zuobao Zhan, Weifa Shen, **Keyan Chen**"
+  info_cn: "申请号: CN202110877273.4, **已授权** (公告日: 2024.07.26)"
+  info_en: "App. No.: CN202110877273.4, **Granted** (Issue Date: 2024.07.26)"
+  date: "2024-07-26"
+  selected: true
+
+- title_cn: "敏感信息文本分类方法、装置、设备及存储介质"
+  title_en: "Sensitive Information Text Classification Method, Apparatus, Device, and Storage Medium"
+  authors_cn: "詹作保, 郭永聪, **陈科研**"
+  authors_en: "Zuobao Zhan, Yongcong Guo, **Keyan Chen**"
+  info_cn: "申请号: CN202110877272.X, **已授权** (公告日: 2024.07.09)"
+  info_en: "App. No.: CN202110877272.X, **Granted** (Issue Date: 2024.07.09)"
+  date: "2024-07-09"
+  selected: true
+
+- title_cn: "文本多标签分类方法、装置、设备及存储介质"
+  title_en: "Text Multi-label Classification Method, Apparatus, Device, and Storage Medium"
+  authors_cn: "詹作保, 沈维发, **陈科研**"
+  authors_en: "Zuobao Zhan, Weifa Shen, **Keyan Chen**"
+  info_cn: "申请号: CN202110877267.9, **已授权** (公告日: 2024.07.09)"
+  info_en: "App. No.: CN202110877267.9, **Granted** (Issue Date: 2024.07.09)"
+  date: "2024-07-09"
+  selected: true
+
+- title_cn: "一种基于目标感知的遥感图像船只小目标检测方法"
+  title_en: "Small Ship Detection Method in Remote Sensing Images Based on Object Awareness"
+  authors_cn: "史振威, 田路云, 陈剑奇, **陈科研**, 刘子力, 贺广均"
+  authors_en: "Zhenwei Shi, Luyun Tian, Jianqi Chen, **Keyan Chen**, Zili Liu, Guangjun He"
+  info_cn: "申请号: CN202111043241.0, **已授权** (公告日: 2024.04.05)"
+  info_en: "App. No.: CN202111043241.0, **Granted** (Issue Date: 2024.04.05)"
+  date: "2024-04-05"
+  selected: true
+
+- title_cn: "目标识别方法、装置、电子设备和存储介质"
+  title_en: "Object Recognition Method, Apparatus, Electronic Device, and Storage Medium"
+  authors_cn: "**陈科研**, 蒋小龙, 汤旭"
+  authors_en: "**Keyan Chen**, Xiaolong Jiang, Xu Tang"
+  info_cn: "申请号: CN202310355697.3, 公开日: 2024.03.22"
+  info_en: "App. No.: CN202310355697.3, Pub. Date: 2024.03.22"
+  date: "2024-03-22"
+  selected: true
+
+- title_cn: "一种基于注意力机制的遥感图像建筑物目标高效提取方法"
+  title_en: "Efficient Building Extraction Method in Remote Sensing Images Based on Attention Mechanism"
+  authors_cn: "史振威, 石慧峰, **陈科研**, 陈剑奇, 刘子力, 贺广均"
+  authors_en: "Zhenwei Shi, Huifeng Shi, **Keyan Chen**, Jianqi Chen, Zili Liu, Guangjun He"
+  info_cn: "申请号: CN202111042674.4, **已授权** (公告日: 2023.11.17)"
+  info_en: "App. No.: CN202111042674.4, **Granted** (Issue Date: 2023.11.17)"
+  date: "2023-11-17"
+  selected: true
+
+- title_cn: "一种基于随机接入记忆的遥感图像目标检测方法"
+  title_en: "Remote Sensing Object Detection Method Based on Random Access Memory"
+  authors_cn: "史振威, **陈科研**, 邹征夏, 马小锋, 赵睿, 王晓雯, 张宁, 韩传钊, 章泉源, 朱新忠, 张瑞珏"
+  authors_en: "Zhenwei Shi, **Keyan Chen**, Zhengxia Zou, Xiaofeng Ma, Rui Zhao, Xiaowen Wang, Ning Zhang, Chuanzhao Han, Quanyuan Zhang, Xinzhong Zhu, Ruijue Zhang"
+  info_cn: "申请号: CN201911333708.8, **已授权** (公告日: 2023.09.01)"
+  info_en: "App. No.: CN201911333708.8, **Granted** (Issue Date: 2023.09.01)"
+  date: "2023-09-01"
+  selected: true
+
+- title_cn: "一种基于场景预分类的光学遥感图像语句描述生成方法"
+  title_en: "Optical Remote Sensing Image Captioning Method Based on Scene Pre-classification"
+  authors_cn: "史振威, 马小锋, 赵睿, **陈科研**, 张宁, 韩传钊, 章泉源, 朱新忠, 张瑞珏"
+  authors_en: "Zhenwei Shi, Xiaofeng Ma, Rui Zhao, **Keyan Chen**, Ning Zhang, Chuanzhao Han, Quanyuan Zhang, Xinzhong Zhu, Ruijue Zhang"
+  info_cn: "申请号: CN201911155068.6, **已授权** (公告日: 2022.10.18)"
+  info_en: "App. No.: CN201911155068.6, **Granted** (Issue Date: 2022.10.18)"
+  date: "2022-10-18"
+  selected: true

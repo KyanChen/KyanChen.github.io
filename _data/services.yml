@@ -1,0 +1,173 @@
+# _data/services.yml
+
+# =================================================
+# 1. Academic Service (Editorship & Memberships)
+# Category: service
+# =================================================
+- category: "service"
+  role_cn: "客座编辑"
+  role_en: "Guest Editor"
+  org_cn: '***[Remote Sensing](https://www.mdpi.com/journal/remotesensing/special_issues/GJ86QFO3C4#editors)***, 专刊: “借助大型多模态基础模型推动遥感发展：迈向智能对地观测”'
+  org_en: '***[Remote Sensing](https://www.mdpi.com/journal/remotesensing/special_issues/GJ86QFO3C4#editors)***, SI: “Advancing Remote Sensing Through Large Multimodal Foundation Models: Toward Intelligent Earth Observation”'
+  date_cn: "2025.11 -- 2026.05"
+  date_en: "2025.11 -- 2026.05"
+  selected: true
+
+- category: "service"
+  role_cn: "学生会员"
+  role_en: "Student Member"
+  org_cn: "中国宇航学会 (CSA)"
+  org_en: "Chinese Society of Astronautics (CSA)"
+  date_cn: "2025.06 -- 至今"
+  date_en: "2025.06 -- Present"
+  selected: true
+
+- category: "service"
+  role_cn: "学生会员"
+  role_en: "Student Member"
+  org_cn: "中国计算机学会 (CCF)"
+  org_en: "China Computer Federation (CCF)"
+  date_cn: "2025.06 -- 至今"
+  date_en: "2025.06 -- Present"
+  selected: true
+
+- category: "service"
+  role_cn: "学生会员"
+  role_en: "Student Member"
+  org_cn: "中国电子学会 (CIE)"
+  org_en: "Chinese Institute of Electronics (CIE)"
+  date_cn: "2025.05 -- 至今"
+  date_en: "2025.05 -- Present"
+  selected: true
+
+- category: "service"
+  role_cn: "学生会员"
+  role_en: "Student Member"
+  org_cn: "中国人工智能学会 (CAAI)"
+  org_en: "Chinese Association for Artificial Intelligence (CAAI)"
+  date_cn: "2023.06 -- 至今"
+  date_en: "2023.06 -- Present"
+  selected: true
+
+- category: "service"
+  role_cn: "学生会员"
+  role_en: "Student Member"
+  org_cn: "中国图象图形学学会 (CSIG)"
+  org_en: "China Society of Image and Graphics (CSIG)"
+  date_cn: "2021.01 -- 至今"
+  date_en: "2021.01 -- Present"
+  selected: true
+
+- category: "service"
+  role_cn: "研究生会员"
+  role_en: "Graduate Student Member"
+  org_cn: "IEEE"
+  org_en: "IEEE"
+  date_cn: "2024.01 -- 至今"
+  date_en: "2024.01 -- Present"
+  selected: true
+
+- category: "service"
+  role_cn: "会员"
+  role_en: "Member"
+  org_cn: "IEEE 地球科学与遥感学会 (GRSS)"
+  org_en: "IEEE Geoscience and Remote Sensing Society"
+  date_cn: "2024.03 -- 至今"
+  date_en: "2024.03 -- Present"
+  selected: true
+
+# =================================================
+# 2. Journal Reviews
+# Category: journal
+# =================================================
+- category: "journal"
+  name: "**ACM Computing Surveys** (CSUR, **Top Tier**)"
+  selected: true
+
+- category: "journal"
+  name: "**International Journal of Computer Vision** (IJCV, **Top Tier**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Image Processing** (TIP, **CCF-A**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Information Forensics and Security** (TIFS, **CCF-A**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Dependable and Secure Computing** (TDSC, **CCF-A**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Mobile Computing** (TMC, **CCF-A**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Geoscience and Remote Sensing** (TGRS, **Top Journal**)"
+  selected: true
+
+- category: "journal"
+  name: "**ISPRS Journal of Photogrammetry and Remote Sensing** (ISPRS P&RS, **Top Journal**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Neural Networks and Learning Systems** (TNNLS, **Top Journal**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Journal of Selected Topics in Signal Processing** (JSTSP, **Top Journal**)"
+  selected: true
+
+- category: "journal"
+  name: "**IEEE Transactions on Circuits and Systems for Video Technology** (TCSVT, CCF-B)"
+  selected: true
+
+- category: "journal"
+  name: "Pattern Recognition (PR, CCF-B)"
+  selected: true
+
+- category: "journal"
+  name: "International Journal of Applied Earth Observation and Geoinformation (JAG, Q1)"
+  selected: true
+
+- category: "journal"
+  name: "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS, Q1)"
+  selected: true
+
+- category: "journal"
+  name: "Journal of Remote Sensing (JRS, Q1)"
+  selected: true
+
+- category: "journal"
+  name: "IEEE Geoscience and Remote Sensing Letters (GRSL, Q1)"
+  selected: true
+
+- category: "journal"
+  name: "Neurocomputing (Neucom, Q1)"
+  selected: true
+
+- category: "journal"
+  name: "Remote Sensing (RS, Q1)"
+  selected: true
+
+# =================================================
+# 3. Conference Reviews
+# Category: conf
+# =================================================
+- category: "conf"
+  name: "**IEEE/CVF Conference on Computer Vision and Pattern Recognition** (CVPR, **CCF-A**)"
+  selected: true
+
+- category: "conf"
+  name: "**The Web Conference** (WWW, **CCF-A**)"
+  selected: true
+
+- category: "conf"
+  name: "**AAAI Conference on Artificial Intelligence** (AAAI, **CCF-A**)"
+  selected: true
+
+- category: "conf"
+  name: "IEEE International Geoscience and Remote Sensing Symposium (IGARSS, **Top RS Conf**)"
+  selected: true

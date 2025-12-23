@@ -1,0 +1,904 @@
+intro:
+  en: "I have authored <span class=\"highlight\">over 40 peer-reviewed papers</span>,\
+    \ featuring \n<span class=\"highlight\">3 ESI Hot Papers</span> (Top 0.1%), \n\
+    <span class=\"highlight\">9 ESI Highly Cited Papers</span> (Top 1%), and \n<span\
+    \ class=\"highlight\">5 Most Popular Articles</span> (Top 10). \nCumulative citations:\
+    \ <span class=\"highlight\">#total_cited_by#</span> on \n<a href=\"https://scholar.google.com/citations?user=#gs_id#\"\
+    \ target=\"_blank\" rel=\"noopener noreferrer\">Google Scholar</a>. \nPlease refer\
+    \ to the <a href=\"https://scholar.google.com/citations?user=#gs_id#\" target=\"\
+    _blank\" rel=\"noopener noreferrer\">Google Scholar</a> profile or \n<a href=\"\
+    /publications-full/\">Full Publications List</a> for all papers.\n"
+  cn: "本人共发表 <span class=\"highlight\">同行评审论文 40 余篇</span>，其中包括 \n<span class=\"highlight\"\
+    >3 篇 ESI 热点论文</span> (Top 0.1%)、\n<span class=\"highlight\">9 篇 ESI 高被引论文</span>\
+    \ (Top 1%) 以及 \n<span class=\"highlight\">5 篇期刊最受欢迎论文</span> (Top 10)。\n在 <a href=\"\
+    https://scholar.google.com/citations?user=#gs_id#\" target=\"_blank\" rel=\"noopener\
+    \ noreferrer\">Google Scholar</a> 上的总引用量超过 <span class=\"highlight\">#total_cited_by#</span>\
+    \ 次。\n完整论文列表请参见 <a href=\"https://scholar.google.com/citations?user=#gs_id#\"\
+    \ target=\"_blank\" rel=\"noopener noreferrer\">Google Scholar</a> 主页或点击访问 <a\
+    \ href=\"/publications-full/\">完整论文列表页面</a>。\n"
+total_cited_by: 7000
+items:
+- title: Cascaded Autoregressive Diffusion Models for Remote Sensing Scene Generation
+  authors: Yuanrui Zhang, Liqin Liu, <strong>Keyan Chen</strong>, Jia Xu, Zhenwei
+    Shi, Zhengxia Zou
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/abstract/document/11205884
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2025_CascadedDiffusion.png
+  selected: true
+  notes: (New)
+  media: null
+  google_scholar_id: 5RF4ia8AAAAJ:pqnbT2bcN3wC
+- title: 'Open-CD: A Comprehensive Toolbox for Change Detection'
+  authors: Kaiyu Li<sup>&dagger;</sup>, Jiawei Jiang<sup>&dagger;</sup>, Chengxi Han<sup>&dagger;</sup>,
+    Yupeng Deng<sup>&dagger;</sup>, Keyan Chen<sup>&dagger;</sup>, Zhuo Zheng<sup>&dagger;</sup>,
+    Hao Chen<sup>&dagger;</sup>, Ziyuan Liu<sup>&dagger;</sup>, Yuantao Gu, Zhengxia
+    Zou, Zhenwei Shi, Sheng Fang, Deyu Meng, Zhi Wang, Xiangyong Cao
+  venue_short: ACM MM
+  venue: Proceedings of the 33rd ACM International Conference on Multimedia <strong>(ACM
+    MM)</strong>, 2025
+  date: 2025
+  pdf: https://dl.acm.org/doi/abs/10.1145/3746027.3756881
+  arxiv: https://arxiv.org/abs/2407.15317
+  github_repo_name: likyoo/open-cd
+  page: null
+  image: ../assets/teaser/2025_OpenCD.png
+  selected: true
+  notes: (New • High Star)
+  media: null
+  google_scholar_id: 5RF4ia8AAAAJ:7PzlFSSx8tAC
+  cited_by: 16
+- title: 'FoBa: A Foreground-Background Co-Guided Method and New Benchmark for Remote
+    Sensing Semantic Change Detection'
+  authors: Haotian Zhang, Han Guo, <strong>Keyan Chen</strong>, Hao Chen, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2509.15788
+  github_repo_name: zmoka-zht/FoBa
+  page: null
+  image: ../assets/teaser/2025_FoBa.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 1
+  google_scholar_id: 5RF4ia8AAAAJ:35N4QoGY0k4C
+- title: 面向“航空航天+人工智能”的研究型实践教学模式重塑
+  authors: 李露, <strong>陈科研</strong>, 史振威, 周付根
+  venue_short: 计算机教育
+  venue: 计算机教育 (Computer Education), 2025
+  date: 2025
+  pdf: https://jyjs.cbpt.cnki.net/portal/journal/portal/client/paper/952a5fb0b4bc8edb745ac9b7b8e62a63
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2025_Education.png
+  selected: false
+  notes: null
+  media: null
+  google_scholar_id: 5RF4ia8AAAAJ:M05iB0D1s5AC
+- title: 'RSRefSeg 2: Decoupling Referring Remote Sensing Image Segmentation With
+    Foundation Models'
+  authors: <strong>Keyan Chen</strong>, Chenyang Liu, Bowen Chen, Jiafan Zhang, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: ArXiv
+  venue: ArXiv Preprint, 2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2507.06231
+  github_repo_name: KyanChen/RSRefSeg2
+  page: null
+  image: ../assets/teaser/2025_RSRefSeg2.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 3
+  google_scholar_id: 5RF4ia8AAAAJ:RGFaLdJalmkC
+- title: 'Fine-grained Hierarchical Crop Type Classification from Integrated Hyperspectral
+    EnMAP Data and Multispectral Sentinel-2 Time Series: A Large-scale Dataset and
+    Dual-stream Transformer Method'
+  authors: Wenyuan Li, Shunlin Liang, Yuxiang Zhang, Liqin Liu, <strong>Keyan Chen</strong>,
+    Yongzhe Chen, Han Ma, Jianglei Xu, Yichuan Ma, Shikang Guan, Zhenwei Shi
+  venue_short: ArXiv
+  venue: ArXiv Preprint, 2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2506.06155
+  github_repo_name: flyakon/H2Crop
+  page: null
+  image: ../assets/teaser/2025_H2Crop.png
+  selected: true
+  notes: (New)
+  media: null
+  google_scholar_id: 5RF4ia8AAAAJ:NMxIlDl6LWMC
+- title: 'SeG-SR: Integrating Semantic Knowledge Into Remote Sensing Image Super-Resolution
+    via Vision-Language Model'
+  authors: Bowen Chen, <strong>Keyan Chen</strong>, Mohan Yang, Zhengxia Zou, Zhenwei
+    Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/document/11175207
+  arxiv: https://arxiv.org/abs/2505.23010
+  github_repo_name: Mr-Bamboo/SeG-SR
+  page: null
+  image: ../assets/teaser/2025_SeGSR.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 1
+  google_scholar_id: 5RF4ia8AAAAJ:hMod-77fHWUC
+- title: 'AgriFM: A Multi-Source Temporal Remote Sensing Foundation Model for Crop
+    Mapping'
+  authors: Wenyuan Li, Shunlin Liang, <strong>Keyan Chen</strong>, Yongzhe Chen, Han
+    Ma, Jianglei Xu, Yichuan Ma, Shikang Guan, Husheng Fang, Zhenwei Shi
+  venue_short: ArXiv
+  venue: ArXiv Preprint, 2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2505.21357
+  github_repo_name: flyakon/AgriFM
+  page: null
+  image: ../assets/teaser/2025_AgriFM.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 3
+  google_scholar_id: 5RF4ia8AAAAJ:M3NEmzRMIkIC
+- title: 'Text2earth: Unlocking Text-Driven Remote Sensing Image Generation With a
+    Global-Scale Dataset and a Foundation Model'
+  authors: Chenyang Liu, <strong>Keyan Chen</strong>, Rui Zhao, Zhengxia Zou, Zhenwei
+    Shi
+  venue_short: GRSM
+  venue: IEEE Geoscience and Remote Sensing Magazine <strong>(GRSM)</strong>, 2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/abstract/document/10988859
+  arxiv: https://arxiv.org/abs/2501.00895
+  github_repo_name: Chen-Yang-Liu/Text2Earth
+  page: null
+  image: ../assets/teaser/2025_Text2Earth.png
+  selected: true
+  notes: (New, Top Journal) • [Top 10 Most Popular]
+  media: null
+  cited_by: 37
+  google_scholar_id: 5RF4ia8AAAAJ:_Qo2XoVZTnwC
+- title: 'Remote Sensing Spatiotemporal Vision-Language Models: A Comprehensive Survey'
+  authors: Chenyang Liu, Jiafan Zhang, <strong>Keyan Chen</strong>, Man Wang, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: GRSM
+  venue: IEEE Geoscience and Remote Sensing Magazine <strong>(GRSM)</strong>, 2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/document/11159545
+  arxiv: https://arxiv.org/abs/2412.02573
+  github_repo_name: Chen-Yang-Liu/Awesome-RS-SpatioTemporal-VLMs
+  page: null
+  image: ../assets/teaser/2025_RSSurvey.png
+  selected: true
+  notes: (New, Top Journal)
+  media: null
+  cited_by: 10
+  google_scholar_id: 5RF4ia8AAAAJ:NaGl4SEjCO4C
+- title: Heterogeneous Mixture of Experts for Remote Sensing Image Super-Resolution
+  authors: Bowen Chen, <strong>Keyan Chen</strong>, Mohan Yang, Zhengxia Zou, Zhenwei
+    Shi
+  venue_short: GRSL
+  venue: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/document/10949132
+  arxiv: https://arxiv.org/abs/2502.09654
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2025_MoESR.png
+  selected: false
+  notes: (New)
+  media: null
+  cited_by: 11
+  google_scholar_id: 5RF4ia8AAAAJ:j3f4tGmQtD8C
+- title: 'DynamicVis: An Efficient and General Visual Foundation Model for Remote
+    Sensing Image Understanding'
+  authors: <strong>Keyan Chen</strong>, Chenyang Liu, Bowen Chen, Wenyuan Li, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: ArXiv
+  venue: ArXiv Preprint, 2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2503.16426
+  github_repo_name: KyanChen/DynamicVis
+  page: null
+  image: ../assets/teaser/2025_DynamicVis.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 25
+  google_scholar_id: 5RF4ia8AAAAJ:TFP_iSt0sucC
+- title: 'TriDF: Triplane-Accelerated Density Fields for Few-Shot Remote Sensing Novel
+    View Synthesis'
+  authors: Jiaming Kang, <strong>Keyan Chen</strong>, Zhengxia Zou, Zhenwei Shi
+  venue_short: ArXiv
+  venue: ArXiv Preprint, 2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2503.13347
+  github_repo_name: kanehub/TriDF
+  page: null
+  image: ../assets/teaser/2025_TriDF.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 1
+  google_scholar_id: 5RF4ia8AAAAJ:bEWYMUwI8FkC
+- title: 'CDMamba: Incorporating Local Clues Into Mamba for Remote Sensing Image Binary
+    Change Detection'
+  authors: Haotian Zhang, <strong>Keyan Chen</strong>, Chenyang Liu, Hao Chen, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/document/10902569
+  arxiv: https://arxiv.org/abs/2406.04207
+  github_repo_name: zmoka-zht/CDMamba
+  page: null
+  image: ../assets/teaser/2025_CDMamba.png
+  selected: true
+  notes: (New) • [ESI Highly Cited]
+  media: null
+  cited_by: 115
+  google_scholar_id: 5RF4ia8AAAAJ:k_IJM867U9cC
+- title: Zero-Shot Image Harmonization With Generative Model Prior
+  authors: Jianqi Chen, Yilan Zhang, Zhengxia Zou, <strong>Keyan Chen</strong>, Zhenwei
+    Shi
+  venue_short: TMM
+  venue: IEEE Transactions on Multimedia <strong>(TMM)</strong>, 2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/document/10858769
+  arxiv: https://arxiv.org/abs/2307.08182
+  github_repo_name: WindVChen/Diff-Harmonization
+  page: null
+  image: ../assets/teaser/2025_ZeroShotHarm.png
+  selected: true
+  notes: (New)
+  media: null
+  cited_by: 5
+  google_scholar_id: 5RF4ia8AAAAJ:hqOjcs7Dif8C
+- title: 'RSRefSeg: Referring Remote Sensing Image Segmentation With Foundation Models'
+  authors: <strong>Keyan Chen</strong>, Jiafan Zhang, Chenyang Liu, Zhengxia Zou,
+    Zhenwei Shi
+  venue_short: IGARSS
+  venue: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>,
+    2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/document/11243338
+  arxiv: https://arxiv.org/abs/2501.06809
+  github_repo_name: KyanChen/RSRefSeg
+  page: null
+  image: ../assets/teaser/2025_RSRefSeg.png
+  selected: false
+  notes: (New)
+  media: null
+  cited_by: 13
+  google_scholar_id: 5RF4ia8AAAAJ:4JMBOYKVnBMC
+- title: 'Semantic-CD: Remote Sensing Image Semantic Change Detection Towards Open-Vocabulary
+    Setting'
+  authors: Yongshuo Zhu, Lu Li, <strong>Keyan Chen</strong>, Chenyang Liu, Fugen Zhou,
+    Zhenwei Shi
+  venue_short: IGARSS
+  venue: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>,
+    2025
+  date: 2025
+  pdf: null
+  arxiv: https://arxiv.org/abs/2501.06808
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2025_SemanticCD.png
+  selected: false
+  notes: (New)
+  media: null
+  cited_by: 10
+  google_scholar_id: 5RF4ia8AAAAJ:RHpTSmoSYBkC
+- title: 'MarsSeg: Mars Surface Semantic Segmentation With Multi-Level Extractor and
+    Connector'
+  authors: Junbo Li, <strong>Keyan Chen</strong>, Gengju Tian, Lu Li, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2025
+  date: 2025
+  pdf: https://ieeexplore.ieee.org/abstract/document/10830541
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2025_MarsSeg.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 6
+  google_scholar_id: 5RF4ia8AAAAJ:4TOpqqG69KYC
+- title: 基于云层与背景解耦的双分支GAN云图像生成方法
+  authors: 李君勇, <strong>陈科研</strong>, 刘丽芹, 邹征夏, 史振威
+  venue_short: 中国空间科学技术
+  venue: 中国空间科学技术 (Chinese Space Science and Technology), 2025
+  date: 2025
+  pdf: https://journal26.magtechjournal.com/kjkxjs/CN/10.16708/j.cnki.1000-758X.2025.0075
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2025_CloudGAN.png
+  selected: false
+  notes: null
+  media: null
+  google_scholar_id: 5RF4ia8AAAAJ:ldfaerwXgEUC
+- title: Structural Representation-Guided GAN for Remote Sensing Image Cloud Removal
+  authors: Jiajun Yang, Wenjing Wang, <strong>Keyan Chen</strong>, Liqin Liu, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: GRSL
+  venue: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10794750
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_CloudRemoval.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 7
+  google_scholar_id: 5RF4ia8AAAAJ:R3hNpaxXUhUC
+- title: Leveraging Language-Aligned Visual Knowledge for Remote Sensing Image Spectral
+    Super-Resolution
+  authors: Bowen Chen, <strong>Keyan Chen</strong>, Liqin Liu, Zhenwei Shi, Zhengxia
+    Zou
+  venue_short: WHISPERS
+  venue: 'Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote
+    Sensing <strong>(WHISPERS)</strong>, 2024'
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10876515
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_WHISPERS.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 2
+  google_scholar_id: 5RF4ia8AAAAJ:r0BpntZqJG4C
+- title: 'Semantic-CC: Boosting Remote Sensing Image Change Captioning via Foundational
+    Knowledge and Semantic Guidance'
+  authors: Yongshuo Zhu, Lu Li, <strong>Keyan Chen</strong>, Chenyang Liu, Fugen Zhou,
+    Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10752619
+  arxiv: https://arxiv.org/abs/2407.14032
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_SemanticCC.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 25
+  google_scholar_id: 5RF4ia8AAAAJ:dhFuZR0502QC
+- title: Diffusion Models for Imperceptible and Transferable Adversarial Attack
+  authors: Jianqi Chen, Hao Chen, <strong>Keyan Chen</strong>, Yilan Zhang, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: TPAMI
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence <strong>(TPAMI)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10716799
+  arxiv: https://arxiv.org/abs/2305.08192
+  github_repo_name: WindVChen/DiffAttack
+  page: null
+  image: ../assets/teaser/2024_DiffAttack.png
+  selected: true
+  notes: (Top Tier) • [ESI Highly Cited]
+  media: '<a href="https://mp.weixin.qq.com/s/PIsPaw8xFp8SPJ3QQpf37Q">[中国图象图形学学会CSIG]</a>:
+    看不见的攻击者：扩散模型如何实现"隐形"对抗攻击'
+  cited_by: 134
+  google_scholar_id: 5RF4ia8AAAAJ:LkGwnXOMwfcC
+- title: Few-Shot Remote Sensing Novel View Synthesis With Geometry Constraint Nerf
+  authors: Jiaming Kang, <strong>Keyan Chen</strong>, Zhengxia Zou, Zhenwei Shi
+  venue_short: GNC
+  venue: Guidance, Navigation and Control <strong>(GNC)</strong>, 2024
+  date: 2024
+  pdf: https://www.worldscientific.com/doi/10.1142/S2737480724410012
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_GNC.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 3
+  google_scholar_id: 5RF4ia8AAAAJ:4DMP91E08xMC
+- title: Weakly Supervised Adversarial Training for Remote Sensing Image Cloud and
+    Snow Detection
+  authors: Jiajun Yang, Wenyuan Li, <strong>Keyan Chen</strong>, Zili Liu, Zhenwei
+    Shi, Zhengxia Zou
+  venue_short: J-STARS
+  venue: IEEE Journal of Selected Topics in Applied Earth Observations and Remote
+    Sensing <strong>(J-STARS)</strong>, 2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10645216
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_WeaklyCloud.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 7
+  google_scholar_id: 5RF4ia8AAAAJ:ZeXyd9-uunAC
+- title: Deriving Accurate Surface Meteorological States at Arbitrary Locations via
+    Observation-Guided Continuous Neural Field Modeling
+  authors: Zili Liu, Hao Chen, Lei Bai, Wenyuan Li, <strong>Keyan Chen</strong>, Zhengyi
+    Wang, Wanli Ouyang, Zhengxia Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10643214
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_MetFields.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 14
+  google_scholar_id: 5RF4ia8AAAAJ:RYcK_YlVTxYC
+- title: 'Change-Agent: Towards Interactive Comprehensive Remote Sensing Change Interpretation
+    and Analysis'
+  authors: Chenyang Liu, <strong>Keyan Chen</strong>, Haotian Zhang, Zipeng Qi, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10591792
+  arxiv: https://arxiv.org/abs/2403.19646
+  github_repo_name: Chen-Yang-Liu/Change-Agent
+  page: null
+  image: ../assets/teaser/2024_ChangeAgent.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 75
+  google_scholar_id: 5RF4ia8AAAAJ:mVmsd5A6BfQC
+- title: Residual Group Enhanced GAN for Remote Sensing Image Cloud Shadow Removal
+  authors: Jiajun Yang, Chenyang Liu, <strong>Keyan Chen</strong>, Zhengxia Zou, Zhenwei
+    Shi
+  venue_short: IGARSS
+  venue: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10642736
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_CloudShadowGAN.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 1
+  google_scholar_id: 5RF4ia8AAAAJ:qUcmZB5y_30C
+- title: 'Time Travelling Pixels: Bitemporal Features Integration With Foundation
+    Model for Remote Sensing Image Change Detection'
+  authors: <strong>Keyan Chen</strong>, Chengyang Liu, Wenyuan Li, Zili Liu, Hao Chen,
+    Haotian Zhang, Zhengxia Zou, Zhenwei Shi
+  venue_short: IGARSS
+  venue: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10640593
+  arxiv: https://arxiv.org/abs/2312.16202
+  github_repo_name: KyanChen/TTP
+  page: null
+  image: ../assets/teaser/2024_TTP.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 54
+  google_scholar_id: 5RF4ia8AAAAJ:8k81kl-MbHgC
+- title: Pixel-Level Change Detection Pseudo-Label Learning for Remote Sensing Change
+    Captioning
+  authors: Chenyang Liu, <strong>Keyan Chen</strong>, Zipeng Qi, Zili Liu, Haotian
+    Zhang, Zhengxia Zou, Zhenwei Shi
+  venue_short: IGARSS
+  venue: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10642750
+  arxiv: https://arxiv.org/abs/2312.15311
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_PixelCD.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 22
+  google_scholar_id: 5RF4ia8AAAAJ:5nxA0vEk-isC
+- title: 'RSMamba: Remote Sensing Image Classification With State Space Model'
+  authors: <strong>Keyan Chen</strong>, Bowen Chen, Chenyang Liu, Wenyuan Li, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: GRSL
+  venue: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10542538
+  arxiv: https://arxiv.org/abs/2403.19654
+  github_repo_name: KyanChen/RSMamba
+  page: null
+  image: ../assets/teaser/2024_RSMamba.png
+  selected: true
+  notes: (High Star) • [ESI Hot] • [ESI Highly Cited] • [Top 3 Most Popular]
+  media: '<a href="https://valser.org/2025/\#/workshop">[VALSE Forum Talk]</a>: Efficient
+    Visual Models for Remote Sensing Image <br>
+
+    <a href="https://mp.weixin.qq.com/s/skNoentwywUpPgNpb8ZszQ">[极市平台]</a>: RSMamba：性能SOTA的遥感图像分类Mamba
+
+    '
+  cited_by: 338
+  google_scholar_id: 5RF4ia8AAAAJ:_kc_bZDykSQC
+- title: 'RSCaMa: Remote Sensing Image Change Captioning With State Space Model'
+  authors: Chenyang Liu, <strong>Keyan Chen</strong>, Bowen Chen, Haotian Zhang, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: GRSL
+  venue: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10537177
+  arxiv: https://arxiv.org/abs/2404.18895
+  github_repo_name: Chen-Yang-Liu/RSCaMa
+  page: null
+  image: ../assets/teaser/2024_RSCaMa.png
+  selected: true
+  notes: '[ESI Highly Cited] • [Top 10 Most Popular]'
+  media: null
+  cited_by: 96
+  google_scholar_id: 5RF4ia8AAAAJ:qxL8FJ1GzNcC
+- title: 一种无锚旋转框遥感图像船只目标检测算法
+  authors: 李露, <strong>陈科研</strong>, 刘辰阳, 史振威
+  venue_short: 北航学报
+  venue: 北京航空航天大学学报, 2024
+  date: 2024
+  pdf: https://bhxb.buaa.edu.cn/bhzk/cn/article/doi/10.13700/j.bh.1001-5965.2023.0852
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_ShipDet.png
+  selected: false
+  notes: null
+  media: null
+  google_scholar_id: 5RF4ia8AAAAJ:GnPB-g6toBAC
+- title: Digital-to-Physical Visual Consistency Optimization for Adversarial Patch
+    Generation in Remote Sensing Scenes
+  authors: Jianqi Chen, Yilan Zhang, Chenyang Liu, <strong>Keyan Chen</strong>, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10521633
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_AdvPatch.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 11
+  google_scholar_id: 5RF4ia8AAAAJ:aqlVkmm33-oC
+- title: 'BiFA: Remote Sensing Image Change Detection With Bitemporal Feature Alignment'
+  authors: Haotian Zhang, Hao Chen, Chenyao Zhou, <strong>Keyan Chen</strong>, Chenyang
+    Liu, Zhengxia Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10471555
+  arxiv: null
+  github_repo_name: zmoka-zht/BiFA
+  page: null
+  image: ../assets/teaser/2024_BiFA.png
+  selected: true
+  notes: '[ESI Highly Cited]'
+  media: null
+  cited_by: 91
+  google_scholar_id: 5RF4ia8AAAAJ:ULOm3_A8WrAC
+- title: 'RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation
+    Based on Visual Foundation Model'
+  authors: <strong>Keyan Chen</strong>, Chenyang Liu, Hao Chen, Haotian Zhang, Wenyuan
+    Li, Zhengxia Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10409216
+  arxiv: https://arxiv.org/abs/2306.16269
+  github_repo_name: KyanChen/RSPrompter
+  page: null
+  image: ../assets/teaser/2024_RSPrompter.png
+  selected: true
+  notes: (High Star) • [ESI Hot] • [ESI Highly Cited] • [Top 3 Most Popular]
+  media: '<a href="https://www.bilibili.com/video/BV1J94y1i7bB">[OpenMMLab Talk]</a>:
+    基于SAM大模型的实例分割研究 -- RSPrompter <br>
+
+    <a href="https://mp.weixin.qq.com/s/VBb_McTaiQtmIqO72-GEBw">[极市平台]</a>: RSPrompter：遥感图像实例分割利器，基于SAM实现自动分割
+    <br>
+
+    <a href="https://mp.weixin.qq.com/s/8441r4v-1-D9BacrkScdkg">[OpenMMLab]</a>: RSPrompter：基于SAM大模型的实例分割研究
+
+    '
+  cited_by: 395
+  google_scholar_id: 5RF4ia8AAAAJ:UebtZRa9Y70C
+- title: Learning to Detect Cloud and Snow in Remote Sensing Images From Noisy Labels
+  authors: Zili Liu, Hao Chen, Wenyuan Li, <strong>Keyan Chen</strong>, Zipeng Qi,
+    Chenyang Liu, Zhengxia Zou, Zhenwei Shi
+  venue_short: IGARSS
+  venue: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10640405
+  arxiv: https://arxiv.org/abs/2401.08932
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_NoisyCloud.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 1
+  google_scholar_id: 5RF4ia8AAAAJ:kNdYIx-mwKoC
+- title: 'DeepPhysiNet: Bridging Deep Learning and Atmospheric Physics for Accurate
+    and Continuous Weather Modeling'
+  authors: Wenyuan Li, Zili Liu, <strong>Keyan Chen</strong>, Hao Chen, Shunlin Liang,
+    Zhengxia Zou, Zhenwei Shi
+  venue_short: ArXiv
+  venue: ArXiv Preprint, 2024
+  date: 2024
+  pdf: null
+  arxiv: https://arxiv.org/abs/2401.04125
+  github_repo_name: flyakon/DeepPhysiNet
+  page: null
+  image: ../assets/teaser/2024_DeepPhysiNet.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 20
+  google_scholar_id: 5RF4ia8AAAAJ:3fE2CSJIrl8C
+- title: Generating Imperceptible and Cross-Resolution Remote Sensing Adversarial
+    Examples Based on Implicit Neural Representations
+  authors: Yu Zhang, Jianqi Chen, Liqin Liu, <strong>Keyan Chen</strong>, Zhenwei
+    Shi, Zhengxia Zou
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2024
+  date: 2024
+  pdf: https://ieeexplore.ieee.org/document/10379828
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2024_INR_Attack.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 6
+  google_scholar_id: 5RF4ia8AAAAJ:MXK_kJrjxJIC
+- title: Continuous Cross-Resolution Remote Sensing Image Change Detection
+  authors: Hao Chen, Haotian Zhang, <strong>Keyan Chen</strong>, Chenyao Zhou, Song
+    Chen, Zhengxia Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2023
+  date: 2023
+  pdf: https://ieeexplore.ieee.org/document/10287990
+  arxiv: https://arxiv.org/abs/2305.14722
+  github_repo_name: justchenhao/SILI_CD
+  page: null
+  image: ../assets/teaser/2023_SILI_CD.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 37
+  google_scholar_id: 5RF4ia8AAAAJ:0EnyYjriUFMC
+- title: Dense Pixel-to-Pixel Harmonization via Continuous Image Representation
+  authors: Jianqi Chen, Yilan Zhang, Zhengxia Zou, <strong>Keyan Chen</strong>, Zhenwei
+    Shi
+  venue_short: TCSVT
+  venue: IEEE Transactions on Circuits and Systems for Video Technology <strong>(TCSVT)</strong>,
+    2023
+  date: 2023
+  pdf: https://ieeexplore.ieee.org/document/10285123
+  arxiv: https://arxiv.org/abs/2303.01681
+  github_repo_name: WindVChen/INR-Harmonization
+  page: null
+  image: ../assets/teaser/2023_INRHarm.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 31
+  google_scholar_id: 5RF4ia8AAAAJ:_FxGoFyzp5QC
+- title: Continuous Remote Sensing Image Super-Resolution Based on Context Interaction
+    in Implicit Function Space
+  authors: <strong>Keyan Chen</strong>, Wenyuan Li, Sen Lei, Jianqi Chen, Xiaolong
+    Jiang, Zhengxia Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2023
+  date: 2023
+  pdf: https://ieeexplore.ieee.org/document/10114420
+  arxiv: https://arxiv.org/abs/2302.08046
+  github_repo_name: KyanChen/FunSR
+  page: null
+  image: ../assets/teaser/2023_FunSR.png
+  selected: true
+  notes: '[ESI Highly Cited]'
+  media: null
+  cited_by: 65
+  google_scholar_id: 5RF4ia8AAAAJ:ufrVoPGSRksC
+- title: 'Object Detection in 20 Years: A Survey'
+  authors: Zhengxia Zou, <strong>Keyan Chen</strong>, Zhenwei Shi, Yuhong Guo, Jieping
+    Ye
+  venue_short: P. IEEE
+  venue: Proceedings of the IEEE <strong>(P. IEEE)</strong>, 2023
+  date: 2023
+  pdf: https://ieeexplore.ieee.org/document/10028728
+  arxiv: https://arxiv.org/abs/1905.05055
+  github_repo_name: KyanChen/ODSurvey
+  page: null
+  image: ../assets/teaser/2023_ODSurvey.png
+  selected: true
+  notes: (Top Tier) • [ESI Hot] • [ESI Highly Cited] • [Most Popular] • [Most Downloaded]
+    • [CS231n Reference]
+  media: '<a href="https://proceedingsoftheieee.ieee.org/proceedings-of-the-ieee-paper-explores-object-detections-evolution-and-future-directions/">[Proc.
+    IEEE News]</a>: Proceedings of the IEEE Paper Explores Object Detection''s Evolution
+    and Future Directions <br>
+
+    <a href="https://mp.weixin.qq.com/s/2PLp2xNfhkHB3fPQr5Ts6g">[专知]</a>: 40页《20年目标检测综述》最新论文，带你全面了解目标检测方法
+
+    '
+  cited_by: 4776
+  google_scholar_id: 5RF4ia8AAAAJ:WF5omc3nYNoC
+- title: 'Ovarnet: Towards Open-Vocabulary Object Attribute Recognition'
+  authors: <strong>Keyan Chen</strong>, Xiaolong Jiang, Yao Hu, Xu Tang, Yan Gao,
+    Jianqi Chen, Weidi Xie
+  venue_short: CVPR
+  venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>,
+    2023
+  date: 2023
+  pdf: https://ieeexplore.ieee.org/document/10204439
+  arxiv: https://arxiv.org/abs/2301.09506
+  github_repo_name: KyanChen/OvarNet
+  page: null
+  image: ../assets/teaser/2023_OvarNet.png
+  selected: true
+  notes: (Top Conference)
+  media: '<a href="https://mp.weixin.qq.com/s/5IWebEA6tzWtzCI9ydQJfg">[小红书]</a>: 小红书提出OvarNet模型：开集预测的新SOTA，“万物识别”有了新玩法'
+  cited_by: 64
+  google_scholar_id: 5RF4ia8AAAAJ:BqipwSGYUEgC
+- title: Resolution-Agnostic Remote Sensing Scene Classification With Implicit Neural
+    Representations
+  authors: <strong>Keyan Chen</strong>, Wenyuan Li, Jianqi Chen, Zhengxia Zou, Zhenwei
+    Shi
+  venue_short: GRSL
+  venue: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2022
+  date: 2022
+  pdf: https://ieeexplore.ieee.org/document/9980428/
+  arxiv: null
+  github_repo_name: KyanChen/RASNet
+  page: null
+  image: ../assets/teaser/2022_RASNet.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 29
+  google_scholar_id: 5RF4ia8AAAAJ:zYLM7Y9cAGgC
+- title: Geographical Supervision Correction for Remote Sensing Representation Learning
+  authors: Wenyuan Li, <strong>Keyan Chen</strong>, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2022
+  date: 2022
+  pdf: https://ieeexplore.ieee.org/document/9869651
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2022_GeoCorrection.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 20
+  google_scholar_id: 5RF4ia8AAAAJ:qjMakFHDy7sC
+- title: Contrastive Learning for Fine-Grained Ship Classification in Remote Sensing
+    Images
+  authors: Jianqi Chen, <strong>Keyan Chen</strong>, Hao Chen, Wenyuan Li, Zhengxia
+    Zou, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2022
+  date: 2022
+  pdf: https://ieeexplore.ieee.org/document/9832938
+  arxiv: null
+  github_repo_name: WindVChen/Push-and-Pull-Network
+  page: null
+  image: ../assets/teaser/2022_ContrastiveShip.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 67
+  google_scholar_id: 5RF4ia8AAAAJ:2osOgNQ5qMEC
+- title: A Degraded Reconstruction Enhancement-Based Method for Tiny Ship Detection
+    in Remote Sensing Images With a New Large-Scale Dataset
+  authors: Jianqi Chen, <strong>Keyan Chen</strong>, Hao Chen, Zhengxia Zou, Zhenwei
+    Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2022
+  date: 2022
+  pdf: https://ieeexplore.ieee.org/document/9791363
+  arxiv: null
+  github_repo_name: WindVChen/DRENet
+  page: null
+  image: ../assets/teaser/2022_DRENet.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 79
+  google_scholar_id: 5RF4ia8AAAAJ:9yKSN-GCB0IC
+- title: Building Extraction From Remote Sensing Images With Sparse Token Transformers
+  authors: <strong>Keyan Chen</strong>, Zhengxia Zou, Zhenwei Shi
+  venue_short: Remote Sensing
+  venue: Remote Sensing, 2021
+  date: 2021
+  pdf: https://www.mdpi.com/2072-4292/13/21/4441
+  arxiv: null
+  github_repo_name: KyanChen/STT
+  page: null
+  image: ../assets/teaser/2021_STT.png
+  selected: true
+  notes: '[ESI Highly Cited]'
+  media: null
+  cited_by: 166
+  google_scholar_id: 5RF4ia8AAAAJ:u-x6o8ySG0sC
+- title: Geographical Knowledge-Driven Representation Learning for Remote Sensing
+    Images
+  authors: Wenyuan Li, <strong>Keyan Chen</strong>, Hao Chen, Zhenwei Shi
+  venue_short: TGRS
+  venue: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>,
+    2021
+  date: 2021
+  pdf: https://ieeexplore.ieee.org/document/9559903
+  arxiv: https://arxiv.org/abs/2107.05276
+  github_repo_name: flyakon/Geographical-Knowledge-driven-Representaion-Learning
+  page: null
+  image: ../assets/teaser/2021_GeoKnowledge.png
+  selected: true
+  notes: null
+  media: null
+  cited_by: 93
+  google_scholar_id: 5RF4ia8AAAAJ:u5HHmVD_uO8C
+- title: Kinect-Based Hand Tracking for First-Person-Perspective Robotic Arm Teleoperation
+  authors: Xue Bai, Changqiang Li, <strong>Keyan Chen</strong>, Yongjie Feng, Zhaowei
+    Yu, Ming Xu
+  venue_short: ICIA
+  venue: IEEE International Conference on Information and Automation <strong>(ICIA)</strong>,
+    2018
+  date: 2018
+  pdf: https://ieeexplore.ieee.org/document/8812561
+  arxiv: null
+  github_repo_name: null
+  page: null
+  image: ../assets/teaser/2018_HandTracking.png
+  selected: false
+  notes: null
+  media: null
+  cited_by: 9
+  google_scholar_id: 5RF4ia8AAAAJ:d1gkVwhDpl0C

@@ -1,0 +1,184 @@
+# --- 2025 ---
+- date: "2025.12"
+  selected: true
+  archive: false
+  content:
+    en: "5 papers accepted to **IEEE TGRS** in 2025"
+    cn: "2025年度共有5篇论文被 **IEEE TGRS** 录用"
+
+- date: "2025.11"
+  selected: true
+  archive: false
+  content:
+    en: "Received **Ph.D. degree** from Beihang University 🎓"
+    cn: "于北京航空航天大学获得**工学博士**学位 🎓"
+
+- date: "2025.10"
+  selected: true
+  archive: false
+  content:
+    en: "Technical report [Open-CD (Change Detection)](https://dl.acm.org/doi/abs/10.1145/3746027.3756881) accepted to **ACM MM** ✨"
+    cn: "技术报告 [Open-CD (变化检测)](https://dl.acm.org/doi/abs/10.1145/3746027.3756881) 被 **ACM MM** 录用 ✨"
+
+- date: "2025.09"
+  selected: true
+  archive: false
+  content:
+    en: "[Survey on Remote Sensing VLMs](https://ieeexplore.ieee.org/abstract/document/11159545) accepted to **IEEE GRSM**"
+    cn: "[遥感视觉-语言模型综述](https://ieeexplore.ieee.org/abstract/document/11159545)被 **IEEE GRSM** 录用"
+
+- date: "2025.06"
+  selected: true
+  archive: false
+  content:
+    en: "Invited speaker at **VALSE 2025 Student Forum** (<span class=\"highlight\">1 of 8 nationwide</span>) 🎤"
+    cn: "受邀至 **VALSE 2025 优秀学生论坛**作特邀报告（<span class=\"highlight\">全国仅8人</span>） 🎤"
+
+- date: "2025.05"
+  selected: true
+  archive: false
+  content:
+    en: "Paper [Text2Earth](https://ieeexplore.ieee.org/abstract/document/10988859/) accepted to **IEEE GRSM**"
+    cn: "论文 [Text2Earth](https://ieeexplore.ieee.org/abstract/document/10988859/) 被 **IEEE GRSM** 录用"
+
+- date: "2025.05"
+  selected: true
+  archive: false
+  content:
+    en: "Awarded **Beihang May Fourth Medal** (<span class=\"highlight\">highest honor for youth</span>) 🏅"
+    cn: "荣获**北航五四奖章**（全校<span class=\"highlight\">青年最高荣誉</span>） 🏅"
+
+- date: "2025.04"
+  selected: true
+  archive: false
+  content:
+    en: "[Google Scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ) citations surpassed <span class=\"highlight\">5,000</span> 🚀"
+    cn: "[谷歌学术](https://scholar.google.com/citations?user=5RF4ia8AAAAJ)引用突破 <span class=\"highlight\">5000次</span> 🚀"
+
+- date: "2025.01"
+  selected: true
+  archive: false
+  content:
+    en: "1 paper accepted to **IEEE TMM**"
+    cn: "1篇论文被 **IEEE TMM** 录用"
+
+- date: "2025.01"
+  selected: true
+  archive: false
+  content:
+    en: "Papers **FunSR** & **RSMamba** identified as <span class=\"highlight\">ESI Highly Cited Papers</span>"
+    cn: "论文 **FunSR** 和 **RSMamba** 入选 <span class=\"highlight\">ESI高被引论文</span>"
+
+# --- 2024 ---
+- date: "2024.12"
+  selected: true
+  archive: false
+  content:
+    en: "7 papers accepted to **IEEE TGRS** in 2024"
+    cn: "2024年度共有7篇论文被 **IEEE TGRS** 录用"
+
+- date: "2024.11"
+  selected: true
+  archive: false
+  content:
+    en: "Awarded **Shen Yuan Medal** (<span class=\"highlight\">highest honor for Beihang students</span>) 🏆"
+    cn: "荣获**北航沈元奖章**（全校<span class=\"highlight\">学生最高荣誉</span>） 🏆"
+
+- date: "2024.11"
+  selected: true
+  archive: false
+  content:
+    en: "Received **Baosteel Education Special Award** (<span class=\"highlight\">Top 10 graduate students nationwide</span>) 🥇"
+    cn: "荣获**宝钢教育奖特等奖**（<span class=\"highlight\">全国研究生仅10人</span>） 🥇"
+
+- date: "2024.11"
+  selected: true
+  archive: false
+  content:
+    en: "Paper **STT** identified as <span class=\"highlight\">ESI Highly Cited Paper</span>"
+    cn: "论文 **STT** 入选 <span class=\"highlight\">ESI高被引论文</span>"
+
+- date: "2024.10"
+  selected: true
+  archive: false
+  content:
+    en: "Research on [Adversarial Attack](https://ieeexplore.ieee.org/abstract/document/10716799) accepted to **IEEE TPAMI** 🔥"
+    cn: "[对抗攻击模型](https://ieeexplore.ieee.org/abstract/document/10716799)研究工作被 **IEEE TPAMI** 录用 🔥"
+
+- date: "2024.07"
+  selected: true
+  archive: false
+  content:
+    en: "Paper **RSMamba** listed as a **IEEE GRSL** <span class=\"highlight\">Popular Article</span>"
+    cn: "论文 **RSMamba** 入选 **IEEE GRSL** <span class=\"highlight\">Popular Article</span>"
+
+- date: "2024.07"
+  selected: true
+  archive: false
+  content:
+    en: "Paper **RSPrompter** identified as <span class=\"highlight\">ESI Hot & Highly Cited Paper</span>"
+    cn: "论文 **RSPrompter** 入选 <span class=\"highlight\">ESI热点及高被引论文</span>"
+
+- date: "2024.05"
+  selected: true
+  archive: false
+  content:
+    en: "Paper **RSPrompter** listed as a **IEEE TGRS** <span class=\"highlight\">Popular Article</span>"
+    cn: "论文 **RSPrompter** 入选 **IEEE TGRS** <span class=\"highlight\">Popular Article</span>"
+
+- date: "2024.05"
+  selected: true
+  archive: false
+  content:
+    en: "Led the inaugural **NSFC** Ph.D. Student Project (<span class=\"highlight\">Principal Investigator</span>) 🚩"
+    cn: "主持首批**国家自然科学基金**青年学生项目（<span class=\"highlight\">项目负责人</span>） 🚩"
+
+# --- 2023 & Before (仅 Archive) ---
+- date: "2023.12"
+  selected: true
+  archive: true
+  content:
+    en: "[Google Scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ) citations surpassed <span class=\"highlight\">2,000</span>"
+    cn: "[谷歌学术](https://scholar.google.com/citations?user=5RF4ia8AAAAJ)引用突破 <span class=\"highlight\">2000次</span>"
+
+- date: "2023.12"
+  selected: true
+  archive: true
+  content:
+    en: "2 papers accepted to **IEEE TGRS** in 2023"
+    cn: "2023年度共有2篇论文被 **IEEE TGRS** 录用"
+
+- date: "2023.10"
+  selected: true
+  archive: true
+  content:
+    en: "1 paper accepted to **IEEE TCSVT**"
+    cn: "1篇论文被 **IEEE TCSVT** 录用"
+
+- date: "2023.02"
+  selected: true
+  archive: true
+  content:
+    en: "1 paper accepted to **CVPR**"
+    cn: "1篇论文被 **CVPR** 录用"
+
+- date: "2023.02"
+  selected: true
+  archive: true
+  content:
+    en: "[Object Detection Survey](https://ieeexplore.ieee.org/abstract/document/10028728) published in **Proc. IEEE** (<span class=\"highlight\">ESI Hot & Highly Cited</span>) 🌟"
+    cn: "[目标检测综述](https://ieeexplore.ieee.org/abstract/document/10028728)发表于 **Proceedings of the IEEE**（入选 <span class=\"highlight\">ESI热点及高被引论文</span>） 🌟"
+
+- date: "2023.01"
+  selected: true
+  archive: true
+  content:
+    en: "[Google Scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ) citations surpassed <span class=\"highlight\">1,000</span>"
+    cn: "[谷歌学术](https://scholar.google.com/citations?user=5RF4ia8AAAAJ)引用突破 <span class=\"highlight\">1000次</span>"
+
+- date: "2022.12"
+  selected: true
+  archive: true
+  content:
+    en: "3 papers accepted to **IEEE TGRS** in 2022"
+    cn: "2022年度共有3篇论文被 **IEEE TGRS** 录用"

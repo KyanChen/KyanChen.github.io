@@ -1,0 +1,91 @@
+# _data/talks.yml
+
+- date_str: "2025.08"
+  date: "2025-08-01"
+  title_cn: "RSRefSeg：基于基础模型的遥感图像指代分割"
+  title_en: "RSRefSeg: Foundation Model-based Referring Segmentation in RS"
+  venue_cn: "IGARSS，澳大利亚布里斯班"
+  venue_en: "IGARSS, Brisbane, Australia"
+  extra_cn: "口头报告"
+  extra_en: "Oral Presentation"
+  selected: true
+
+- date_str: "2025.07"
+  date: "2025-07-15"
+  title_cn: "遥感图像高效基础模型"
+  title_en: "Efficient Foundation Models for Remote Sensing"
+  venue_cn: "CSIG 学生会员论坛，线上"
+  venue_en: "CSIG Student Forum, Online"
+  extra_cn: "[视频回放](https://www.bilibili.com/video/BV1RJ8yzGEcH)"
+  extra_en: "[Video](https://www.bilibili.com/video/BV1RJ8yzGEcH)"
+  selected: true
+
+- date_str: "2025.07"
+  date: "2025-07-01"
+  title_cn: "遥感图像高效基础模型"
+  title_en: "Efficient Foundation Models for Remote Sensing"
+  venue_cn: "AIRS学术论坛（学生论坛），云南"
+  venue_en: "AIRS Academic Forum (Student Track), Yunnan"
+  extra_cn: "" # 没有额外信息留空
+  extra_en: ""
+  selected: true
+
+- date_str: "2025.06"
+  date: "2025-06-01"
+  title_cn: "遥感图像高效基础模型"
+  title_en: "Efficient Foundation Models for Remote Sensing"
+  venue_cn: "VALSE 2025 优秀学生论坛，珠海"
+  venue_en: "VALSE 2025 Excellent Student Forum, Zhuhai"
+  extra_cn: "[视频回放](https://www.bilibili.com/video/BV1nV4qzWEju/?spm_id_from=333.337.search-card.all.click)"
+  extra_en: "[Video](https://www.bilibili.com/video/BV1nV4qzWEju/?spm_id_from=333.337.search-card.all.click)"
+  selected: true
+
+- date_str: "2024.12"
+  date: "2024-12-01"
+  title_cn: "遥感图像基础模型研究"
+  title_en: "Research on Remote Sensing Foundation Models"
+  venue_cn: "北航研究生论坛，北京"
+  venue_en: "Beihang Graduate Forum, Beijing"
+  extra_cn: "[讲座链接](https://mp.weixin.qq.com/s/vCiy-zH1yVfffKqU8qEadQ)"
+  extra_en: "[Link](https://mp.weixin.qq.com/s/vCiy-zH1yVfffKqU8qEadQ)"
+  selected: true
+
+- date_str: "2024.07"
+  date: "2024-07-01"
+  title_cn: "基于基础模型的遥感图像变化检测"
+  title_en: "Foundation Model-based Change Detection in RS Imagery"
+  venue_cn: "IGARSS，希腊雅典"
+  venue_en: "IGARSS, Athens, Greece"
+  extra_cn: "口头报告"
+  extra_en: "Oral Presentation"
+  selected: true
+
+- date_str: "2023.07"
+  date: "2023-07-15"
+  title_cn: "基于SAM基础模型的实例分割研究"
+  title_en: "Instance Segmentation based on SAM Foundation Model"
+  venue_cn: "OpenMMLab，线上"
+  venue_en: "OpenMMLab, Online"
+  extra_cn: "[视频回放](https://www.bilibili.com/video/BV1J94y1i7bB)"
+  extra_en: "[Video](https://www.bilibili.com/video/BV1J94y1i7bB)"
+  selected: true
+
+- date_str: "2023.07"
+  date: "2023-07-01"
+  title_cn: "轻量级交互式实例分割及应用"
+  title_en: "Lightweight Interactive Instance Segmentation"
+  venue_cn: "OPPO研究院，线上"
+  venue_en: "OPPO Research Institute, Online"
+  extra_cn: "内部技术交流"
+  extra_en: "Internal Seminar"
+  selected: true
+
+- date_str: "2023.03"
+  date: "2023-03-01"
+  title_cn: "开放词汇目标理解"
+  title_en: "Open-Vocabulary Object Understanding"
+  venue_cn: "小红书多模态团队，北京"
+  venue_en: "Xiaohongshu Multimodal Team, Beijing"
+  extra_cn: "内部技术交流"
+  extra_en: "Internal Seminar"
+  selected: true

@@ -1,0 +1,23 @@
+main:
+
+  - title: "Honors"
+    url: /honors/
+    right: true
+
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "Services"
+    url: /services/
+
+  - title: "Talks"
+    url: /talks/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Home"
+    url: /

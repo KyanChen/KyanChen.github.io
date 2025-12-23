@@ -1,0 +1,375 @@
+main:
+
+  - title: "RSRefSeg 2: Decoupling Referring Remote Sensing Image Segmentation with Foundation Models"
+    authors: <strong>Keyan Chen</strong>, Chenyang Liu, Bowen Chen, Jiafan Zhang, Zhengxia Zou, Zhenwei Shi
+    conference_short: ArXiv
+    conference: arXiv preprint <strong>(ArXiv)</strong>, 2025
+    pdf: https://arxiv.org/abs/2507.06231
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:Ur8BxlNjrx4J:scholar.google.com/&output=citation&scisdr=CgIyGE31ELf-yrLYtak:AAZF9b8AAAAAaHHerajNaiC2_HQtdLzGZWLhULg&scisig=AAZF9b8AAAAAaHHerQBYpmKOrdTiJLUPLa62uoY&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2025_RSRefSeg2.png
+    code: https://github.com/KyanChen/RSRefSeg2
+    notes:
+    others: |
+      <a href="https://github.com/KyanChen/RSRefSeg2" target="_blank" rel="noopener"><strong> <i style="color:#e74d3c; font-weight:600" id="githubstars_RSRefSeg2"></i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></strong></a><script>
+      githubStars("KyanChen/RSRefSeg2", function(stars) {
+        var startext = document.getElementById("githubstars_RSRefSeg2"); 
+        startext.innerHTML=stars;
+      });
+      </script>
+
+  - title: "DynamicVis: An Efficient and General Visual Foundation Model for Remote Sensing Image Understanding"
+    authors: <strong>Keyan Chen</strong>, Chenyang Liu, Bowen Chen, Wenyuan Li, Zhengxia Zou, Zhenwei Shi
+    conference_short: ArXiv
+    conference: arXiv preprint <strong>(ArXiv)</strong>, 2025
+    pdf: https://arxiv.org/abs/2503.16426
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:Cbtmb2ZdDzkJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEIaaoUUotoQ:AFWwaeYAAAAAZ_suroQ4YcxH7ke8kO3BJN8JHcU&scisig=AFWwaeYAAAAAZ_sursXk0Wg4DSnCaHGWA8K-7hg&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2025_DynamicVis.png
+    code: https://github.com/KyanChen/DynamicVis
+    notes:
+    others: |
+      <a href="https://github.com/KyanChen/DynamicVis" target="_blank" rel="noopener"><strong> <i style="color:#e74d3c; font-weight:600" id="githubstars_DynamicVis"></i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></strong></a><script>
+      githubStars("KyanChen/DynamicVis", function(stars) {
+        var startext = document.getElementById("githubstars_DynamicVis"); 
+        startext.innerHTML=stars;
+      });
+      </script>
+  
+
+  - title: "RSRefSeg: Referring Remote Sensing Image Segmentation with Foundation Models"
+    authors: <strong>Keyan Chen</strong>, Jiafan Zhang, Chenyang Liu, Zhengxia Zou, Zhenwei Shi
+    conference_short: IGARSS
+    conference: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>, 2025
+    pdf: https://arxiv.org/abs/2501.06809
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:FPdte01in-AJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8ycj840:AFWwaeYAAAAAZ5wl641amHL-QBix6WuA_OiELa4&scisig=AFWwaeYAAAAAZ5wl63x8M1DpkesSmjFa8fuLEOc&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2025_RSRefSeg.png
+    code: https://github.com/KyanChen/RSRefSeg
+    notes:
+    others: |
+      <a href="https://github.com/KyanChen/RSRefSeg" target="_blank" rel="noopener"><strong> <i style="color:#e74d3c; font-weight:600" id="githubstars_RSRefSeg"></i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></strong></a><script>
+      githubStars("KyanChen/RSRefSeg", function(stars) {
+        var startext = document.getElementById("githubstars_RSRefSeg"); 
+        startext.innerHTML=stars;
+      });
+      </script>
+
+
+  - title: "RSMamba: Remote Sensing Image Classification with State Space Model"
+    authors: <strong>Keyan Chen</strong>, Bowen Chen, Chenyang Liu, Wenyuan Li, Zhengxia Zou, Zhenwei Shi
+    conference_short: GRSL
+    conference: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2024
+    pdf: https://arxiv.org/abs/2403.19654
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:cXJUNFz7AewJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8ycv6E8:AFWwaeYAAAAAZ5wp8E--IMFK6cyB_NOsTFDnRbw&scisig=AFWwaeYAAAAAZ5wp8F-NP7QOAzuv7sOFD8NUeXg&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2024_RSMamba.png
+    code: https://github.com/KyanChen/RSMamba
+    notes: 🏆️ESI Highly Cited Paper • Popular Article of GRSL
+    others: |
+      <strong> 
+        <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:_kc_bZDykSQC">
+          <i id="total_citation_RSMamba">100+</i>
+          <i style="color:#e74d3c; font-weight:600"> Citations • </i>
+        </a>
+        <a href="https://github.com/KyanChen/RSMamba" target="_blank" rel="noopener">
+        <i style="color:#e74d3c; font-weight:600" id="githubstars_RSMamba">50+</i>
+        <i style="color:#e74d3c; font-weight:600"> GitHub Stars</i>
+        </a>
+      </strong>
+      <script>
+      githubStars("KyanChen/RSMamba", function(stars) {
+      var startext = document.getElementById("githubstars_RSMamba");
+            startext.innerHTML=stars;
+      });
+      </script>
+      <script>
+          $(document).ready(function () {
+              
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+              
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:_kc_bZDykSQC"]["num_citations"]
+                  document.getElementById("total_citation_RSMamba").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
+
+
+
+  - title: "Time Travelling Pixels: Bitemporal Features Integration with Foundation Model for Remote Sensing Image Change Detection"
+    authors: <strong>Keyan Chen</strong>, Chenyang Liu, Wenyuan Li, Zili Liu, Hao Chen, Haotian Zhang, Zhengxia Zou, Zhenwei Shi
+    conference_short: IGARSS
+    conference: IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>, 2024
+    pdf: https://arxiv.org/abs/2312.16202
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:LViFAWre3UQJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8ycyHBw:AFWwaeYAAAAAZ5w0BBy3WP6OwaWnDixAVKURIa8&scisig=AFWwaeYAAAAAZ5w0BGDAhcFE5h2B3xqiQ3gLCfM&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page: https://kyanchen.github.io/TTP/
+    image: ../assets/teaser/2024_TTP.png
+    code: https://github.com/KyanChen/TTP
+    demo: https://huggingface.co/spaces/KyanChen/TTP
+    notes:
+    others: |
+      <strong> 
+        <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:8k81kl-MbHgC">
+          <i id="total_citation_TTP">30+</i>
+          <i style="color:#e74d3c; font-weight:600"> Citations • </i>
+        </a>
+        <a href="https://github.com/KyanChen/TTP" target="_blank" rel="noopener">
+          <i style="color:#e74d3c; font-weight:600" id="githubstars_TTP">50+</i>
+          <i style="color:#e74d3c; font-weight:600"> GitHub Stars</i>
+        </a>
+      </strong>
+      <script>
+      githubStars("KyanChen/TTP", function(stars) {
+        var startext = document.getElementById("githubstars_TTP"); 
+        startext.innerHTML=stars;
+      });
+      </script>
+      <script>
+          $(document).ready(function () {
+    
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+    
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:8k81kl-MbHgC"]["num_citations"]
+                  document.getElementById("total_citation_TTP").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
+
+  - title: "RSPrompter: Learning to Prompt for Remote Sensing Instance Segmentation based on Visual Foundation Model"
+    authors: <strong>Keyan Chen</strong>, Chenyang Liu, Hao Chen, Haotian Zhang, Wenyuan Li, Zhengxia Zou, Zhenwei Shi
+    conference_short: TGRS
+    conference: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>, 2024
+    pdf: https://arxiv.org/abs/2306.16269
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:Gcedd2ZOfjwJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8yczQiQ:AFWwaeYAAAAAZ5w1WiQm1NMkrhU9oKb_ZJOlxxY&scisig=AFWwaeYAAAAAZ5w1Wn5RBlV3aqqXSJ7iFMzjR1I&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page: https://kyanchen.github.io/RSPrompter/
+    image: ../assets/teaser/2024_RSPrompter.png
+    code: https://github.com/KyanChen/RSPrompter
+    demo: https://huggingface.co/spaces/KyanChen/RSPrompter
+    notes: 🏆️ESI Highly Cited Paper • ESI Hot Paper • Popular Article of TGRS
+    others: |
+      <strong> <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:UebtZRa9Y70C"><i id="total_citation_RSPrompter">100+</i><i style="color:#e74d3c; font-weight:600"> Citations • </i></a><a href="https://github.com/KyanChen/RSPrompter" target="_blank" rel="noopener"><i style="color:#e74d3c; font-weight:600" id="githubstars_RSPrompter">50+</i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></a></strong>
+      <script>
+      githubStars("KyanChen/RSPrompter", function(stars) {
+      var startext = document.getElementById("githubstars_RSPrompter");
+            startext.innerHTML=stars;
+      });
+      </script>
+      <script>
+          $(document).ready(function () {
+    
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+    
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:UebtZRa9Y70C"]["num_citations"]
+                  document.getElementById("total_citation_RSPrompter").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
+
+
+
+  - title: "Continuous Remote Sensing Image Super-Resolution based on Context Interaction in Implicit Function Space"
+    authors: <strong>Keyan Chen</strong>, Wenyuan Li, Sen Lei, Jianqi Chen, Xiaolong Jiang, Zhengxia Zou, Zhenwei Shi
+    conference_short: TGRS
+    conference: IEEE Transactions on Geoscience and Remote Sensing <strong>(TGRS)</strong>, 2023
+    pdf: https://arxiv.org/abs/2302.08046
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:eWfcI5JRW14J:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8ycwgaQ:AFWwaeYAAAAAZ5w2maQQVd2e3QgWphlejvvow_E&scisig=AFWwaeYAAAAAZ5w2mQjYcfbbbPHoqp2oOLgENAo&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page: https://kyanchen.github.io/FunSR/
+    image: ../assets/teaser/2023_FunSR.png
+    code: https://github.com/KyanChen/FunSR
+    demo: https://huggingface.co/spaces/KyanChen/FunSR
+    notes: 🏆️ESI Highly Cited Paper
+    others: |
+      <strong> 
+        <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:ufrVoPGSRksC">
+        <i id="total_citation_FunSR">50+</i>
+        <i style="color:#e74d3c; font-weight:600"> Citations • </i>
+        </a>
+        <a href="https://github.com/KyanChen/FunSR" target="_blank" rel="noopener">
+        <i style="color:#e74d3c; font-weight:600" id="githubstars_FunSR">30+</i>
+        <i style="color:#e74d3c; font-weight:600"> GitHub Stars</i>
+        </a>
+      </strong>
+      <script>
+      githubStars("KyanChen/FunSR", function(stars) {
+        var startext = document.getElementById("githubstars_FunSR"); 
+        startext.innerHTML=stars;
+      });
+      </script>
+      <script>
+          $(document).ready(function () {
+    
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+    
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:ufrVoPGSRksC"]["num_citations"]
+                  document.getElementById("total_citation_FunSR").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
+
+  - title: "Object Detection in 20 Years: A Survey"
+    authors: Zhengxia Zou*, <strong>Keyan Chen</strong>*, Zhenwei Shi, Yuhong Guo, Jieping Ye
+    conference_short: P. IEEE
+    conference: Proceedings of the IEEE <strong>(P. IEEE)</strong>, 2023
+    pdf: https://arxiv.org/abs/1905.05055
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:xxlNuw8NtIgJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8ycx6dw:AFWwaeYAAAAAZ5w38dy1dNYJB5pwoGYyDT6FIYM&scisig=AFWwaeYAAAAAZ5w38fzNUq6SlufFtqqKtQIVxNQ&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2023_ODSurvey.png
+    code:
+    demo:
+    notes: 🏆️ESI Highly Cited Paper • ESI Hot Paper • Popular Article of P. IEEE
+    others: |
+      <strong> <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:WF5omc3nYNoC"><i id="total_citation_ODSurvey">100+</i><i style="color:#e74d3c; font-weight:600"> Citations</i></a></strong>
+      <script>
+          $(document).ready(function () {
+    
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+    
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:WF5omc3nYNoC"]["num_citations"]
+                  document.getElementById("total_citation_ODSurvey").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
+
+  - title: "OvarNet: Towards Open-vocabulary Object Attribute Recognition"
+    authors: <strong>Keyan Chen</strong>, Xiaolong Jiang, Yao Hu, Xu Tang, Yan Gao, Jianqi Chen, Weidi Xie
+    conference_short: CVPR
+    conference: IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2023
+    pdf: https://arxiv.org/abs/2301.09506
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:5kNUdc-VWyYJ:scholar.google.com/&output=citation&scisdr=CgIyGE31ELf-yrLYjOM:AAZF9b8AAAAAaHHelOICg6qndVOC7YsBxG3vrpo&scisig=AAZF9b8AAAAAaHHelBjMvINZa89qMaBdH6bLhdY&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2023_OvarNet.png
+    code:
+    demo:
+    notes:
+    others: |
+      <strong> 
+        <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:BqipwSGYUEgC">
+        <i id="total_citation_OvarNet">50+</i>
+        <i style="color:#e74d3c; font-weight:600"> Citations • </i>
+        </a>
+        <a href="https://github.com/KyanChen/OvarNet" target="_blank" rel="noopener">
+        <i style="color:#e74d3c; font-weight:600" id="githubstars_OvarNet">30+</i>
+        <i style="color:#e74d3c; font-weight:600"> GitHub Stars</i>
+        </a>
+      </strong>
+      <script>
+      githubStars("KyanChen/OvarNet", function(stars) {
+        var startext = document.getElementById("githubstars_OvarNet"); 
+        startext.innerHTML=stars;
+      });
+      </script>
+      <script>
+          $(document).ready(function () {
+    
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+    
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:BqipwSGYUEgC"]["num_citations"]
+                  document.getElementById("total_citation_OvarNet").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
+
+  - title: "Resolution-agnostic Remote Sensing Scene Classification with Implicit Neural Representations"
+    authors: <strong>Keyan Chen</strong>, Wenyuan Li, Jianqi Chen, Zhengxia Zou, Zhenwei Shi
+    conference_short: GRSL
+    conference: IEEE Geoscience and Remote Sensing Letters <strong>(GRSL)</strong>, 2022
+    pdf: https://ieeexplore.ieee.org/abstract/document/9980428
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:FIg4njHZu7sJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8yc_AQk:AFWwaeYAAAAAZ5w5GQkXkhvNug3DjijAOIPODJo&scisig=AFWwaeYAAAAAZ5w5GZtLv8aFWfvDu1D1d0TTTgk&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page: https://kyanchen.github.io/RASNet/
+    image: ../assets/teaser/2022_RASNet.png
+    code: https://github.com/KyanChen/RASNet
+    demo:
+    notes:
+    others:
+
+
+
+  - title: "Building Extraction from Remote Sensing Images with Sparse Token Transformers"
+    authors: <strong>Keyan Chen</strong>, Zhengxia Zou, Zhenwei Shi
+    conference_short: Remote Sensing
+    conference: Remote Sensing, 2021
+    pdf: https://www.mdpi.com/2072-4292/13/21/4441
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:Dp8kscI9BqUJ:scholar.google.com/&output=citation&scisdr=ClFhYJVEEI_r8yc8P84:AFWwaeYAAAAAZ5w6J847g6DqolBAeLyY8Yx-94g&scisig=AFWwaeYAAAAAZ5w6Jydr9SlFTwxvqV77PQ_Yw1E&scisf=4&ct=citation&cd=-1&hl=en
+    data:
+    page:
+    image: ../assets/teaser/2021_STT.png
+    code:
+    demo:
+    notes: 🏆️ESI Highly Cited Paper
+    others: |
+      <strong> <a style="color:#e74d3c; font-weight:600" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=5RF4ia8AAAAJ&citation_for_view=5RF4ia8AAAAJ:u-x6o8ySG0sC"><i id="total_citation_STT">100+</i><i style="color:#e74d3c; font-weight:600"> Citations • </i></a><a href="https://github.com/KyanChen/STT" target="_blank" rel="noopener"><i style="color:#e74d3c; font-weight:600" id="githubstars_STT">50+</i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></a></strong>
+      <script>
+      githubStars("KyanChen/STT", function(stars) {
+      var startext = document.getElementById("githubstars_STT");
+            startext.innerHTML=stars;
+      });
+      </script>
+      <script>
+          $(document).ready(function () {
+    
+              var gsDataBaseUrl = "https://raw.githubusercontent.com/KyanChen/KyanChen.github.io/"
+    
+              $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+                  var totalCitation = data["publications"]["5RF4ia8AAAAJ:u-x6o8ySG0sC"]["num_citations"]
+                  document.getElementById("total_citation_STT").innerHTML = totalCitation;
+                  var citationEles = document.getElementsByClassName("show_paper_citations")
+                  Array.prototype.forEach.call(citationEles, element => {
+                      var paperId = element.getAttribute("data")
+                      var numCitations = data["publications"][paperId]["num_citations"]
+                      element.innerHTML = "| Citations: " + numCitations;
+                  });
+              });
+          })
+      </script>
