@@ -1,0 +1,21 @@
+# --- 2025 ---
+- date: "2025.12"
+  selected: true
+  archive: false
+  content:
+    en: "5 papers accepted to **IEEE TGRS** in 2025"
+    cn: "2025年度共有5篇论文被 **IEEE TGRS** 录用"
+
+- date: "2025.11"
+  selected: true
+  archive: false
+  content:
+    en: "Received **Ph.D. degree** from Beihang University 🎓"
+    cn: "于北京航空航天大学获得**工学博士**学位 🎓"
+
+- date: "2022.12"
+  selected: true
+  archive: true
+  content:
+    en: "3 papers accepted to **IEEE TGRS** in 2022"
+    cn: "2022年度共有3篇论文被 **IEEE TGRS** 录用"

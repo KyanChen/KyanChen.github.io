@@ -1,0 +1,160 @@
+
+
+
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navigation-height);
+  background-color: var(--navigation-bg-color);
+  box-shadow: var(--navigation-shadow);
+  z-index: 999;
+  
+  /* Flexbox用于居中内容 */
+  display: flex;
+  justify-content: center;
+  
+  /* 移除复杂的 padding 计算，改用 inner container */
+  padding: 0 20px; 
+  
+  box-sizing: border-box;
+}
+
+/* 内部容器：限制最大宽度并居中 */
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--navigation-max-width);
+  height: 100%;
+}
+
+/* Logo 容器 */
+.logo-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0%;
+  margin-left: 0px;
+  margin-right: 10px;
+  text-decoration: none;
+  
+  img {
+    height: calc(var(--navigation-height) * 0.7); /* Logo高度占导航栏的70% */
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+/* 导航链接容器 (默认状态) */
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* 链接通用样式 */
+.nav-item,
+.nav-item:visited {
+  color: var(--navigation-text-color) !important; /* Force override */
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all var(--navigation-transition-speed) ease;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: var(--navigation-hover-bg);
+    color: var(--navigation-hover-text) !important;
+    transform: translateY(-3px); /* 默认桌面端上浮 */
+  }
+  
+  /* Active: 鼠标按下去的一瞬间 */
+  &:active {
+    transform: translateY(0); /* 回到原位 (模拟被按下去) */
+    background-color: rgba(255, 255, 255, 0.25); /* 背景稍微变亮，增加点击反馈 */
+    transition-duration: 0.1s; /* 按下去的动作要快，这就叫“跟手” */
+  }
+}
+
+.lang-switch {
+  min-width: 40px;
+  text-align: center;
+}
+
+/* 汉堡菜单图标 (默认隐藏，后面在Mobile显示) */
+.icon {
+  display: none;
+  color: var(--navigation-text-color) !important;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px; /* 增加点击区域 */
+  transition: transform 0.2s;
+  
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+/* ========================
+   3. 移动端布局 (<= 960px)
+   ======================== */
+@media screen and (max-width: 960px) {
+  .topnav {
+    padding: 0 20px; /* 移动端左右边距 */
+  }
+
+  /* 显示汉堡菜单 */
+  .icon {
+    display: block;
+  }
+
+  /* 移动端导航菜单容器 - 关键优化点 */
+  .nav-links {
+    position: absolute;
+    top: var(--navigation-height); /* 紧贴Header下方 */
+    left: 0;
+    width: 100%;
+    background-color: var(--navigation-bg-color);
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.2); /* 底部阴影 */
+    
+    /* 垂直排列 */
+    flex-direction: column;
+    gap: 0;
+    
+    /* 丝滑动画核心属性 */
+    max-height: 0;          /* 默认高度为0 */
+    overflow: hidden;       /* 隐藏溢出内容 */
+    opacity: 0;             /* 透明 */
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  /* 展开状态 (由JS添加此类) */
+  .nav-links.responsive {
+    max-height: 500px;      /* 设置一个足够大的值，允许内容展开 */
+    opacity: 1;             /* 不透明 */
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* 移动端链接样式 */
+  .nav-item {
+    display: block;
+    width: 100%;
+    text-align: center; /* 或者 left，看喜好 */
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    
+    /* 取消桌面端的上浮 */
+    &:hover {
+      transform: none;
+      background-color: var(--navigation-hover-bg);
+    }
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

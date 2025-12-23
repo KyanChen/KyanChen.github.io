@@ -1,0 +1,51 @@
+<!-- 按钮 -->
+<button id="back-to-top" title="Back to Top">
+  <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+    <line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline>
+  </svg>
+</button>
+
+<style>
+#back-to-top {
+  position: fixed; bottom: 40px; right: 40px; z-index: 99;
+  width: 45px; height: 45px; /* 尺寸 */
+  border: none; border-radius: 8px; 
+  background: #fff; color: #333;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  
+  /* 居中 */
+  display: flex; align-items: center; justify-content: center;
+  
+  /* 动画初始状态 */
+  opacity: 0; pointer-events: none; /* 隐藏时不响应点击 */
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+/* 显示状态 */
+#back-to-top.show {
+  opacity: 1; pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* 悬停效果 */
+#back-to-top:hover {
+  background: #e0e0e0; /* 经典灰色：比 f8f8f8 深，很有质感 */
+  color: #000;         /* 图标变纯黑，清晰有力 */
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+</style>
+
+<script>
+const btn = document.getElementById("back-to-top");
+
+// 监听滚动：超过300px自动切换 .show 类
+window.addEventListener("scroll", () => {
+  btn.classList.toggle("show", window.scrollY > 300);
+});
+
+// 点击回顶
+btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>

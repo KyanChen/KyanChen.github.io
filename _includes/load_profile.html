@@ -1,0 +1,80 @@
+{% assign lang = include.lang | default: 'en' %}
+
+{% if include.mode == 'short' %}
+  <h2 id="short-bio" class="section-heading">Short Bio</h2>
+  
+  <div class="bio-content">
+  {% if lang == 'cn' and site.data.profile.short_bio.cn %}
+    {{ site.data.profile.short_bio.cn | markdownify }}
+  {% else %}
+    {{ site.data.profile.short_bio.en | markdownify }}
+  {% endif %}
+  </div>
+
+  <blockquote>
+    <p>
+    {% if lang == 'cn' %}
+      我的详细个人简介请见 <a href="{{ '/cn/biography/' | relative_url }}">这里</a>。
+    {% else %}
+      My detailed biography is available <a href="{{ '/biography/' | relative_url }}">here</a>.
+    {% endif %}
+    </p>
+  </blockquote>
+
+  
+{% else %}
+  <h2 id="biography" class="section-heading">Biography</h2>
+  
+  <div class="bio-content bio-full">
+  {% if lang == 'cn' and site.data.profile.bio.cn %}
+    {{ site.data.profile.bio.cn | markdownify }}
+  {% else %}
+    {{ site.data.profile.bio.en | markdownify }}
+  {% endif %}
+  </div>
+
+  <h2 id="education-experience" class="section-heading" style="margin-bottom: 0;">Education & Experience</h2>
+  <ul class="education-list">
+  {% for edu in site.data.profile.education %}
+    {% if include.mode == 'full' or edu.selected == true %}
+    <li>
+      <strong>[{{ edu.time }}]</strong> 
+      {% if lang == 'cn' and edu.institution_cn %}
+        {{ edu.institution_cn }}, {{ edu.degree_cn }}
+      {% else %}
+        {{ edu.institution }}, {{ edu.degree }}
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endif %}
+
+<style>
+  .bio-content p {
+    margin-bottom: 0.7em; /* 调整段落间距 */
+    text-align: justify;  /* 保持两端对齐 */
+  }
+  .bio-full {
+    font-size: 0.95em;
+  }
+  .education-list {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .education-list li {
+    margin: 4px !important;
+    padding: 0 !important;
+    display: flex; /* Use flex to align dash and content */
+    align-items: baseline; /* Align dash with text baseline */
+  }
+  .education-list li::before {
+    content: "-";
+    margin-right: 0.5em;
+    display: inline-block;
+  }
+  .education-list li strong {
+    margin-right: 5px;
+  }
+</style>

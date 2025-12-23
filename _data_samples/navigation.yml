@@ -1,0 +1,15 @@
+- title: Home
+  url: /
+- title: Publications
+  url: /publications/
+- title: Projects
+  url: /projects/
+- title: Honors
+  url: /honors/
+- title: Services
+  url: /services/
+- title: Talks
+  url: /talks/
+- title: Teaching
+  url: /teaching/
+  align: right

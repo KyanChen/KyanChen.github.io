@@ -1,0 +1,88 @@
+<!-- _includes/load_services_list.html -->
+
+{% assign services = site.data.services %}
+{% assign display_lang = include.lang | default: "en" %}
+{% assign filter_type = include.type | default: "all" %}
+{% assign filter_category = include.category | default: "service" %}
+
+<ul class="service-list">
+{% for item in services %}
+  
+  <!-- 筛选逻辑：Category 和 Selected -->
+  {% if item.category != filter_category %}
+    {% continue %}
+  {% endif %}
+  
+  {% if filter_type == "selected" and item.selected != true %}
+    {% continue %}
+  {% endif %}
+
+  <li>
+    <div class="service-item">
+      <!-- 情况 1：学术兼职 (service) -->
+      {% if filter_category == "service" %}
+        {% if display_lang == "cn" %}
+            <!-- 格式: 角色: 机构 (时间) -->
+            <span class="service-role">{{ item.role_cn }}</span>: 
+            <span class="service-org">{{ item.org_cn | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            <span class="service-date">({{ item.date_cn }})</span>
+        {% else %}
+            <span class="service-role">{{ item.role_en }}</span>: 
+            <span class="service-org">{{ item.org_en | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            <span class="service-date">({{ item.date_en }})</span>
+        {% endif %}
+      
+      <!-- 情况 2：审稿人 (journal 或 conf) -->
+      {% else %}
+        <!-- 审稿人通常只显示名字，名字一般为英文 -->
+        <span class="service-name">{{ item.name | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      {% endif %}
+    </div>
+  </li>
+
+{% endfor %}
+</ul>
+
+<style>
+/* 严格复用之前的样式 */
+ul.service-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul.service-list li {
+  margin-bottom: 3px;    /* 严格间距 */
+  display: flex;
+  align-items: baseline;
+}
+
+ul.service-list li::before {
+  content: "-";
+  margin-right: 0.5em;
+  /* font-weight: bold; */
+  color: var(--base-text-color);
+  flex-shrink: 0;
+}
+
+/* 样式微调 */
+.service-role {
+  font-weight: bold;
+}
+
+.service-org, .service-name {
+    font-size: 0.9em;
+}
+
+.service-org p, .service-name p {
+    display: inline; /* 防止 markdownify 产生多余换行 */
+    margin: 0;
+}
+
+.service-date {
+    margin-left: 4px;
+    font-size: 0.9em;
+    color: var(--base-text-color);
+    font-style: italic;
+}
+</style>

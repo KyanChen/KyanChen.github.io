@@ -1,0 +1,198 @@
+<!-- _includes/publications.html -->
+
+<!-- 1. 简介部分 (非 Full 模式显示) -->
+{% unless include.mode == 'full' %}
+<div class="publications-intro">
+  {% assign gs_id = site.google_scholar_id | default: "" %}
+  {% assign total_cited_by = site.data.publications.total_cited_by | default: "7000" %}
+  
+  {% if include.lang == 'cn' and site.data.publications.intro.cn %}
+    <!-- 中文简介 -->
+    {{ site.data.publications.intro.cn 
+       | replace: "#total_cited_by#", total_cited_by 
+       | replace: "#gs_id#", gs_id 
+    }}
+  {% else %}
+    <!-- 英文简介 (默认) -->
+    {{ site.data.publications.intro.en 
+       | replace: "#total_cited_by#", total_cited_by 
+       | replace: "#gs_id#", gs_id 
+    }}
+  {% endif %}
+</div>
+{% endunless %}
+
+
+<!-- 2. 论文列表 -->
+<div class="publications-list">
+  
+  <!-- 核心逻辑：按日期倒序 -->
+  {% assign sorted_pubs = site.data.publications.items | sort: 'date' | reverse %}
+  {% assign last_year = "" %}
+  {% assign pub_index = 0 %}
+
+  {% for item in sorted_pubs %}
+    
+    <!-- 筛选逻辑：非 Full 模式且未精选则跳过 -->
+    {% if include.mode != 'full' and item.selected != true %}{% continue %}{% endif %}
+    
+    {% assign pub_index = pub_index | plus: 1 %}
+    {% assign current_year = item.date | split: '-' | first %}
+
+    <!-- 年份分组 -->
+    {% if current_year != last_year %}
+      <h3 class="year-header">{{ current_year }}</h3>
+      {% assign last_year = current_year %}
+    {% endif %}
+
+    <div class="pub-item">
+      
+      <!-- 图片接口：有 image 字段时显示，否则自动隐藏 -->
+      <!-- {% if item.image %}
+      <div class="pub-image-wrapper">
+        <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="pub-image">
+      </div>
+      {% endif %} -->
+
+      <!-- 内容区域 -->
+      <div class="pub-content">
+        
+        <!-- 标题：优先跳转 PDF，其次 Project -->
+        <div class="pub-title">
+            <span class="pub-index">[{{ pub_index }}]</span>
+            <a href="{{ item.pdf | default: item.page | default: '#' }}" target="_blank">{{ item.title }}</a>
+        </div>
+
+        <div class="pub-authors">{{ item.authors }}</div>
+        <div class="pub-venue">{{ item.venue }}</div>
+        
+        <!-- 动态统计 (Scholar / GitHub) -->
+        {% if item.google_scholar_id or item.github_repo_name %}
+        <div class="pub-stats">
+            {% if item.google_scholar_id %}
+                <a class="stat-link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.google_scholar_id }}&citation_for_view={{ item.google_scholar_id }}" target="_blank">
+                    <img src="https://img.shields.io/badge/Google_Scholar-{{ item.cited_by | default: 'Link' }}-4285F4?style=social&logo=google-scholar&logoColor=4285F4" alt="Google Scholar Citations">
+                </a>
+            {% endif %}
+            {% if item.github_repo_name %}
+                <a class="stat-link" href="https://github.com/{{ item.github_repo_name }}" target="_blank">
+                    <img src="https://img.shields.io/github/stars/{{ item.github_repo_name }}?style=social&label=Stars" alt="github stars">
+                </a>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if item.notes %} <div class="pub-note">{{ item.notes }}</div> {% endif %}
+        {% if item.media %} <div class="pub-media">{{ item.media }}</div> {% endif %}
+
+        <!-- 链接按钮组 -->
+        <div class="pub-links">
+            {% if item.pdf %}    <a href="{{ item.pdf }}" class="pub-btn" target="_blank">PDF</a> {% endif %}
+            {% if item.arxiv %}  <a href="{{ item.arxiv }}" class="pub-btn" target="_blank">arXiv</a> {% endif %}
+            {% if item.page %}   <a href="{{ item.page }}" class="pub-btn" target="_blank">Project</a> {% endif %}
+            
+            <!-- Code 逻辑：优先 item.code，其次拼凑 github 地址 -->
+            {% if item.code %}
+                <a href="{{ item.code }}" class="pub-btn" target="_blank">Code</a>
+            {% elsif item.github_repo_name %}
+                <a href="https://github.com/{{ item.github_repo_name }}" class="pub-btn" target="_blank">Code</a>
+            {% endif %}
+            
+            {% if item.demo %}   <a href="{{ item.demo }}" class="pub-btn" target="_blank">Demo</a> {% endif %}
+            {% if item.data %}   <a href="{{ item.data }}" class="pub-btn" target="_blank">Dataset</a> {% endif %}
+            {% if item.bibtex %} <a href="{{ item.bibtex }}" class="pub-btn" target="_blank">BibTeX</a> {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- CSS 样式 -->
+<style>
+    .publications-intro { 
+        margin-bottom: 30px; 
+        font-size: 1em; 
+        line-height: 1.6; 
+        text-align: justify;
+    }
+    
+    /* 年份标题样式 */
+    .year-header {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        margin: 40px 0 20px 0;
+        color: var(--base-text-color, #333); /* 添加回退颜色防止变量不存在 */
+        font-size: 1.3em;
+    }
+
+    .pub-item {
+        display: flex;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .pub-image-wrapper {
+        flex: 0 0 220px; 
+        max-width: 220px;
+    }
+    .pub-image {
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+    .pub-image:hover { transform: scale(1.02); }
+
+    .pub-content { flex: 1; }
+    .pub-title { font-weight: bold; font-size: 1.1em; margin-bottom: 5px; color: var(--base-text-color, #333); }
+    .pub-title a { text-decoration: none; color: inherit; }
+    .pub-title a:hover { color: #0056b3; text-decoration: underline; }
+    
+    .pub-authors { color: #555; margin-bottom: 4px; line-height: 1.3; }
+    .pub-venue { font-style: italic; color: #333; margin-bottom: 6px; }
+    .pub-note { font-weight: bold; color: var(--base-highlight-color, #d9534f); font-size: 0.9em; margin-bottom: 6px; }
+    
+    .pub-stats { margin-bottom: 8px; font-size: 0.85em; display: flex; gap: 15px; }
+    .stat-link { text-decoration: none; color: var(--base-text-color, #333); display: flex; align-items: center;}
+
+    .pub-media { 
+        font-size: 0.9em; 
+        background: #f8f9fa; 
+        padding: 5px 10px; 
+        border-left: 3px solid #17a2b8; 
+        margin-bottom: 10px; 
+    }
+
+    /* 按钮样式 */
+    .pub-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+    .pub-btn {
+        display: inline-block;
+        padding: 2px 8px;
+        font-size: 0.85em;
+        color: #0056b3;
+        border: 1px solid #0056b3;
+        border-radius: 3px;
+        text-decoration: none;
+        transition: all 0.2s;
+        font-family: monospace;
+    }
+    .pub-btn:hover {
+        background-color: #0056b3;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* [新增] 序号样式 (原CSS缺失) */
+    .pub-index {
+        color: var(--base-text-color, #333);
+        font-weight: normal;
+        font-size: 0.9em;
+        margin-right: 4px;
+    }
+
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+        .pub-item { flex-direction: column; }
+        .pub-image-wrapper { flex: 0 0 100%; max-width: 100%; }
+    }
+</style>

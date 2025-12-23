@@ -1,0 +1,107 @@
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    /* 字体：现代无衬线体栈 */
+    font-family: var(--base-font-main);
+    
+    /* 背景：非常淡的灰白色，比纯白柔和 */
+    background-color: var(--base-bg-color); 
+    
+    /* 文字：深蓝灰色，不仅易读而且比纯灰有质感 */
+    color: var(--base-text-color); 
+    
+    /* 行高：学术文本通常较长，1.6 的行高更适合阅读 */
+    line-height: 1.5;
+}
+
+/* 标题样式调整 */
+h1, h2, h3 {
+    /* 
+       修改处：
+       原颜色 #111 太深。
+       改为 #2c3e50 (与正文同色，利用字重区分) 
+       或者 #333 (柔和的深灰) 
+    */
+    color: var(--base-text-color); 
+    font-weight: 600;
+}
+
+a, a:visited {
+    /* 链接颜色：一种稳重的蓝色 */
+    color: var(--base-link-color); 
+    text-decoration: none;
+    
+    /* 简单的过渡动画 */
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    /* 悬停时加深颜色并加下划线 */
+    color: var(--base-link-hover-color);
+    text-decoration: underline;
+}
+
+/* =======================
+   新增样式区域
+   ======================= */
+
+/* 1. 单纯加粗样式 */
+/* 覆盖默认的 strong/b 标签，或使用 .bold 类 */
+strong, b, .bold {
+    font-weight: 700; /* 700 等同于 bold，但在不同字体下渲染更稳定 */
+    color: var(--base-text-color);   /* 保持与正文同色，强调字重 */
+}
+
+/* 2. 加粗且加红样式 */
+/* 在 HTML 中使用 <span class="highlight">文字</span> 或 <strong class="highlight">文字</strong> */
+.highlight {
+    font-weight: 700;
+    /* 
+       红色选择：#e74c3c 
+       这种红色（Alizarin）比纯红更符合现代 UI 风格，
+       与您的背景 #fafafa 和深蓝灰 #2c3e50 搭配更高级。
+    */
+    color: var(--base-highlight-color); 
+}
+
+/* 3. 引用块样式 */
+blockquote {
+    /* 【核心布局】开启 Flexbox 布局 */
+    display: flex;
+    
+    /* 【核心对齐】让内部文字垂直居中 */
+    align-items: center;
+    
+    /* 【高度控制】强制设定一个较矮的高度 */
+    /* 通常 30px - 40px 大约就是一行文字加一点点空隙的高度 */
+    height: 36px; 
+    font-size: 0.9em;
+
+    /* 边框：#ccc */
+    border-left: 3px solid #ccc;
+    
+    /* 背景色：#fafafa (极浅灰)，比 #ccc 淡很多 */
+    background-color: #fafafa;
+    
+    /* 外边距：保持原有间距 */
+    margin: 1em 0;
+    
+    /* 内边距：上下为 0 (因为高度由 height 控制)，左右 1em */
+    padding: 0 10px;
+    
+    /* 字体颜色 */
+    color: var(--base-text-color);
+    
+    /* 字体样式 */
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important; /* 让行高紧贴文字，便于 Flex 居中 */
+}

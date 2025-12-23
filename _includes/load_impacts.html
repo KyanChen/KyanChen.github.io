@@ -1,0 +1,72 @@
+<!-- _includes/load_impacts.html -->
+
+{% assign impacts = site.data.impacts %}
+{% assign display_lang = include.lang | default: "en" %}
+
+<!-- 1. 渲染总述段落 -->
+<div class="impact-intro">
+    {% if display_lang == "cn" %}
+    {{ impacts.intro.cn | markdownify }}
+    {% else %}
+    {{ impacts.intro.en | markdownify }}
+    {% endif %}
+</div>
+
+<!-- 2. 渲染评价列表 -->
+<ol class="impact-list">
+    {% for item in impacts.items %}
+    <li>
+        <div class="impact-item">
+        {% if display_lang == "cn" %}
+            {{ item.cn | markdownify }}
+        {% else %}
+            {{ item.en | markdownify }}
+        {% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ol>
+
+<style>
+/* --- 容器与排版 --- */
+.impact-intro {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* --- 有序列表样式 [1] --- */
+ol.impact-list {
+  list-style-type: none;
+  counter-reset: impact-counter;
+  padding-left: 0;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+ol.impact-list li {
+  counter-increment: impact-counter;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+ol.impact-list li::before {
+  content: "[" counter(impact-counter) "] ";
+  font-weight: bold;
+  margin-right: 0.8em;
+  min-width: 1.8em;
+  color: var(--base-text-color);
+  flex-shrink: 0;
+}
+
+/* 修复 markdownify 产生的 p 标签 */
+.impact-item p, .impact-intro p {
+  margin: 0;
+  display: inline-block;
+  text-align: justify; /* Ensure text is justified */
+}
+
+
+</style>

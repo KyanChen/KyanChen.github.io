@@ -1,0 +1,24 @@
+
+
+{% assign lang = include.lang | default: 'en' %}
+{% assign contact = site.data.profile.contact %}
+
+<h2 id="contact" class="section-heading">Contact</h2>
+
+
+<p>
+  <!-- 1. 地址 Address -->
+  {% if lang == 'cn' %}
+    <strong>通讯地址：</strong> {{ contact.address_cn | default: contact.address }}<br>
+  {% else %}
+    <strong>Mailing Address:</strong> {{ contact.address }}<br>
+  {% endif %}
+
+  <!-- 2. 邮箱 Email -->
+  {% if lang == 'cn' %}<strong>电子邮箱：</strong>{% else %}<strong>Email:</strong>{% endif %}
+  <a href="mailto:{{ contact.email | replace: '(at)', '@' }}">{{ contact.email }}</a><br>
+
+  <!-- 3. 微信 Wechat -->
+  {% if lang == 'cn' %}<strong>微信：</strong>{% else %}<strong>Wechat:</strong>{% endif %}
+  {{ contact.wechat }}
+</p>

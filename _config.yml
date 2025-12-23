@@ -1,0 +1,116 @@
+# Basic Information 
+title: "Keyan Chen"
+position: Research Fellow
+affiliation: Beihang University
+affiliation_link: https://ev.buaa.edu.cn/
+affiliation_logo: assets/img/icons/beihang.svg
+emails: 
+  - kychen(at)buaa.edu.cn
+  - kychen1012(at)gmail.com
+
+# Search Engine Optimization (SEO)
+keywords: keyan chen, chen keyan, keyanchen, chenkeyan, 陈科研, 北航陈科研
+canonical: https://chenkeyan.top
+description: >- # this means to ignore newlines until "baseurl:"
+  Keyan Chen obtained his Ph.D., M.S., and B.S. degrees from Beihang University in 2025, 2022, and 2019, respectively, under the supervision of Prof. Zhenwei Shi and Prof. Zhengxia Zou. His research centers on Computer Vision and Remote Sensing, with a particular focus on Foundation Models, Multimodal Learning, and AI4Earth.
+
+# Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kyanchen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
+timezone: Asia/Shanghai
+encoding: utf-8
+
+# The option is used to show the last update time.
+enable_last_update: true
+
+# Links
+link_type: icon #text/icon
+google_scholar_id: 5RF4ia8AAAAJ
+github_username: KyanChen
+linkedin_username: chenkeyan
+twitter_username: KyanChen1012
+cv_link: assets/cv/KeyanChen_CV.pdf
+
+# Images 
+avatar: ./assets/img/profile/KeyanChen_2025.jpg
+portrait: ./assets/img/profile/KeyanChen_2023.jpg
+favicon: ./assets/favicon/favicon.ico
+favicon_dark: ./assets/favicon/favicon.ico
+
+# Footnotes
+footnote: Feel free to use my website's source code.
+footnote_link: https://github.com/KyanChen/KyanChen.github.io
+
+# Analytics
+clustrmaps_id: "98ZgCYz_BPXzld4HL9fFapBJ5kjTLP5IRdxhqmBdddg" # Example ID, user should replace
+google_analytics: "G-9ZWVGXM1YW" # Replace with your Google Analytics ID
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+theme: null
+license: MIT
+
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  auto_ids: true
+  math_engine: mathjax
+  smart_quotes: ["lsquo", "rsquo", "ldquo", "rdquo"]
+
+sass:
+  style: compressed
+  # style: expanded
+  # debug: true
+  # trace: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be defined with either a path or a glob pattern.
+#
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scripts/
+  - README.md
+  - readme.md
+  - LICENSE
+  - .github/
+  - .DS_Store
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "_pages"
+    values:
+      layout: "page"

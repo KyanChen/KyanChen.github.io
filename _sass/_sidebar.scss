@@ -1,0 +1,160 @@
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  height: fit-content;
+
+  .avatar {
+    margin-bottom: 30px;
+    a { border: 0; display: inline-block; }
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 35%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      &:hover { transform: scale(1.1); }
+    }
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+
+    .site-title {
+      font: 700 26px/1.2 sans-serif;
+      margin-bottom: 10px;
+      color: var(--base-text-color);
+    }
+    .position {
+      font-size: 16px;
+      color: var(--base-text-color);
+      margin-bottom: 2px;
+      font-weight: 700;
+    }
+    .affiliation {
+      font-size: 14px;
+      color: var(--base-text-color);
+      text-decoration: none;
+      transition: color 0.2s;
+      margin-bottom: 2px;
+      font-weight: 500;
+      &:hover { color: var(--base-text-color-hover); }
+    }
+    .contact-emails .email {
+      font-size: 14px;
+      a {
+        color: var(--base-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        &:hover { color: var(--base-text-color-hover); text-decoration: underline; }
+      }
+    }
+  }
+
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    a {
+      text-decoration: none;
+      transition: all 0.2s;
+      position: relative;
+      color: var(--base-text-color);
+      &:hover { color: var(--base-text-color-hover); }
+    }
+
+    /* 图标模式样式 */
+    &.icon-mode {
+      gap: 20px; /* 图标变大后，增加间距 */
+      
+      > a {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        /* 修改点 2: 移除了对 a 标签 font-size 的强依赖，改为在 i 标签中强行控制 */
+        
+        &:hover { 
+          transform: translateY(-3px) scale(1.1) !important;
+        }
+        
+        /* 修改点 3: 直接暴力控制 i 标签的大小，并重置宽高限制 */
+        i {
+          display: block; /* 防止行内元素不仅由 */
+          font-size: 24px !important; /* 这里调整图标大小，当前设置为 32px */
+          line-height: 1 !important;
+          width: auto !important;  /* 防止图标库默认设置固定宽度 */
+          height: auto !important;
+          text-align: center;
+        }
+        
+        /* 针对 FontAwesome 可能的 svg 渲染模式 (如果你的主题加载的是 JS 版而不是 CSS 版) */
+        svg {
+           width: 24px !important;
+           height: 24px !important;
+           font-size: 24px !important;
+        }
+      }
+    }
+    
+    /* 文字模式样式 */
+    &.text-mode {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      
+      > a {
+        font-size: 14px;
+        border: 1px solid #eee;
+        padding: 4px 12px;
+        border-radius: 20px;
+        &::before { content: "[ "; color: #ccc; margin-right: 3px;}
+        &::after { content: " ]"; color: #ccc; margin-left: 3px;}
+        &:hover { 
+          background: #f5f5f5; 
+          color: #000; 
+          border-color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile 适配 */
+@media screen and (max-width: 960px) {
+  .sidebar {
+    display: none; /* 默认隐藏侧边栏 */
+    width: 100%;
+    position: static;
+    // padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding: 25px;
+    padding-bottom: 5px; /* 减少底部内边距 */
+    height: auto;
+    font-size: 0.8em;
+    
+    .avatar img { width: 120px; height: 120px; }
+    .profile-info .site-title { font-size: 24px; }
+    
+    /* 移动端再大一点 */
+    .social-links.icon-mode > a i {
+        font-size: 30px !important; 
+    }
+  }
+
+  /* 仅在首页显示侧边栏 */
+  .layout-home .sidebar {
+    display: block;
+  }
+}

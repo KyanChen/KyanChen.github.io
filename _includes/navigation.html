@@ -1,0 +1,50 @@
+<header class="topnav" id="myTopnav">
+    <div class="nav-inner">
+        <!-- Logo 区域 -->
+        <a href="{{ site.affiliation_link }}" class="logo-link">
+            <img src="{{ site.affiliation_logo | relative_url }}" alt="Logo">
+        </a>
+        
+        <!-- 移动端菜单切换按钮 -->
+        <a href="javascript:void(0);" class="icon" id="menuToggle" aria-label="Toggle Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- 导航链接容器 -->
+        <div id="myLinks" class="nav-links">
+            {%- for item in site.data.navigation -%}
+                {% assign nav_url = item.url %}
+                {% if page.lang == 'cn' %}
+                    {% assign nav_url = '/cn' | append: item.url %}
+                {% endif %}
+            <a class="nav-item {% if item.align == 'right' %}right{% endif %}" href="{{ nav_url | relative_url }}">
+                {{ item.title | escape }}
+            </a>
+            {%- endfor -%}
+            
+            <!-- Language Switcher -->
+            {% if page.lang == 'cn' %}
+                <a class="nav-item right lang-switch" href="{{ page.url | replace_first: '/cn', '' | relative_url }}">En</a>
+            {% else %}
+                <a class="nav-item right lang-switch" href="{{ '/cn' | append: page.url | relative_url }}">中</a>
+            {% endif %}
+        </div>
+    </div>
+</header>
+
+<script>
+document.getElementById('menuToggle').addEventListener('click', function() {
+    const nav = document.getElementById("myLinks");
+    const icon = this.querySelector("i");
+    
+    // 切换响应式类
+    nav.classList.toggle("responsive");
+    
+    // 切换图标 (汉堡 <-> 关闭)
+    if (nav.classList.contains("responsive")) {
+        icon.classList.replace("fa-bars", "fa-times");
+    } else {
+        icon.classList.replace("fa-times", "fa-bars");
+    }
+});
+</script>

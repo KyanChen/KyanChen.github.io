@@ -1,0 +1,76 @@
+<!-- _includes/load_teaching_list.html -->
+
+{% assign teaching_raw = site.data.teaching %}
+{% assign display_lang = include.lang | default: "en" %}
+{% assign filter_type = include.type | default: "all" %}
+
+<!-- 按日期倒序排列 (最新的在最上面) -->
+{% assign teaching = teaching_raw | sort: 'date' | reverse %}
+
+<ul class="teaching-list">
+{% for item in teaching %}
+  
+  <!-- 筛选逻辑 -->
+  {% if filter_type == "selected" and item.selected != true %}
+    {% continue %}
+  {% endif %}
+
+  <li>
+    <div class="teaching-item">
+      {% if display_lang == "cn" %}
+        <!-- 中文格式：2025春：课程名，助教 -->
+        <span class="teaching-term">{{ item.term_cn }}</span>: 
+        <span class="teaching-course">{{ item.course_cn }}</span>, 
+        <span class="teaching-role">{{ item.role_cn }}</span>
+      {% else %}
+        <!-- 英文格式：Spring 2025: Course Name, TA -->
+        <span class="teaching-term">{{ item.term_en }}</span>: 
+        <span class="teaching-course">{{ item.course_en }}</span>, 
+        <span class="teaching-role">{{ item.role_en }}</span>
+      {% endif %}
+    </div>
+  </li>
+
+{% endfor %}
+</ul>
+
+<style>
+/* 自定义无序列表样式 */
+ul.teaching-list {
+  list-style-type: none; /* 移除默认的圆点 */
+  padding-left: 0;       /* 移除默认左缩进 */
+  margin-left: 0;
+}
+
+ul.teaching-list li {
+  margin-bottom: 4px;
+  display: flex;         /* 使用 flex 布局让符号和文字对齐 */
+  align-items: baseline; /* 确保符号与第一行文字对齐 */
+}
+
+
+
+/* 使用伪元素生成 - 号 */
+ul.teaching-list li::before {
+  content: "-";
+  margin-right: 0.5em;   /* 符号与文字的间距 */
+  /* font-weight: bold; */
+  color: var(--base-text-color);           /* 符号颜色，可按需调整 */
+  flex-shrink: 0;        /* 防止符号被压缩 */
+}
+
+.teaching-term {
+  /* font-weight: bold; */
+  font-size: 1em;
+}
+
+.teaching-course {
+  color: var(--base-text-color);           /* 符号颜色，可按需调整 */
+  font-size: 0.9em;
+}
+
+.teaching-role {
+  color: var(--base-text-color);
+  font-size: 0.9em;
+}
+</style>

@@ -1,0 +1,49 @@
+# Data
+_data/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Gems
+Gemfile.lock
+vendor/
+.bundle/
+
+# Python 编译文件和缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 本地虚拟环境 (如果你在本地创建了虚拟环境运行脚本)
+venv/
+env/
+.env
+
+# Node
+node_modules/
+package-lock.json
+
+# System
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Sublime Text
+*.sublime-workspace

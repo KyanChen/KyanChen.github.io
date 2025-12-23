@@ -1,0 +1,60 @@
+# _data/projects.yml
+
+# ========================
+# Vertical: 纵向课题
+# ========================
+- category: "vertical"
+  type_cn: "国家自然科学基金青年学生基础研究项目（博士研究生）"
+  type_en: "NSFC Basic Research Project for PhD Students"
+  name_cn: "光学遥感图像通用基础模型相关方法研究"
+  name_en: "Foundation Models for Optical Remote Sensing Imagery"
+  source_cn: "国家自然科学基金委 (NSFC)"
+  source_en: "NSFC"
+  date_str: "2024.05 -- 2025.12"
+  date: "2024-05-01"
+  role_cn: <strong class="highlight">主持 (项目负责人)</strong>
+  role_en: <strong class="highlight">Principal Investigator (PI)</strong> 
+  selected: true
+
+- category: "vertical"
+  type_cn: "教育部创新团队项目"
+  type_en: "MOE Innovation Team Program"
+  name_cn: "智能遥感大数据处理"
+  name_en: "Intelligent Remote Sensing Big Data Processing"
+  source_cn: "教育部"
+  source_en: "Ministry of Education"
+  date_str: "2023.01 -- 2025.12"
+  date: "2023-01-01"
+  role_cn: "学生核心骨干"
+  role_en: "Core Member"
+  selected: true
+
+# ========================
+# Horizontal: 横向课题
+# ========================
+- category: "horizontal"
+  type_cn: "应用项目"
+  type_en: "Industry Project"
+  name_cn: "光学遥感图像超分辨率重建系统"
+  name_en: "Optical RS Image Super-Resolution Reconstruction System"
+  source_cn: "中国四维"
+  source_en: "China Siwei"
+  date_str: "2024.01 -- 2025.01"
+  date: "2024-01-01"
+  role_cn: "学生核心骨干"
+  role_en: "Lead Developer"
+  selected: true
+
+- category: "horizontal"
+  type_cn: "应用项目"
+  type_en: "Level-0 Data Processing System"
+  name_cn: "0级数据处理系统"
+  name_en: "Level-0 Data Processing System"
+  source_cn: "中国资源卫星应用中心"
+  source_en: "CRESDA"
+  date_str: "2022.07 -- 2023.02"
+  date: "2022-07-01"
+  role_cn: "学生核心骨干"
+  role_en: "Core Member"
+  selected: true
+

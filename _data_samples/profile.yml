@@ -1,0 +1,46 @@
+bio:
+  en: |
+    
+    I obtained my Ph.D., M.S., and B.S. degrees from **Beihang University** in 2025, 2022, and 2019, respectively, under the supervision of [Prof. Zhenwei Shi](https://scholar.google.com/citations?user=kNhFWQIAAAAJ) and [Prof. Zhengxia Zou](https://scholar.google.com/citations?user=DzwoyZsAAAAJ).
+
+    My research centers on **Computer Vision** and **Remote Sensing**, with a particular focus on **Foundation Models**, **Multimodal Learning**, and **AI4Earth**. 
+  
+  cn: |
+    
+    我分别于2025年、2022年及2019年在**北京航空航天大学**获得**博士、硕士及学士**学位，师从[史振威教授](https://scholar.google.com/citations?user=kNhFWQIAAAAJ)和[邹征夏教授](https://scholar.google.com/citations?user=DzwoyZsAAAAJ)。
+
+    研究致力于**计算机视觉**与**遥感**图像处理领域，重点聚焦**基础模型**、**多模态学习**及 **AI4Earth**。
+
+
+short_bio:
+  en: |
+    
+    I obtained my Ph.D., M.S., and B.S. degrees from **Beihang University** in 2025, 2022, and 2019, respectively, under the supervision of [Prof. Zhenwei Shi](https://scholar.google.com/citations?user=kNhFWQIAAAAJ) and [Prof. Zhengxia Zou](https://scholar.google.com/citations?user=DzwoyZsAAAAJ).
+
+    My research centers on **Computer Vision** and **Remote Sensing**, with a particular focus on **Foundation Models**, **Multimodal Learning**, and **AI4Earth**.
+  cn: |
+    
+    我分别于2025年、2022年及2019年在**北京航空航天大学**获得**博士、硕士及学士**学位，师从[史振威教授](https://scholar.google.com/citations?user=kNhFWQIAAAAJ)和[邹征夏教授](https://scholar.google.com/citations?user=DzwoyZsAAAAJ)。
+
+    研究致力于**计算机视觉**与**遥感**图像处理领域，重点聚焦**基础模型**、**多模态学习**及 **AI4Earth**。
+
+
+education:
+  - time: "2022.09 -- 2025.11"
+    institution: "Beihang University"
+    degree: "Ph.D. in Pattern Recognition & Intelligent Systems"
+    institution_cn: "北京航空航天大学"
+    degree_cn: "模式识别与智能系统 博士"
+    selected: true
+  - time: "2019.09 -- 2022.01"
+    institution: "Beihang University"
+    degree: "M.S. in Pattern Recognition & Intelligent Systems"
+    institution_cn: "北京航空航天大学"
+    degree_cn: "模式识别与智能系统 硕士"
+    selected: false
+
+contact:
+  address: "9 GaoJiaoYuan Nan San Jie, Changping District, Beijing, China"
+  address_cn: "北京市昌平区高教园南三街9号"
+  email: "xxxx(at)buaa.edu.cn"
+  wechat: "KeyanChen"

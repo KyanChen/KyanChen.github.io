@@ -1,0 +1,48 @@
+# _data/services.yml
+
+# =================================================
+# 1. Academic Service (Editorship & Memberships)
+# Category: service
+# =================================================
+- category: "service"
+  role_cn: "客座编辑"
+  role_en: "Guest Editor"
+  org_cn: '***[Remote Sensing](https://www.mdpi.com/journal/remotesensing/special_issues/GJ86QFO3C4#editors)***, 专刊: “借助大型多模态基础模型推动遥感发展：迈向智能对地观测”'
+  org_en: '***[Remote Sensing](https://www.mdpi.com/journal/remotesensing/special_issues/GJ86QFO3C4#editors)***, SI: “Advancing Remote Sensing Through Large Multimodal Foundation Models: Toward Intelligent Earth Observation”'
+  date_cn: "2025.11 -- 2026.05"
+  date_en: "2025.11 -- 2026.05"
+  selected: true
+
+- category: "service"
+  role_cn: "学生会员"
+  role_en: "Student Member"
+  org_cn: "中国宇航学会 (CSA)"
+  org_en: "Chinese Society of Astronautics (CSA)"
+  date_cn: "2025.06 -- 至今"
+  date_en: "2025.06 -- Present"
+  selected: true
+
+# =================================================
+# 2. Journal Reviews
+# Category: journal
+# =================================================
+- category: "journal"
+  name: "**ACM Computing Surveys** (CSUR, **Top Tier**)"
+  selected: true
+
+- category: "journal"
+  name: "**International Journal of Computer Vision** (IJCV, **Top Tier**)"
+  selected: true
+
+# =================================================
+# 3. Conference Reviews
+# Category: conf
+# =================================================
+- category: "conf"
+  name: "**IEEE/CVF Conference on Computer Vision and Pattern Recognition** (CVPR, **CCF-A**)"
+  selected: true
+
+- category: "conf"
+  name: "**The Web Conference** (WWW, **CCF-A**)"
+  selected: true
+

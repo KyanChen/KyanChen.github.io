@@ -1,0 +1,26 @@
+
+:root {
+  /* 颜色变量 */
+  --navigation-bg-color: #13294B !important;      /* 导航栏背景色 */
+  --navigation-text-color: #f2f2f2 !important;    /* 导航栏文字颜色 */
+  --navigation-hover-bg: rgba(255, 255, 255, 0.5) !important; /* 鼠标悬停背景色 (半透明更高级) */
+  --navigation-hover-text: #fff !important;       /* 鼠标悬停文字颜色 */
+
+  /* 尺寸变量 */
+  --navigation-height: 40px !important;           /* 导航栏高度 (建议稍微增高一点，40px太窄) */
+  --navigation-max-width: 1200px !important;      /* 导航栏最大宽度 */
+  --content-max-width: 1200px !important;         /* 正文内容最大宽度 */
+
+  /* 效果变量 */
+  --navigation-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  --navigation-transition-speed: 0.3s !important;
+
+  /* 基础样式变量 */
+  --base-bg-color: #fafafa !important;
+  --base-text-color: #2c3e50 !important;
+  --base-text-color-hover: #000 !important;
+  --base-link-color: #0366d6  !important;
+  --base-link-hover-color: #0056b3 !important;
+  --base-highlight-color: #e74c3c !important;
+  --base-font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}

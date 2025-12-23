@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<body class="layout-{{ page.layout | default: 'default' }}">
+
+    <!-- 移动端/全局顶部导航 -->
+    {%- include navigation.html -%}
+
+    <!-- 页面主容器 -->
+    <div class="wrapper">
+        
+        <!-- 侧边栏：个人信息 -->
+        <aside class="sidebar">
+            {%- include sidebar.html -%}
+        </aside>
+
+        <!-- 主内容区 -->
+        <section class="main-content">
+            {{ content }}
+
+            <!-- 仅在开启配置时显示最后更新时间 -->
+            {%- if site.enable_last_update -%}
+                {%- include last-updated.html -%}
+            {%- endif -%}
+
+            <!-- 仅在 Home 页面显示 Footer 和 Clustrmaps -->
+            {%- if page.layout == 'home' -%}
+                {%- include footer.html -%}
+                {%- include clustrmaps.html -%}
+            {%- endif -%}
+        </section>
+        
+    </div>
+    
+
+    <!-- 功能脚本 -->
+    {%- include back-to-top.html -%}
+
+</body>
+</html>

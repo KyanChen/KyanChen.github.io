@@ -1,0 +1,78 @@
+<!-- _includes/load_talks_list.html -->
+
+{% assign talks_raw = site.data.talks %}
+{% assign display_lang = include.lang | default: "en" %}
+{% assign filter_type = include.type | default: "all" %}
+
+<!-- 按日期倒序排列 -->
+{% assign talks = talks_raw | sort: 'date' | reverse %}
+
+<ul class="talks-list">
+{% for item in talks %}
+  
+  {% if filter_type == "selected" and item.selected != true %}
+    {% continue %}
+  {% endif %}
+
+  <li>
+    <div class="talk-item">
+      <span class="talk-date">{{ item.date_str }}</span>: 
+
+      {% if display_lang == "cn" %}
+        <span class="talk-title">{{ item.title_cn }}</span>, <span class="talk-venue">{{ item.venue_cn }}</span><!--
+        
+        -->{% if item.extra_cn and item.extra_cn != "" %}<!--
+        -->, <span class="talk-extra">{{ item.extra_cn | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+        {% endif %}
+
+      {% else %}
+        <span class="talk-title">{{ item.title_en }}</span>, <span class="talk-venue">{{ item.venue_en }}</span><!--
+        
+        -->{% if item.extra_en and item.extra_en != "" %}<!--
+        -->, <span class="talk-extra">{{ item.extra_en | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+        {% endif %}
+
+      {% endif %}
+    </div>
+  </li>
+
+{% endfor %}
+</ul>
+
+<style>
+/* 无序列表样式 */
+ul.talks-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* 保持 6px 间距 */
+ul.talks-list li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: baseline;
+}
+
+ul.talks-list li::before {
+  content: "-";
+  margin-right: 0.5em;
+  /* font-weight: bold; */
+  color: var(--base-text-color);
+  flex-shrink: 0;
+}
+
+.talk-title {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.talk-venue {
+    font-size: 0.9em;
+}
+
+.talk-extra {
+    font-size: 0.9em;
+    font-style: italic;
+}
+</style>

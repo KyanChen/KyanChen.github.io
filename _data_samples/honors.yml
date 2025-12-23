@@ -1,0 +1,17 @@
+# _data/awards.yml
+
+- name_cn: "北航优秀博士毕业生"
+  name_en: "Outstanding Ph.D. Graduate of Beihang University"
+  org_cn: "北京航空航天大学"
+  org_en: "Beihang University"
+  date_str: "2025.11"
+  date: "2025-11-01"
+  selected: true
+
+- name_cn: "博士研究生国家奖学金"
+  name_en: "National Scholarship (Doctoral)"
+  org_cn: "中华人民共和国教育部"
+  org_en: "Ministry of Education"
+  date_str: "2025.11"
+  date: "2025-11-01"
+  selected: true

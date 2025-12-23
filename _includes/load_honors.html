@@ -1,0 +1,83 @@
+<!-- _includes/load_awards_list.html -->
+
+{% assign honors_raw = site.data.honors %}
+{% assign display_lang = include.lang | default: "en" %}
+{% assign filter_type = include.type | default: "all" %}
+
+<!-- 按日期倒序排列 -->
+{% assign honors = honors_raw | sort: 'date' | reverse %}
+
+<ul class="honors-list">
+{% for item in honors %}
+  
+  {% if filter_type == "selected" and item.selected != true %}
+    {% continue %}
+  {% endif %}
+
+  <li>
+    <div class="honor-item">
+      {% if display_lang == "cn" %}
+        <!-- 中文格式：中文名称(加粗)，来源，时间 -->
+        <span class="honor-name">{{ item.name_cn }}</span>, 
+        <span class="honor-org">{{ item.org_cn }}</span>, 
+        <span class="honor-date">{{ item.date_str }}</span>
+      {% else %}
+        <!-- 英文格式：英文名称(加粗) (中文名称)，来源，时间 -->
+        <span class="honor-name">{{ item.name_en }}</span> 
+        <span class="honor-name-cn">({{ item.name_cn }})</span>, 
+        <span class="honor-org">{{ item.org_en }}</span>, 
+        <span class="honor-date">{{ item.date_str }}</span>
+      {% endif %}
+    </div>
+  </li>
+
+{% endfor %}
+</ul>
+
+<style>
+/* 基础列表样式 */
+ul.honors-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul.honors-list li {
+  margin-bottom: 6px;    /* 保持 6px 间距 */
+  display: flex;
+  align-items: baseline;
+}
+
+ul.honors-list li::before {
+  content: "-";
+  margin-right: 0.5em;
+  /* font-weight: bold; */
+  color: var(--base-text-color);
+  flex-shrink: 0;
+}
+
+/* 样式控制 */
+
+/* 奖项名称加粗 */
+.honor-name {
+  font-weight: bold;
+  color: var(--base-text-color); /* 可选：如果你之前喜欢 mainblue，这里可以写颜色代码，例如 #0056b3 */
+}
+
+/* 英文版括号里的中文名称不加粗，颜色稍微淡一点以便区分 */
+.honor-name-cn {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: var(--base-text-color);
+}
+
+.honor-org {
+  font-size: 0.9em;
+  color: var(--base-text-color);
+}
+
+.honor-date {
+  font-size: 0.9em;
+  color: var(--base-text-color);
+}
+</style>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}_CV_{{ page.lang }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/cv.css' | relative_url }}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Language Switcher -->
+        <div class="lang-switch no-print">
+            {% if page.lang == 'en' %}
+                <a href="{{ '/cn/cv/' | relative_url }}">中文</a>
+            {% else %}
+                <a href="{{ '/cv/' | relative_url }}">English</a>
+            {% endif %}
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="header-info">
+                <h1>{{ site.title }}</h1>
+                <h2>
+                    {% if page.lang == 'en' %}
+                        {{ site.position }} @ {{ site.affiliation }}
+                    {% else %}
+                        {{ site.position }} @ {{ site.affiliation }} <!-- Need CN mapping if available, otherwise use default -->
+                    {% endif %}
+                </h2>
+                <div class="contact-info">
+                    <strong>Email:</strong> 
+                    {% for email in site.emails %}
+                        <a href="mailto:{{ email | replace: '(at)', '@' }}">{{ email }}</a>{% unless forloop.last %} | {% endunless %}
+                    {% endfor %}
+                </div>
+                <div class="social-links">
+                    <a href="{{ site.url }}"><i class="fas fa-globe"></i></a>
+                    <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            {% if site.portrait %}
+            <img src="{{ site.portrait | relative_url }}" alt="Profile Photo" class="header-photo">
+            {% endif %}
+        </header>
+
+        <!-- Biography -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Biography{% else %}个人简介{% endif %}</h3>
+            <div class="content-item">
+                {% if page.lang == 'en' %}
+                    {{ site.data.profile.bio.en | markdownify }}
+                {% else %}
+                    {{ site.data.profile.bio.cn | markdownify }}
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- News -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}News{% else %}新闻{% endif %}</h3>
+            <ul>
+                {% for item in site.data.news %}
+                    {% if item.selected %}
+                    <li>
+                        <span class="date">[{{ item.date }}]</span>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            {{ item.content.en | markdownify | remove: '<p>' | remove: '</p>' }}
+                        {% else %}
+                            {{ item.content.cn | markdownify | remove: '<p>' | remove: '</p>' }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Education and Experience -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Education and Experience{% else %}教育及工作经历{% endif %}</h3>
+            <ul>
+                {% for item in site.data.profile.education %}
+                {% if item.selected %}
+                <li>
+                    <span class="date">{{ item.time }}</span>
+                    <span class="list-content">
+                    {% if page.lang == 'en' %}
+                        <strong>{{ item.institution }}</strong>, {{ item.degree }}
+                    {% else %}
+                        <strong>{{ item.institution_cn }}</strong>, {{ item.degree_cn }}
+                    {% endif %}
+                    </span>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Selected Publications -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Selected Publications{% else %}代表性论文{% endif %}</h3>
+            <div class="content-item">
+                {% assign pub_intro = site.data.publications.intro[page.lang] | replace: '#total_cited_by#', site.data.publications.total_cited_by | replace: '#gs_id#', site.google_scholar_id %}
+                {{ pub_intro | markdownify }}
+            </div>
+
+            {% assign sorted_pubs = site.data.publications.items | sort: 'date' | reverse %}
+            {% assign current_year = "" %}
+            {% assign pub_index = 0 %}
+
+            {% for pub in sorted_pubs %}
+                {% if pub.selected %}
+                    {% assign pub_year = pub.date | slice: 0, 4 %}
+                    {% if pub_year != current_year %}
+                        {% assign current_year = pub_year %}
+                        <h4 class="sub-title">{{ current_year }}</h4>
+                    {% endif %}
+                    {% assign pub_index = pub_index | plus: 1 %}
+                    
+                    <div class="pub-item">
+                        <span class="pub-number">[{{ pub_index }}]</span>
+                        <span class="pub-content">
+                            <!-- Title -->
+                            <strong>{{ pub.title }}</strong><br>
+                            <!-- Authors -->
+                            {{ pub.authors }}<br>
+                            <!-- Venue -->
+                            <em>{{ pub.venue }}</em><br>
+                            <!-- Notes/Awards -->
+                            {% if pub.notes %}
+                            <span class="highlight"> {{ pub.notes }}</span><br>
+                            {% endif %}
+                            
+                            <!-- Media -->
+                            {% if pub.media %}
+                            <div class="pub-media">
+                                {% for media_item in pub.media %}
+                                    <div class="media-item">{{ media_item | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            
+                            <!-- Links -->
+                            <span class="pub-links">
+                                {% if pub.pdf %}
+                                    <a href="{{ pub.pdf }}">[PDF]</a>
+                                {% endif %}
+                                {% if pub.arxiv %}
+                                    <a href="{{ pub.arxiv }}">[arXiv]</a>
+                                {% endif %}
+                                {% if pub.github_repo_name %}
+                                    <a href="https://github.com/{{ pub.github_repo_name }}">[Code]</a>
+                                {% endif %}
+                                {% if pub.page %}
+                                    <a href="{{ pub.page }}">[Project]</a>
+                                {% endif %}
+                                {% if pub.google_scholar_id %}
+                                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ pub.google_scholar_id }}">[Google Scholar]</a>
+                                {% endif %}
+                            </span>
+                        </span>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </section>
+
+        <!-- Academic Impacts -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Academic Impacts{% else %}学术影响{% endif %}</h3>
+            <div class="content-item">
+                {% if page.lang == 'en' %}
+                    {{ site.data.impacts.intro.en | markdownify }}
+                {% else %}
+                    {{ site.data.impacts.intro.cn | markdownify }}
+                {% endif %}
+            </div>
+            <ul>
+                {% for impact in site.data.impacts.items %}
+                <li>
+                    <span class="list-content">
+                    {% if page.lang == 'en' %}
+                        {{ impact.en | markdownify }}
+                    {% else %}
+                        {{ impact.cn | markdownify }}
+                    {% endif %}
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Selected Projects -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Selected Projects{% else %}代表性项目{% endif %}</h3>
+            
+            <!-- Vertical Projects -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Research Grants{% else %}纵向项目{% endif %}</h4>
+            <ul>
+                {% for proj in site.data.projects %}
+                    {% if proj.selected and proj.category == 'vertical' %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            <strong>{{ proj.type_en }}</strong>: {{ proj.name_en }}<br>
+                            {{ proj.source_en }}, {{ proj.date_str }}, {{ proj.role_en }}
+                        {% else %}
+                            <strong>{{ proj.type_cn }}</strong>: {{ proj.name_cn }}<br>
+                            {{ proj.source_cn }}, {{ proj.date_str }}, {{ proj.role_cn }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- Horizontal Projects -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Industry Projects{% else %}应用项目{% endif %}</h4>
+            <ul>
+                {% for proj in site.data.projects %}
+                    {% if proj.selected and proj.category == 'horizontal' %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            <strong>{{ proj.type_en }}</strong>: {{ proj.name_en }}<br>
+                            {{ proj.source_en }}, {{ proj.date_str }}, {{ proj.role_en }}
+                        {% else %}
+                            <strong>{{ proj.type_cn }}</strong>: {{ proj.name_cn }}<br>
+                            {{ proj.source_cn }}, {{ proj.date_str }}, {{ proj.role_cn }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Honors and Awards -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Honors and Awards{% else %}荣誉奖项{% endif %}</h3>
+            <ul>
+                {% for award in site.data.honors %}
+                    {% if award.selected %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            {{ award.name_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}, {{ award.org_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}, {{ award.date_str }}
+                        {% else %}
+                            {{ award.name_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}, {{ award.org_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}, {{ award.date_str }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Academic Activities and Services -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Academic Activities and Services{% else %}学术活动与服务{% endif %}</h3>
+            
+            <!-- Services -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Academic Service{% else %}学术服务{% endif %}</h4>
+            <ul>
+                {% for service in site.data.services %}
+                    {% if service.category == 'service' and service.selected %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            {{ service.role_en }}: {{ service.org_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}, {{ service.date_en }}
+                        {% else %}
+                            {{ service.role_cn }}: {{ service.org_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}, {{ service.date_cn }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- Journal Reviews -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Journal Reviewer{% else %}期刊审稿{% endif %}</h4>
+            <ul>
+                {% for service in site.data.services %}
+                    {% if service.category == 'journal' and service.selected %}
+                    <li>
+                        <span class="list-content">
+                            {{ service.name | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <!-- Conference Reviews -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Conference Reviewer{% else %}会议审稿{% endif %}</h4>
+            <ul>
+                {% for service in site.data.services %}
+                    {% if service.category == 'conf' and service.selected %}
+                    <li>
+                        <span class="list-content">
+                            {{ service.name | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Invited Talks -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Invited Talks{% else %}特邀报告{% endif %}</h3>
+            <ul>
+                {% assign sorted_talks = site.data.talks | sort: 'date' | reverse %}
+                {% for talk in sorted_talks %}
+                    {% if talk.selected %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            <strong>{{ talk.title_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</strong>, {{ talk.venue_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% if talk.extra_en != "" %}, {{ talk.extra_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% endif %}, {{ talk.date_str }}
+                        {% else %}
+                            <strong>{{ talk.title_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</strong>, {{ talk.venue_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% if talk.extra_cn != "" %}, {{ talk.extra_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% endif %}, {{ talk.date_str }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Teaching -->
+        <section>
+            <h3 class="section-title">{% if page.lang == 'en' %}Teaching{% else %}教学经历{% endif %}</h3>
+            <ul>
+                {% assign sorted_teaching = site.data.teaching | sort: 'date' | reverse %}
+                {% for teach in sorted_teaching %}
+                    {% if teach.selected %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            {{ teach.term_en }}: <strong>{{ teach.course_en }}</strong>, {{ teach.role_en }}
+                        {% else %}
+                            {{ teach.term_cn }}: <strong>{{ teach.course_cn }}</strong>, {{ teach.role_cn }}
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <!-- Appendix -->
+        <section class="page-break">
+            <h3 class="section-title">{% if page.lang == 'en' %}Appendix{% else %}附录{% endif %}</h3>
+
+            <!-- Full List of Publications -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Full List of Publications{% else %}完整论文列表{% endif %}</h4>
+            {% assign sorted_pubs = site.data.publications.items | sort: 'date' | reverse %}
+            {% assign current_year = "" %}
+            {% assign pub_index = 0 %}
+
+            {% for pub in sorted_pubs %}
+                {% assign pub_year = pub.date | slice: 0, 4 %}
+                {% if pub_year != current_year %}
+                    {% assign current_year = pub_year %}
+                    <h5 class="year-header" style="font-size: 11pt; margin: 5px 0; color: #666;">{{ current_year }}</h5>
+                {% endif %}
+                {% assign pub_index = pub_index | plus: 1 %}
+                
+                <div class="pub-item">
+                    <span class="pub-number">[{{ pub_index }}]</span>
+                    <span class="pub-content">
+                        <!-- Title -->
+                        <strong>{{ pub.title }}</strong><br>
+                        <!-- Authors -->
+                        {{ pub.authors }}<br>
+                        <!-- Venue -->
+                        <em>{{ pub.venue }}</em><br>
+                        <!-- Notes/Awards -->
+                        {% if pub.notes %}
+                        <span class="highlight"> {{ pub.notes }}</span><br>
+                        {% endif %}
+                        
+                        <!-- Media -->
+                        {% if pub.media %}
+                        <div class="pub-media">
+                            {% for media_item in pub.media %}
+                                <div class="media-item">{{ media_item | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        <!-- Links -->
+                        <span class="pub-links">
+                            {% if pub.pdf %}
+                                [<a href="{{ pub.pdf }}">PDF</a>]
+                            {% endif %}
+                            {% if pub.arxiv %}
+                                [<a href="{{ pub.arxiv }}">arXiv</a>]
+                            {% endif %}
+                            {% if pub.github_repo_name %}
+                                [<a href="https://github.com/{{ pub.github_repo_name }}">Code</a>]
+                            {% endif %}
+                            {% if pub.page %}
+                                [<a href="{{ pub.page }}">Project Page</a>]
+                            {% endif %}
+                        </span>
+                    </span>
+                </div>
+            {% endfor %}
+            
+            <!-- Patents -->
+            <h4 class="sub-title">{% if page.lang == 'en' %}Patents{% else %}发明专利{% endif %}</h4>
+            <ul class="patent-list">
+                {% for patent in site.data.patents %}
+                    {% if patent.selected %}
+                    <li>
+                        <span class="list-content">
+                        {% if page.lang == 'en' %}
+                            <strong>{{ patent.title_en }}</strong><br>
+                            <em>{{ patent.authors_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</em><br>
+                            <em>{{ patent.info_en | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</em>
+                        {% else %}
+                            <strong>{{ patent.title_cn }}</strong><br>
+                            <em>{{ patent.authors_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</em><br>
+                            <em>{{ patent.info_cn | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</em>
+                        {% endif %}
+                        </span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>

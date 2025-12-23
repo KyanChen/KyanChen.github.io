@@ -1,0 +1,70 @@
+
+
+{% assign patents_raw = site.data.patents %}
+{% assign display_lang = include.lang | default: "en" %}
+{% assign filter_type = include.type | default: "all" %}
+
+<!-- 核心修改：先按日期排序，再反转（降序） -->
+{% assign patents = patents_raw | sort: 'date' | reverse %}
+
+<ol class="patent-list">
+{% for item in patents %}
+  
+  {% if filter_type == "selected" and item.selected != true %}
+    {% continue %}
+  {% endif %}
+
+  <li>
+    <div class="patent-item">
+      {% if display_lang == "cn" %}
+        <span class="patent-title">{{ item.title_cn }}</span><br>
+        <span class="patent-authors">{{ item.authors_cn | markdownify | remove: '<p>' | remove: '</p>' }}</span><br>
+        <span class="patent-info"><i>{{ item.info_cn | markdownify | remove: '<p>' | remove: '</p>' }}</i></span>
+      {% else %}
+        <span class="patent-title">{{ item.title_en }}</span><br>
+        <span class="patent-authors">{{ item.authors_en | markdownify | remove: '<p>' | remove: '</p>' }}</span><br>
+        <span class="patent-info"><i>{{ item.info_en | markdownify | remove: '<p>' | remove: '</p>' }}</i></span>
+      {% endif %}
+    </div>
+  </li>
+
+{% endfor %}
+</ol>
+
+<style>
+/* 保持样式不变 */
+ol.patent-list {
+  list-style-type: none;
+  counter-reset: patent-counter;
+  padding-left: 0;
+}
+
+ol.patent-list li {
+  counter-increment: patent-counter;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: baseline;
+}
+
+ol.patent-list li::before {
+  content: "[" counter(patent-counter) "] ";
+  /* font-weight: bold; */
+  font-size: 0.8em;
+  margin-right: 0.15em;
+  min-width: 2em;
+}
+
+.patent-title {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.patent-authors {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.patent-info {
+  font-size: 0.8em;
+}
+</style>

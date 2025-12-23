@@ -1,0 +1,14 @@
+{%- if site.footnote -%}
+<style>
+  .ft-n { color: var(--base-text-color, #2c3e50); }
+  .ft-n a { color: inherit; transition: color .2s; }
+  .ft-n a:hover { color: var(--base-text-color-hover, #000); text-decoration: underline;}
+</style>
+<p><small class="ft-n">
+  {%- if site.footnote_link -%}
+    <a href="{{ site.footnote_link }}" target="_blank" rel="noopener noreferrer">{{ site.footnote }}</a>
+  {%- else -%}
+    {{ site.footnote }}
+  {%- endif -%}
+</small></p>
+{%- endif -%}

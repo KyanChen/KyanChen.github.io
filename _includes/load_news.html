@@ -1,0 +1,91 @@
+{% assign lang = include.lang | default: 'en' %}
+{% assign sorted_news = site.data.news | sort: 'date' | reverse %}
+
+<h2 id="news" class="section-heading">News</h2>
+
+<!-- 1. 显示 Selected News (默认展示) -->
+<ul class="news-list">
+  {% for item in sorted_news %}
+    {% if item.selected == true and item.archive == false %}
+      <li>
+        <strong>[{{ item.date }}]:&nbsp;</strong> 
+        <span>
+        {% if lang == 'cn' and item.content.cn %}
+          {{ item.content.cn | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+          {{ item.content.en | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+        </span>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<!-- 2. 显示 Archive (折叠，点击展开) -->
+<!-- 逻辑：使用 unless item.selected == true，只显示那些没被选中的，确保不重复 -->
+<div class="news-archive">
+  <details>
+    <summary>
+      {% if lang == 'cn' %} 更多动态 (Archive) ... {% else %} More News (Archive) ... {% endif %}
+    </summary>
+    
+    <ul class="news-list" style="margin-top: 10px !important;">
+      {% for item in sorted_news %}
+        {% if item.archive == true %}
+          <li>
+            <strong>[{{ item.date }}]:&nbsp;</strong> 
+            <span>
+            {% if lang == 'cn' and item.content.cn %}
+              {{ item.content.cn | markdownify | remove: '<p>' | remove: '</p>' }}
+            {% else %}
+              {{ item.content.en | markdownify | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
+            </span>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </details>
+</div>
+
+<style>
+  /* 原有样式保持不变 */
+  .news-list {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+  .news-list li {
+    margin: 2px !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: baseline;
+  }
+  .news-list li::before {
+    content: "-";
+    margin-right: 0.5em;
+    flex-shrink: 0;
+  }
+
+  /* 新增：折叠区域样式 */
+  .news-archive {
+    margin-top: 10px;
+  }
+  
+  /* Summary 样式：鼠标变成手型，去掉默认难看的蓝色边框 */
+  details summary {
+    cursor: pointer;
+    font-style: italic;
+    color: #666; /* 可以根据你的主题改为 mainblue 或其他颜色 */
+    font-weight: 600;
+    outline: none;
+    transition: color 0.2s;
+  }
+  
+  details summary:hover {
+    color: #000;
+  }
+
+  /* 针对 Safari 去掉默认的小三角（可选，如果喜欢原生的三角可删掉这行） */
+  /* details summary::-webkit-details-marker { display: none; } */
+</style>

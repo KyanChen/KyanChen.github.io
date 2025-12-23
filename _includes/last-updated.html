@@ -1,0 +1,20 @@
+<div>
+    <br>
+    <hr style="border: 0; border-top: 1px solid #eaeaea; margin-top: 20px;">
+    <small>
+        Last Update: <span id="last-modified-date"></span>
+    </small>
+</div>
+
+<script>
+(function() {
+    const dateSpan = document.getElementById("last-modified-date");
+    if (dateSpan) {
+        // 使用浏览器原生 API 格式化日期 (例如: "15. October 2023")
+        const date = new Date(document.lastModified);
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        // 'en-GB' 输出格式类似 "15 October 2023"，可视需求改为 'en-US'
+        dateSpan.textContent = date.toLocaleDateString('en-GB', options);
+    }
+})();
+</script>

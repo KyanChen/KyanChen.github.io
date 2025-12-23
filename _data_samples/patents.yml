@@ -1,0 +1,18 @@
+
+- title_cn: "一种基于地理信息混合专家模型的遥感图像船只目标检测方法"
+  title_en: "Remote Sensing Ship Detection Method Based on Geographic Information Mixture-of-Experts Model"
+  authors_cn: "史振威, 卢光宇, **陈科研**, 陈博文, 邹征夏"
+  authors_en: "Zhenwei Shi, Guangyu Lu, **Keyan Chen**, Bowen Chen, Zhengxia Zou"
+  info_cn: "申请号: CN202510760125.2, 公开日: 2025.10.31"
+  info_en: "App. No.: CN202510760125.2, Pub. Date: 2025.10.31"
+  date: "2025-10-31"
+  selected: true
+
+- title_cn: "一种基于状态空间模型知识蒸馏的轻量化遥感目标实例分割模型的构建方法"
+  title_en: "Construction Method of Lightweight Remote Sensing Instance Segmentation Model via SSM Knowledge Distillation"
+  authors_cn: "邹征夏, 杨沁哲, **陈科研**, 史振威"
+  authors_en: "Zhengxia Zou, Qinzhe Yang, **Keyan Chen**, Zhenwei Shi"
+  info_cn: "申请号: CN202411183072.4, **已授权** (公告日: 2025.10.24)"
+  info_en: "App. No.: CN202411183072.4, **Granted** (Issue Date: 2025.10.24)"
+  date: "2025-10-24"
+  selected: true

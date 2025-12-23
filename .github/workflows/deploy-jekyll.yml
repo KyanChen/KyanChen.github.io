@@ -1,0 +1,102 @@
+name: Build and Deploy to Github Pages
+
+on:
+  # 1. 监听 Update Workflow，当它完成后触发本流程
+  workflow_run:
+    workflows: ["Update Profile to Remote"] # 必须与你 update workflow 的 name 完全一致
+    types:
+      - completed
+  
+  # 2. 允许代码 Push 到 release 分支时直接触发 (作为备用)
+#   push:
+#     branches:
+#       - release  # 根据你的 Update workflow，你的源码分支似乎是 release
+
+  # 3. 允许手动触发
+  workflow_dispatch:
+
+# 设置权限：允许读取代码、写入 Pages、使用 OIDC 认证
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 并发控制：防止多次部署冲突
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+
+jobs:
+  build:
+    # 条件判断：如果是手动或 push 触发，直接运行；
+    # 如果是 workflow_run 触发，必须确保上一个流程是 success 的
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: 检出博客源码
+      - uses: actions/checkout@v6
+    
+      # Step 2: 检出私有数据仓库
+      # 必须这一步，否则 Jekyll 构建时没有数据
+      - name: Checkout Private Data
+        uses: actions/checkout@v6
+        with:
+          repository: KyanChen/my-website-private-data
+          token: ${{ secrets.API_TOKEN_GITHUB }} # 需要有读取私有库权限的 PAT
+          path: temp_folder
+          ref: release
+
+      # Step 3: 移动数据到 _data 目录
+      - name: Move Data to Root
+        run: |
+          # 清理旧数据 (如果有)
+          rm -rf _data
+          
+          # 移动数据
+          mv temp_folder/_data .
+          
+          # 清理临时文件夹
+          rm -rf temp_folder
+          
+          # 验证数据是否存在
+          ls -F _data/
+
+      # Step 3: 配置 Ruby 环境 (利用官方缓存机制)
+      # 这替代了手动配置 actions/cache，更简单稳定
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4' # 根据你的 Jekyll 版本需求调整
+          bundler-cache: true # 自动运行 'bundle install' 并缓存依赖
+
+      # Step 4: 配置 Pages 参数
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+    
+      # Step 5: 构建网站 (Jekyll)
+      - name: Build with Jekyll
+        # 使用 baseurl 输出参数，防止路径错误
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+    
+      # Step 6: 打包并上传构建产物
+      # 这一步会生成一个 artifact，供 deploy job 使用
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+
+# === 部署任务 ===
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build # 必须等待 build 完成
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

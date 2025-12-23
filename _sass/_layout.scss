@@ -1,0 +1,62 @@
+
+
+
+
+/* 页面主容器 */
+.wrapper {
+  display: flex;
+  width: 100%; /* 强制占满可用宽度，防止内容少时塌陷 */
+  max-width: var(--content-max-width); /* 使用 navigation.scss 中定义的变量 */
+  margin: 0 auto;
+  padding: 40px 20px; /* 上下留白，左右与导航栏对齐 */
+  gap: 60px; /* 侧边栏与主内容的间距 */
+  margin-top: var(--navigation-height); /* 避开固定导航栏 */
+}
+
+/* ========================
+   主内容区 (Main Content)
+   ======================== */
+.main-content {
+  flex-grow: 1; /* 占据剩余空间 */
+  min-width: 0; /* 防止内容溢出 */
+  font-size: 16px;
+  text-align: justify; /* 两端对齐，阅读体验更好 */
+  
+  /* 调整标题样式 */
+  h1, h2, h3 {
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+  }
+  
+  p {
+    margin-bottom: 1.2em;
+    text-align: justify; /* 两端对齐，阅读体验更好 */
+  }
+  
+  /* 自定义章节标题间距 */
+  .section-heading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+}
+
+/* Mobile Layout adjustments */
+@media screen and (max-width: 960px) {
+  .wrapper {
+    flex-direction: column; /* 垂直排列 */
+    padding: 40px 20px; /* 上下留白，左右与导航栏对齐 */
+    gap: 0px;
+    margin-top: var(--navigation-height);
+  }
+  
+  .main-content {
+    width: 100%;
+    font-size: 0.8em;
+    padding-bottom: 20px;
+
+    .section-heading {
+      margin-top: 10px;
+    }
+  }
+}

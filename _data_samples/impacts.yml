@@ -1,0 +1,14 @@
+# _data/impacts.yml
+
+# --- 总述段落 (Intro) ---
+intro:
+  cn: "研究工作获 <span class='bold'>40余位院士/Fellow</span>（含图灵奖得主及多国院士）高度评价，[谷歌学术](https://scholar.google.com/citations?user=5RF4ia8AAAAJ)引用 <span class='highlight'>7000+次</span>，被 <span class='bold'>IEEE、中国图象图形学学会</span> 等权威机构报道，GitHub开源项目获 <span class='highlight'>2500+ Stars</span>，代表性评价如下："
+  en: "My research has drawn high praise from <span class='bold'>over 40 Academicians and Fellows</span> (including a Turing Award winner and multinational academicians). It has accumulated <span class='highlight'>7,000+</span> citations on [Google Scholar](https://scholar.google.com/citations?user=5RF4ia8AAAAJ) and has been featured by authoritative institutions such as <span class='bold'>IEEE and CSIG</span>. His open-source projects have garnered <span class='highlight'>2,500+ Stars</span> on GitHub. Representative endorsements include:"
+
+# --- 评价列表 (Items) ---
+items:
+  - cn: "**获图灵奖得主引用：**<span class='bold'>图灵奖得主 Yoshua Bengio 教授</span>（引用量 <span class='highlight'>100万+</span>）在 NeurIPS'25 论文中多次引用本人工作，并指出该研究受本人方法启发（building upon insights from），将本人方法作为 <span class='highlight'>关键研究基础</span> 迁移至其领域并取得显著效果。"
+    en: "**Cited by Turing Award Winner:** <span class='bold'>Prof. Yoshua Bengio</span> (Turing Award Winner, Citations: <span class='highlight'>1M+</span>) cited my work multiple times in a NeurIPS'25 paper. He noted that his research was “building upon insights from” my work, adopting it as a <span class='highlight'>key research foundation</span> to achieve significant improvements in his domain."
+
+  - cn: "**获顶尖科技公司引用：**<span class='bold'>Meta FAIR团队</span>（含计算机视觉泰斗/杰出科学家 <span class='bold'>Ross Girshick</span>，引用量 <span class='highlight'>58万+</span>）在开源视觉大模型 <span class='highlight'>SAM 2</span> 的技术报告中，将本人工作作为 <span class='highlight'>遥感领域2个代表性方法之一</span> 进行介绍。"
+    en: "**Cited by Top Tech Giant:** The <span class='bold'>Meta FAIR Team</span> (including Computer Vision pioneer/Distinguished Scientist <span class='bold'>Ross Girshick</span>, Citations: <span class='highlight'>580k+</span>) highlighted my work as <span class='highlight'>one of the two representative methods in Remote Sensing</span> in the technical report of their open-source vision foundation model, <span class='highlight'>SAM 2</span>."

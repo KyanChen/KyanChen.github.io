@@ -1,0 +1,68 @@
+<div class="sidebar">
+    {% if site.avatar %}
+    <div class="avatar">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}" loading="lazy" />
+        </a>
+    </div>
+    {% endif %}
+
+    <div class="profile-info">
+        <h1 class="site-title">{{ site.title }}</h1>
+
+        {% if site.position %}
+            <div class="position">{{ site.position }}</div>
+        {% endif %}
+
+
+        {% if site.affiliation %}
+
+            {% if site.affiliation_link %}
+                <a href="{{ site.affiliation_link }}" target="_blank" rel="noopener" class="affiliation">{{ site.affiliation }}</a>
+            {% else %}
+                <span class="affiliation">{{ site.affiliation }}</span>
+            {% endif %}
+
+        {% endif %}
+
+        <div class="contact-emails">
+            {% if site.emails %}
+                {% for email in site.emails %}
+                    <div class="email">
+                        <a href="mailto:{{ email }}">{{ email }}</a>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="social-links {{ site.link_type | default: 'icon' }}-mode">
+        {% assign keys = "google_scholar_id,cv_link,github_username,linkedin_username,twitter_username" | split: "," %}
+        {% assign prefixes = "https://scholar.google.com/citations?user=,LOCAL_PATH,https://github.com/,https://www.linkedin.com/in/,https://twitter.com/" | split: "," %}
+        {% assign icons = "ai ai-google-scholar,ai ai-cv,fab fa-github,fab fa-linkedin,fab fa-x-twitter" | split: "," %}
+        {% assign labels = "Google Scholar,CV,GitHub,LinkedIn,Twitter" | split: "," %}
+
+        {% for key in keys %}
+            {% assign value = site[key] %}
+            
+            {% if value %}
+                {% assign prefix = prefixes[forloop.index0] %}
+                
+                {% if prefix == 'LOCAL_PATH' %}
+                    {% assign final_url = value | relative_url %}
+                {% else %}
+                    {% assign final_url = prefix | append: value %}
+                {% endif %}
+
+                <a href="{{ final_url }}" target="_blank" rel="noopener" aria-label="{{ labels[forloop.index0] }}">
+                    {% if site.link_type == 'text' %}
+                        {{ labels[forloop.index0] }}
+                    {% else %}
+                        <i class="{{ icons[forloop.index0] }}"></i>
+                    {% endif %}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+</div>

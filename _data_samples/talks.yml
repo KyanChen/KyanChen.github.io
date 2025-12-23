@@ -1,0 +1,31 @@
+# _data/talks.yml
+
+- date_str: "2025.07"
+  date: "2025-07-15"
+  title_cn: "遥感图像高效基础模型"
+  title_en: "Efficient Foundation Models for Remote Sensing"
+  venue_cn: "CSIG 学生会员论坛，线上"
+  venue_en: "CSIG Student Forum, Online"
+  extra_cn: "[视频回放](https://www.bilibili.com/video/BV1RJ8yzGEcH)"
+  extra_en: "[Video](https://www.bilibili.com/video/BV1RJ8yzGEcH)"
+  selected: true
+
+- date_str: "2025.07"
+  date: "2025-07-01"
+  title_cn: "遥感图像高效基础模型"
+  title_en: "Efficient Foundation Models for Remote Sensing"
+  venue_cn: "AIRS学术论坛（学生论坛），云南"
+  venue_en: "AIRS Academic Forum (Student Track), Yunnan"
+  extra_cn: "" # 没有额外信息留空
+  extra_en: ""
+  selected: true
+
+- date_str: "2025.06"
+  date: "2025-06-01"
+  title_cn: "遥感图像高效基础模型"
+  title_en: "Efficient Foundation Models for Remote Sensing"
+  venue_cn: "VALSE 2025 优秀学生论坛，珠海"
+  venue_en: "VALSE 2025 Excellent Student Forum, Zhuhai"
+  extra_cn: "[视频回放](https://www.bilibili.com/video/BV1nV4qzWEju/?spm_id_from=333.337.search-card.all.click)"
+  extra_en: "[Video](https://www.bilibili.com/video/BV1nV4qzWEju/?spm_id_from=333.337.search-card.all.click)"
+  selected: true

@@ -1,0 +1,129 @@
+name: Update Profile to Remote
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *'  # 每3天运行
+  workflow_dispatch:      # 手动触发
+  # page_build:             # 博客构建完成后触发
+  push:
+    branches: [ release ] # 你的博客源分支是 release
+    paths-ignore:
+      - 'README.md'
+      - '_data/**'        # 避免数据变动重复触发
+
+jobs:
+  update-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 1. 检出代码 (目前最新版是 v6)
+      - name: Checkout Source
+        uses: actions/checkout@v6
+      
+      # 注意⚠️=== 检出私有数据仓库，若公开_data/文件夹则不需要此步骤 ===
+      - name: Checkout Private Data
+        uses: actions/checkout@v6
+        with:
+          repository: KyanChen/my-website-private-data  # 修改为你存放数据的私有仓库名
+          token: ${{ secrets.API_TOKEN_GITHUB }}    # 必须使用 PAT
+          path: temp_folder   # <--- 关键：下载到临时目录
+          ref: release
+      # 检出私有数据仓库后，移动数据文件到当前仓库
+      - name: Move Data to Root
+        run: |
+          # 确保本地没有残留的 _data (防止报错)
+          rm -rf _data
+          
+          # 从临时目录把 _data 文件夹移动到根目录
+          # 结构变为： ./_data/你的yml文件
+          mv temp_folder/_data .
+          
+          # 删除临时目录
+          rm -rf temp_folder
+          
+          # 调试：确认 requirements.txt 还在，且 _data 也就位
+          ls -F ./
+          ls -F _data/
+      
+      # ==============================
+
+      # 2. 配置 Python (目前最新版是 v6)
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      # -------------------------------------------------------
+      # 阶段 A: 更新数据并保存到当前仓库 (KyanChen.github.io)
+      # -------------------------------------------------------
+      - name: Update Google Scholar Stats
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        run: python scripts/update_stats.py
+      
+      ### 注意⚠️=== 若公开_data文件夹则Push到当前仓库，走下面的代码，否则Push到私有仓库，走第二个Commit data to private repo的代码 ===
+      # - name: Commit data to current repo
+      #   # 目前最新稳定版是 v7
+      #   uses: stefanzweifel/git-auto-commit-action@v7
+      #   with:
+      #     commit_message: "chore: update stats data [skip ci]"
+      #     file_pattern: '_data/publications.yml'
+      #     commit_user_name: "github-actions[bot]"
+      #     commit_user_email: "github-actions[bot]@users.noreply.github.com"
+      
+      # 注意⚠️=== 若不公开_data文件夹则Push到私有仓库，走下面的代码 ===
+      - name: Commit Data to Private Repo
+        uses: cpina/github-action-push-to-another-repository@v1.7.3
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # 确保这个 Token 有私有仓库写权限
+        with:
+          source-directory: '_data'
+          destination-github-username: 'KyanChen'
+          destination-repository-name: 'my-website-private-data'
+          target-branch: 'release'
+          target-directory: '_data'   # 保持远程仓库的 _data 结构
+          user-email: github-actions[bot]@users.noreply.github.com
+          user-name: github-actions[bot]
+          commit-message: "chore: update stats data [skip ci]"
+
+      # -------------------------------------------------------
+      # 阶段 B: 生成 Profile 并推送到目标仓库 (KyanChen/KyanChen)
+      # -------------------------------------------------------
+      - name: Generate Profile Markdown
+        run: python scripts/generate_readme.py
+      
+      - name: Prepare Directory for Push
+        run: |
+          # 创建临时目录
+          mkdir -p generated_profile
+          
+          # 将生成的 readme_profile.md 移动并重命名为 README.md
+          # 这样只会推送这一个文件，且自动清理了源目录
+          mv readme_profile.md generated_profile/README.md
+
+      - name: Commit Profile to Profile Repository
+        # 跨仓库推送的专用 Action
+        uses: cpina/github-action-push-to-another-repository@v1.7.3
+        env:
+          # 这里的 Secret 需要你去后台添加 Personal Access Token (PAT)
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'generated_profile'  # 只推送这个文件夹里的内容
+          destination-github-username: 'KyanChen'
+          destination-repository-name: 'KyanChen'
+          target-branch: 'release'               # 推送到目标仓库的 release 分支
+          user-email: github-actions[bot]@users.noreply.github.com
+          user-name: github-actions[bot]
+          commit-message: "chore: update profile readme from blog repo"
+      
+      - name: Verify Data
+        run: |
+          # 确保 _data 文件夹存在
+          ls -F _data/

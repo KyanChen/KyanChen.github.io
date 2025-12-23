@@ -1,0 +1,114 @@
+<!-- _includes/load_projects_list.html -->
+
+{% assign projects_raw = site.data.projects %}
+{% assign display_lang = include.lang | default: "en" %}
+{% assign filter_type = include.type | default: "all" %}
+{% assign filter_category = include.category | default: "vertical" %}
+
+<!-- 按日期倒序排列 -->
+{% assign projects = projects_raw | sort: 'date' | reverse %}
+
+<ul class="project-list">
+{% for item in projects %}
+  
+  {% if item.category != filter_category %}
+    {% continue %}
+  {% endif %}
+  
+  {% if filter_type == "selected" and item.selected != true %}
+    {% continue %}
+  {% endif %}
+
+  <li>
+    <div class="project-item">
+      {% if display_lang == "cn" %}
+        <!-- 中文格式：类型：名称，来源，时间，身份 -->
+        <span class="project-type">{{ item.type_cn }}</span>：<span class="project-name">{{ item.name_cn }}</span>，<!--
+        -->{% if filter_category == "horizontal" %}<!--
+          --><span class="project-source-bold">{{ item.source_cn }}</span>，<!--
+        -->{% else %}<!--
+          --><span class="project-source">{{ item.source_cn }}</span>，<!--
+        -->{% endif %}<!--
+        --><span class="project-date">{{ item.date_str }}</span>，<span class="project-role">{{ item.role_cn }}</span>
+
+      {% else %}
+        <!-- 英文格式：Type: Name, Source, Date, Role -->
+        <span class="project-type">{{ item.type_en }}</span>: 
+        <span class="project-name">{{ item.name_en }}</span>, 
+
+        {% if filter_category == "horizontal" %}
+          <span class="project-source-bold">{{ item.source_en }}</span>, 
+        {% else %}
+          <span class="project-source">{{ item.source_en }}</span>, 
+        {% endif %}
+
+        <span class="project-date">{{ item.date_str }}</span>, 
+        <span class="project-role">{{ item.role_en }}</span>
+
+      {% endif %}
+    </div>
+  </li>
+
+{% endfor %}
+</ul>
+
+<style>
+/* 列表基础样式 */
+ul.project-list {
+  list-style-type: none;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+ul.project-list li {
+  margin-bottom: 4px; 
+  display: flex;
+  align-items: baseline;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+ul.project-list li::before {
+  content: "-";
+  margin-right: 0.5em;
+  /* font-weight: bold; */
+  color: var(--base-text-color);
+  flex-shrink: 0;
+}
+
+/* 字体样式控制 */
+
+/* 类型：永远加粗 */
+.project-type {
+  font-weight: bold;
+  color: var(--base-text-color); /* 可选：如果你需要 LaTeX 中的 mainred/mainblue，可在此处指定特定颜色 */
+}
+
+/* 来源（普通） */
+.project-source {
+  color: var(--base-text-color);
+  font-size: 0.8em;
+}
+
+/* 来源（加粗 - 用于横向课题） */
+.project-source-bold {
+  font-weight: bold;
+  font-size: 0.8em;
+  color: var(--base-text-color); /* 如果需要模仿 LaTeX 横向课题的公司名颜色，可改为 color: #0056b3; */
+}
+
+.project-role {
+  font-size: 0.8em;
+  color: var(--base-text-color);
+}
+
+.project-date {
+  font-size: 0.8em;
+  color: var(--base-text-color);
+}
+
+.project-name {
+  font-size: 0.9em;
+}
+
+</style>
