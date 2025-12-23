@@ -11,6 +11,10 @@ on:
       - 'README.md'
       - '_data/**'        # 避免数据变动重复触发
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   update-and-push:
     runs-on: ubuntu-latest
