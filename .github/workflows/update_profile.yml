@@ -66,6 +66,7 @@ jobs:
         env:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          SCRAPE_DO_API_KEY: ${{ secrets.SCRAPE_DO_API_KEY }}
         run: python scripts/update_stats.py
       
       ### 注意⚠️=== 若公开_data文件夹则Push到当前仓库，走下面的代码，否则Push到私有仓库，走第二个Commit data to private repo的代码 ===
