@@ -1,18 +1,19 @@
 # Basic Information 
 title: "Keyan Chen"
 position: Research Fellow
-affiliation: Beihang University
-affiliation_link: https://ev.buaa.edu.cn/
-affiliation_logo: assets/img/icons/beihang.svg
+affiliation: Nanyang Technological University
+affiliation_link: https://www.ntu.edu.sg/
+affiliation_logo: assets/img/icons/ntu.svg
 emails: 
+  - keyan.chen@ntu.edu.sg
   - kychen(at)buaa.edu.cn
   - kychen1012(at)gmail.com
 
 # Search Engine Optimization (SEO)
-keywords: keyan chen, chen keyan, keyanchen, chenkeyan, 陈科研, 北航陈科研
+keywords: keyan chen, chen keyan, keyanchen, chenkeyan, 陈科研, 北航陈科研, NTU陈科研, 南洋理工陈科研, 南洋理工大学陈科研
 canonical: https://chenkeyan.top
 description: >- # this means to ignore newlines until "baseurl:"
-  Keyan Chen obtained his Ph.D., M.S., and B.S. degrees from Beihang University in 2025, 2022, and 2019, respectively, under the supervision of Prof. Zhenwei Shi and Prof. Zhengxia Zou. His research centers on Computer Vision and Remote Sensing, with a particular focus on Foundation Models, Multimodal Learning, and AI4Earth.
+  Keyan Chen currently a Research Fellow at the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU), working with Prof. Shijian Lu. He obtained his Ph.D., M.S., and B.S. degrees from Beihang University in 2025, 2022, and 2019, respectively, under the supervision of Prof. Zhenwei Shi and Prof. Zhengxia Zou. His research centers on Computer Vision and Remote Sensing, with a particular focus on Foundation Models, Multimodal Learning, and AI4Earth.
 
 # Site Settings
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -30,7 +31,7 @@ google_scholar_id: 5RF4ia8AAAAJ
 github_username: KyanChen
 linkedin_username: chenkeyan
 twitter_username: KyanChen1012
-cv_link: assets/cv/KeyanChen_CV.pdf
+cv_link: cv/
 
 # Images 
 avatar: ./assets/img/profile/KeyanChen_2025.jpg
