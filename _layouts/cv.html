@@ -54,9 +54,9 @@
             <h3 class="section-title">{% if page.lang == 'en' %}Biography{% else %}个人简介{% endif %}</h3>
             <div class="content-item">
                 {% if page.lang == 'en' %}
-                    {{ site.data.profile.bio.en | markdownify }}
+                    {{ site.data.profile.bio.en | split: "**Collaboration" | first | markdownify }}
                 {% else %}
-                    {{ site.data.profile.bio.cn | markdownify }}
+                    {{ site.data.profile.bio.cn | split: "**合作交流" | first | markdownify }}
                 {% endif %}
             </div>
         </section>
