@@ -10,16 +10,18 @@ emails:
   - kychen1012(at)gmail.com
 
 # Search Engine Optimization (SEO)
-keywords: keyan chen, chen keyan, keyanchen, chenkeyan, 陈科研, 北航陈科研, NTU陈科研, 南洋理工陈科研, 南洋理工大学陈科研
+keywords: keyan chen, chen keyan, keyanchen, chenkeyan, 陈科研, 北航陈科研, NTU陈科研, 南洋理工陈科研, 南洋理工大学陈科研, Remote Sensing Foundation Models, AI4Earth, Change Detection, Multimodal Learning, NTU Research Fellow, Beihang University
 canonical: https://chenkeyan.top
 description: >- # this means to ignore newlines until "baseurl:"
-  Keyan Chen currently a Research Fellow at the College of Computing and Data Science (CCDS), Nanyang Technological University (NTU), working with Prof. Shijian Lu. He obtained his Ph.D., M.S., and B.S. degrees from Beihang University in 2025, 2022, and 2019, respectively, under the supervision of Prof. Zhenwei Shi and Prof. Zhengxia Zou. His research centers on Computer Vision and Remote Sensing, with a particular focus on Foundation Models, Multimodal Learning, and AI4Earth.
+  Keyan Chen is a Research Fellow at NTU working on Computer Vision and Remote Sensing. 
+  With 8,000+ citations, his research focuses on Foundation Models, Multimodal Learning, and AI4Earth. 
+  He received his Ph.D. from Beihang University and has published in TPAMI, CVPR, and Proc. IEEE.
 
 # Site Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kyanchen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
-timezone: Asia/Shanghai
+timezone: Asia/Singapore
 encoding: utf-8
 
 # The option is used to show the last update time.
