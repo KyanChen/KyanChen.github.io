@@ -42,12 +42,20 @@ This repository contains the source code for [Keyan Chen's personal website](htt
    ```bash
    conda create -n jekyll python=3.13 -y
    conda activate jekyll
-   conda install ruby -y
+
+   conda config --add channels conda-forge
+   conda config --set channel_priority strict
+   conda config --show channels
+
+   conda install conda-forge::ruby==3.1.2 -y
+   ruby -v
    
    # check gem version
    gem -v
-   # if there is no gem, install it first, from https://rubygems.org/pages/download, then run
-   conda install compilers make
+   # if there is no gem, install it first, from https://rubygems.org/pages/download
+   # if gem version is lower than 3.0, update it `ruby -S gem update --system`
+
+   conda install -c conda-forge compilers make -y
    bundle install
    ```
 
@@ -56,7 +64,7 @@ This repository contains the source code for [Keyan Chen's personal website](htt
 To serve the website locally:
 
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve 
 ```
 
 The site will be available at `http://localhost:4000`.
@@ -76,10 +84,6 @@ Edit `_config.yml` to update site-wide settings such as title, description, emai
 
 
 
-
-
-
-
 ## FAQ
 
 **Q: What if the page styles are not loading correctly?**
@@ -88,7 +92,7 @@ If the page loading is incorrect, try turning off CDN acceleration and cache, an
 
 **Q: What if error occurs when running `bundle install`?**
 
-If error `bigdecimal` occurs when running `bundle install`, try running `conda install compilers make` first.
+If error `bigdecimal` occurs when running `bundle install`, try running `conda install -c conda-forge compilers make -y` first.
 
 
 
