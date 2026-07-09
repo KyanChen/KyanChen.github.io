@@ -46,6 +46,17 @@
     {% endif %}
 
     <div class="pub-item">
+      {% assign pdf_link = item.pdf | default: "" | strip %}
+      {% assign arxiv_link = item.arxiv | default: "" | strip %}
+      {% assign page_link = item.page | default: "" | strip %}
+      {% assign title_link = "#" %}
+      {% if pdf_link != "" %}
+        {% assign title_link = pdf_link %}
+      {% elsif arxiv_link != "" %}
+        {% assign title_link = arxiv_link %}
+      {% elsif page_link != "" %}
+        {% assign title_link = page_link %}
+      {% endif %}
       
       <!-- 图片接口：有 image 字段时显示，否则自动隐藏 -->
       <!-- {% if item.image %}
@@ -57,10 +68,10 @@
       <!-- 内容区域 -->
       <div class="pub-content">
         
-        <!-- 标题：优先跳转 PDF，其次 Project -->
+        <!-- 标题：优先跳转 PDF，其次 arXiv，再其次 Project -->
         <div class="pub-title">
             <span class="pub-index">[{{ pub_index }}]</span>
-            <a href="{{ item.pdf | default: item.page | default: '#' }}" target="_blank">{{ item.title }}</a>
+            <a href="{{ title_link }}" target="_blank">{{ item.title }}</a>
         </div>
 
         <div class="pub-authors">{{ item.authors }}</div>
@@ -87,9 +98,9 @@
 
         <!-- 链接按钮组 -->
         <div class="pub-links">
-            {% if item.pdf %}    <a href="{{ item.pdf }}" class="pub-btn" target="_blank">PDF</a> {% endif %}
-            {% if item.arxiv %}  <a href="{{ item.arxiv }}" class="pub-btn" target="_blank">arXiv</a> {% endif %}
-            {% if item.page %}   <a href="{{ item.page }}" class="pub-btn" target="_blank">Project</a> {% endif %}
+            {% if pdf_link != "" %}    <a href="{{ pdf_link }}" class="pub-btn" target="_blank">PDF</a> {% endif %}
+            {% if arxiv_link != "" %}  <a href="{{ arxiv_link }}" class="pub-btn" target="_blank">arXiv</a> {% endif %}
+            {% if page_link != "" %}   <a href="{{ page_link }}" class="pub-btn" target="_blank">Project</a> {% endif %}
             
             <!-- Code 逻辑：优先 item.code，其次拼凑 github 地址 -->
             {% if item.code %}
