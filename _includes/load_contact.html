@@ -18,7 +18,9 @@
   {% if lang == 'cn' %}<strong>电子邮箱：</strong>{% else %}<strong>Email:</strong>{% endif %}
   <a href="mailto:{{ contact.email | replace: '(at)', '@' }}">{{ contact.email }}</a><br>
 
+  {% comment %}
   <!-- 3. 微信 Wechat -->
   {% if lang == 'cn' %}<strong>微信：</strong>{% else %}<strong>Wechat:</strong>{% endif %}
   {{ contact.wechat }}
+  {% endcomment %}
 </p>

@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+/*
+ * Keep the centered layout in the same horizontal position on every page.
+ * Some pages are tall enough to need a vertical scrollbar while shorter
+ * pages are not; reserving the gutter prevents the viewport width from
+ * changing when navigating between them.
+ */
+html {
+    scrollbar-gutter: stable;
+}
+
+/* Fallback for browsers that do not support scrollbar-gutter. */
+@supports not (scrollbar-gutter: stable) {
+    html {
+        overflow-y: scroll;
+    }
+}
+
 body {
     /* 字体：现代无衬线体栈 */
     font-family: var(--base-font-main);
